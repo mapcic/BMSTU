@@ -1,4 +1,4 @@
-%% getJ: function description delta, meff, U, Ez
+% getJ: function description delta, meff, U, Ez
 function J = getJ(delta, meff, U, dU, EFermi)
 	e = 1.6e-19;
 	eVtoJ = e;
@@ -13,9 +13,9 @@ function J = getJ(delta, meff, U, dU, EFermi)
 	J = k*ones(1, length(dU));
 
 	for j = 1:length(dU)
-		Uj = U - linspace( 0, dU(j),length(U) );
+		Uj = U - linspace( 0, dU(j), length(U) );
 		dTDEz = @(Ez) TDEz(delta, meff, Uj, Ez, EFermi);
-		J(j) = J(j)*integral(dTDEz, 0, 1, 'AbsTol', 1e-30);
+		J(j) = e*J(j)*integral(dTDEz, 0, max(Uj), 'AbsTol', 1e-30);
 	end
 end
 

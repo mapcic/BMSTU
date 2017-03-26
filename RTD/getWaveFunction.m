@@ -20,12 +20,15 @@ function [waveLeft, waveRigth] = getWaveFunction(delta, meff, U, Ez)
 		kLeft = sqrt( 2*meff(1)*me*(Ez(j) - U(1)) )/hbar;
 		kRight = sqrt( 2*meff(end)*me*(Ez(j) - U(end)) )/hbar;
 
-		% delta
+		% d1 = meff(2:ULen)./meff(1:ULen-1);
+		% d2 = 2*delta^2*me*meff(2:end-1).*(Ez(j) - U(2:end-1))./hbar^2 - 2 ;
+		% d2=[1i*kLeft*delta - 1, d2, 1i*kRight*delta - 1];
+		% d3 = meff(1:ULen-1)./meff(2:ULen);
 
-		d1 = meff(2:ULen)./meff(1:ULen-1);
-		d2 = 2*delta^2*me*meff(2:end-1).*(Ez(j) - U(2:end-1))./hbar^2 - 2 ;
-		d2=[1i*kLeft*delta - 1, d2, 1i*kRight*delta - 1];
-		d3 = meff(1:ULen-1)./meff(2:ULen);
+		d1=ones(ULen-1,1);
+		d2=((2*(delta^2)*me*meff(2:end-1)./(hbar^2)).*(Ez(j)-U(2:end-1)))-(meff(2:end-1)./meff(3:end))-1;
+		d2=[1i*kLeft*delta-1,d2,1i*kRight*delta-1];
+		d3=[1,meff(2:end-1)./meff(3:end)];
 
 		H = diag(d1, -1) + diag(d2) + diag(d3, +1);
 

@@ -13,7 +13,7 @@ function val = TDEz(delta, meff, U, Ez, EFermi)
 
 	[waveLeft, ~] = getWaveFunction(delta, meff, U, Ez);
 
-	T = (kRight/kLeft)*(meff(1)/meff(end))*(abs(waveLeft(:, end)).^2)';
+	T = (kRight./kLeft).*(meff(1)/meff(end)).*(abs(waveLeft(:, end)).^2)';
 	D = log( ( 1 + exp( eVtoJ*(EFermi + U(1) - Ez)/kT ) ) ./ ( 1 + exp( eVtoJ*(EFermi + U(end) - 1)/kT ) ) );
 
 	val = T.*D;

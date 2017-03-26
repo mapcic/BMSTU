@@ -1,6 +1,6 @@
 clear; clc;
 
-delta = 0.3; % nm ~ atom's radius
+delta = 0.56; % nm ~ atom's radius
 % Count layers
 a = 8;
 b = 4;
@@ -11,7 +11,7 @@ m_GaAs = 0.067;
 % Hight of potential barrier
 U = 1;
 % Applyied voltage
-dU = 0:0.01:2;
+dU = 0:0.001:0.6;
 %  Potential grid
 gridU = [zeros(1, a), U*ones(1, b), zeros(1, c), U*ones(1, b), zeros(1, a)];
 % Mass grid
