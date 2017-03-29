@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.23)  29 MAR 2017 05:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.23)  30 MAR 2017 01:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1010,7 +1010,7 @@ enefit from \pgfplotsset{compat=1.14} (current compat level: 1.12).
 (./00-titlepage.tex (/usr/share/texmf-dist/tex/latex/ucs/data/uni-4.def
 File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
 )
-<assets/bmstu-logo.png, id=68, 319.1925pt x 376.40625pt>
+<assets/bmstu-logo.png, id=56, 319.1925pt x 376.40625pt>
 File: assets/bmstu-logo.png Graphic file (type png)
 
 <use assets/bmstu-logo.png>
@@ -1095,6 +1095,12 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 1.
+ <assets/baseConnect.png, id=97, 648.4225pt x 197.73875pt>
+File: assets/baseConnect.png Graphic file (type png)
+
+<use assets/baseConnect.png>
+Package pdftex.def Info: assets/baseConnect.png used on input line 7.
+(pdftex.def)             Requested size: 422.52057pt x 128.8515pt.
 )
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 24.
@@ -1107,7 +1113,7 @@ Package babel Info: Redefining russian shorthand "~
  [3
 
 
-]
+ <./assets/baseConnect.png>]
 \openout2 = `20-main.aux'.
 
  (./20-main.tex
@@ -1123,42 +1129,29 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 26.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 26.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 33.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 33.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 33.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 33.
- [4
+
+<assets/connect.png, id=106, 314.17375pt x 42.1575pt>
+File: assets/connect.png Graphic file (type png)
+ <use assets/connect.png>
+Package pdftex.def Info: assets/connect.png used on input line 30.
+(pdftex.def)             Requested size: 234.73524pt x 31.49774pt.
 
 
-
-]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 35.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 35.
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--44
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 44.
+(babel)             in language append on input line 36.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 44.
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--53
-
- []
-
+(babel)             in language append on input line 36.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 53.
+(babel)             in language append on input line 36.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 53.
-)
+(babel)             in language append on input line 36.
+[4
+
+
+
+])
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 28.
 Package babel Info: Redefining russian shorthand "~
@@ -1167,7 +1160,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 28.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 28.
- [5]
+ [5 <./assets/connect.png>]
 \openout2 = `21-main.aux'.
 
  (./21-main.tex
@@ -1179,52 +1172,98 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 2.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2.
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 8.
+(babel)             in language append on input line 9.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 8.
+(babel)             in language append on input line 9.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 9.
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 36.
+(babel)             in language append on input line 16.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 36.
+(babel)             in language append on input line 16.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 16.
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 36.
+(babel)             in language append on input line 23.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 36.
- [6
+(babel)             in language append on input line 23.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 23.
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 29.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 29.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 29.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 29.
+[6
 
 
 
 ]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 52.
+(babel)             in language append on input line 30.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 52.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 53.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 53.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 59.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 59.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 61.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 61.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 61.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 61.
- [7]
-Overfull \hbox (3.84543pt too wide) in paragraph at lines 67--67
-[] 
- []
+(babel)             in language append on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 30.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 30.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 77.
+(babel)             in language append on input line 35.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 77.
+(babel)             in language append on input line 35.
+<assets/plots.png, id=143, 1645.14626pt x 885.3075pt>
+File: assets/plots.png Graphic file (type png)
+ <use assets/plots.png>
+Package pdftex.def Info: assets/plots.png used on input line 38.
+(pdftex.def)             Requested size: 469.47049pt x 252.63947pt.
 )
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 29.
@@ -1234,7 +1273,8 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 29.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 29.
- [8]
+
+[7 <./assets/plots.png>]
 \openout2 = `30-conclusion.aux'.
 
  (./30-conclusion.tex
@@ -1243,6 +1283,11 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 1.
 )
+Underfull \hbox (badness 1454) in paragraph at lines 2--33
+[]\T2A/cmr/m/n/14.4 График сум^^?мар^^?ной ин^^?тен^^?сив^^?но^^?сти от^^?ка^^?
+зов, пред^^?став^^?лен^^?ный на
+ []
+
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 33.
 Package babel Info: Redefining russian shorthand "~
@@ -1251,7 +1296,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 33.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 33.
- [9
+[8
 
 
 
@@ -1268,17 +1313,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 0A6F185B840BDABD9F910C835D5787B8;3704.
+(rerunfilecheck)             Checksum: BA3B8B7980B54176859D927F9EF6A9A3;3072.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
- 35541 strings out of 493013
- 770441 string characters out of 6139316
+ 35540 strings out of 493013
+ 770656 string characters out of 6139316
  958851 words of memory out of 5000000
- 38382 multiletter control sequences out of 15000+600000
+ 38395 multiletter control sequences out of 15000+600000
  14122 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,9n,98p,749b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,9n,98p,1122b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -1293,10 +1338,10 @@ f-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/cm-super/sfcc2986.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
 uper/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.p
 fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
-Output written on index.pdf (9 pages, 375563 bytes).
+Output written on index.pdf (8 pages, 439701 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 180 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

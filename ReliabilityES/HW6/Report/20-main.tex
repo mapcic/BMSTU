@@ -23,39 +23,38 @@
 		\item ССН с основным соединением элементов (с последовательным соединением); 
 		\item ССН с резервным соединением элементов (присутствуют резервирующие элементы).
 	\end{enumerate}
-\section{Виды резервирования}
-	Выделяется 5 основных видов резервирования (целых крайностей):
+\section{Надёжность технической системы с основным соединением элементов (без восстановления)}
+	Аналитически ССН для такой системы задаётся следующим образом: отказ любого элемента системы влечёт за собой отказ системы. ССН основного соединения показана на рис.~\ref{img:20-0}
+	\begin{figure}[h]
+	  \centering
+	  \includegraphics[width=.5\linewidth]{assets/connect}
+	  \caption{CCН основного соединения}
+	  \label{img:20-0}
+	\end{figure}
+
+	При условии независимости отказов элементов в системе (поток отказов без последствий) ВБР системы с основным соединением будет равна произведению ВБР её элементов:
+	\begin{equation}
+		P_{sys}(t) = \prod\limits_{i = 1}^{n}P_{i}(t).
+	\end{equation}
+
+	Если интенсивность отказов не постоянна, тогда:
+	\begin{gather}
+		P_{sys}(t) = e^{-\sum\limits_{i = 1}^{n}\;\int\limits_{0}^{t}\lambda_{i}(\tau)d\tau};\\
+		T_{1,sys} = \int\limits_{0}^{\infty}P_{sys}(t)dt.
+	\end{gather}
+
+	Если интенсивность отказов постоянна, тогда:
+	\begin{gather}
+		P_{sys}(t) = e^{-\sum\limits_{i = 1}^{n}\lambda_{i}t};\\
+		T_{1,sys} = \int\limits_{0}^{\infty}P_{sys}(t)dt;\\
+		f_{sys}(t) = -\frac{d P_{sys}(t)}{d t} = \sum\limits_{i = 1}^{n}\lambda_{i}e^{-\sum\limits_{i = 1}^{n}\lambda_{i}t};\\
+		\lambda_{sys} = \frac{P_{sys}(t)}{f_{sys}(t)} = \sum\limits_{i = 1}^{n}\lambda_{i}.
+	\end{gather}
+
+	Основные свойства системы с основным соединением элементов без восстановления: 
 	\begin{enumerate}
-		\item Общее горячие резервирование;
-		\item Специальное горячие резервирование;
-		\item Общее холодное резервирование;
-		\item Специальное холодное резервирование;
-		\item Скользящие холодное резервирование;
+		\item C увеличением количества элементов системы надёжность системы уменьшается; 
+		\item Надёжность системы в целом заведомо ниже надёжности любого элемента системы;
+		\item Устойчивость экспоненциального закона надёжности.
 	\end{enumerate}
-\subsection{Общее горячие резервирование}
-	\begin{equation}\label{eq1-1}
-		P_{system}(t) = 1 - \prod\limits_{i = 1}^{ m + 1 }\Big( 1 - \prod\limits_{j = 1}^{ N }P_{ij}(t) \Big),
-	\end{equation}
-	\begin{conditions}
-	  $m$ & кратность резервирования,\\
-	  $N$ & количество элементов,\\
-	  $P_{ij}$ & ВБР $ij$ элемента $N$.
-	\end{conditions}
-\subsection{Специальное горячие резервирование}
-	\begin{equation}\label{eq1-2}
-		P_{system}(t) = \prod\limits_{j = 1}^{ N } \Big(1 - \prod\limits_{i = 1}^{ m + 1 }\big( 1 - P_{ij}(t) \big) \Big),
-	\end{equation}
-	\begin{conditions}
-	  $m$ & кратность резервирования,\\
-	  $N$ & количество элементов,\\
-	  $P_{ij}$ & ВБР $ij$ элемента $N$.
-	\end{conditions}
-\subsection{Специальное холодное резервирование}
-	\begin{equation}\label{eq1-3}
-		P_{system}(t) = \prod\limits_{i = 1}^{ N }\Big( e^{-\lambda_{i} t}\sum\limits_{j = 0}^{ m }\frac{(\lambda_{j} t)^{j}}{j!} \Big),
-	\end{equation}
-	\begin{conditions}
-	  $m$ & кратность резервирования,\\
-	  $N$ & количество элементов,\\
-	  $\lambda_{i}$ & интенсивность отказа $i$-ого элемента.
-	\end{conditions}
+
