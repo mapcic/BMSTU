@@ -1,0 +1,38 @@
+% Shut up!
+\RequirePackage{silence}
+\WarningFilter{caption}{Unsupported document class}
+\WarningFilter{latexfont}{Font shape `PD1/cmr/m/n'}
+\WarningFilter{latexfont}{Font shape `PU/cmr/m/n'}
+\WarningFilter{latexfont}{Some font shapes}
+
+\documentclass[utf8, 14pt]{G7-32}
+
+\include{preamble.inc}
+\include{listings.inc}
+\include{macros.inc}
+% \input{biblio/biblatex}% Настройки библиографии из внешнего файла (там же выбор: встроенная или на основе biblatex)
+
+\begin{document}
+
+\frontmatter
+
+\include{00-titlepage}
+
+\setcounter{page}{2}
+\tableofcontents
+
+\include{10-intro}
+
+\mainmatter
+
+\include{20-main}
+\include{21-main}
+
+\backmatter
+
+\include{30-conclusion}
+\include{31-biblio}
+
+\appendix
+
+\end{document}
