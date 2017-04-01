@@ -38,3 +38,5 @@ bar(Axes{2}, t-dt/2, f);
 plotFormat(Axes{3}, 'Title', 'xTitle', 'yTitle', {}, [], []);
 plot(Axes{3}, t, lambda);
 bar(Axes{3}, t-dt/2, lambda);
+
+% need aproximate
