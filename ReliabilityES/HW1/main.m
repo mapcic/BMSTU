@@ -27,14 +27,14 @@ Axes = {
 	subplot(1, 3, 3);
 };
 
-plotFormat(Axes{1}, 'Title', 'xTitle', 'yTitle', {}, [], []);
+plotFormat(Axes{1}, 'Title', 'xTitle', 'yTitle', {}, [], [], 15);
 plot(Axes{1}, t, F);
 bar(Axes{1}, t-dt/2, F);
 
-plotFormat(Axes{2}, 'Title', 'xTitle', 'yTitle', {}, [], []);
+plotFormat(Axes{2}, 'Title', 'xTitle', 'yTitle', {}, [], [], 15);
 plot(Axes{2}, t, f);
 bar(Axes{2}, t-dt/2, f);
 
-plotFormat(Axes{3}, 'Title', 'xTitle', 'yTitle', {}, [], []);
+plotFormat(Axes{3}, 'Title', 'xTitle', 'yTitle', {}, [], [], 15);
 plot(Axes{3}, t, lambda);
 bar(Axes{3}, t-dt/2, lambda);
