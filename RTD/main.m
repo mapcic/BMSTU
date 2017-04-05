@@ -25,7 +25,7 @@ U = 1;
 EFermi = 1.51*1e-20;
 
 % Applyied voltage
-dU = 0:0.001:0.5;
+dU = 0:0.01:0.5;
 
 %  Potential grid
 gridU = [zeros(1, a), U*ones(1, b), zeros(1, c), U*ones(1, b), zeros(1, a)];
@@ -33,5 +33,9 @@ gridU = [zeros(1, a), U*ones(1, b), zeros(1, c), U*ones(1, b), zeros(1, a)];
 % Mass grid
 gridMeff = [m_GaAs*ones(1, a), m_AlAS*ones(1, b), m_GaAs*ones(1, c), m_AlAS*ones(1, b), m_GaAs*ones(1, a)];
 
-J = getJ(delta*nm, gridMeff*me, gridU*eVtoJ, dU*eVtoJ, EFermi);
-plot(dU, J);
+
+% diffusion
+
+% get J from V
+% J = getJ(delta*nm, gridMeff*me, gridU*eVtoJ, dU*eVtoJ, EFermi);
+% plot(dU, J);
