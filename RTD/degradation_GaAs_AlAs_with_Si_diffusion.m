@@ -10,7 +10,7 @@ dt = 1;
 
 kT = T*k_B;
 
-time = 15*365*24;
+time = 24;
 
 Eg_GaAs = 1.519 - 5.405*1e-4*T^2/(T+204);
 
@@ -29,7 +29,7 @@ c = 6;
 
 D = 0.2*exp(-3.5/(kT*JtoEv))*1e-4;
 
-lmbd = D*dt*60*60/dx^2;
+lmbd = D*dt*60/dx^2;
 
 % Count layers
 a = 8;
