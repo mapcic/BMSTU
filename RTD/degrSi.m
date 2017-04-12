@@ -7,7 +7,7 @@ hbar = 1.054*1e-34; k_B = 1.38e-23;
 dx = 0.56*nm;
 dt = 1;
 
-T = 500;
+T = 400;
 kT = T*k_B;
 
 Eg = 1.519 - 5.405*1e-4*T^2/(T+204);
@@ -23,8 +23,10 @@ ni = sqrt(Nc*Nv)*exp(-Eg/(2*kT*JtoEv));
 C_Si = 2*1e17*1e6;
 
 C_Al = 4.42*1e28;
-purity = 1e-10;
+purity = 1e-9;
+
 C_addition = C_Al*purity;
+% C_addition = ni;
 
 Time = 10*365*24;
 % Count layers
@@ -40,8 +42,8 @@ grid_U = [0, zeros(1, a), C_Si*ones(1, b), zeros(1, c), C_Si*ones(1, b), zeros(1
 plot(0:1:a+b+c+b+a+1, len_grid_C);
 hold on;
 
+dtdx2 = dt*60*60/dx^2;
 for i = 0 : dt : Time
-	dtdx2 = dt*60*60/dx^2;
 
 	grid_n_coduct = 0.5*grid_C.*( 2 + 0.5*(2*ni./grid_C).^2 );
 
@@ -55,9 +57,9 @@ for i = 0 : dt : Time
 	d3 = [0, D_plus(2:end)*dtdx2];
 
 	Matrix = diag(d1, -1) + diag(d2) + diag(d3, +1);
+	
 	grid_C = (Matrix*grid_C')';
-
 end
 
 plot(0:1:a+b+c+b+a+1, grid_C', '--');
-plot(0:1:a+b+c+b+a+1, grid_U)
+plot(0:1:a+b+c+b+a+1, grid_U);

@@ -1,41 +1,35 @@
 clear; clc;
 
-e = 1.6e-19;
-eVtoJ = e;
-JtoEv = e^(-1); 
-me = 9.10938356*1e-31;
-nm = 1e-9;
+e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); 
+me = 9.11*1e-31; nm = 1e-9;
+
+T = 800; % K
+
+checkTime = [1, 5, 10, 15, 20, 25]; %years
 
 % atoms' radius
-delta = 0.56;
+dx = 0.56; %nm
 
 % Count layers
-a = 8;
-b = 4;
+a = 8; % monolayers
+b = 5;
 c = 6;
 
-% Effective mass
-m_AlAS = 0.15;
-m_GaAs = 0.067;
-
-% Hight of potential barrier
-U = 1;
-
 % Fermi Energy
-EFermi = 1.51*1e-20;
+EFermi = 1.51*1e-20; % J
 
 % Applyied voltage
-dU = 0:0.01:0.5;
+dU = 0:0.01:0.6;
 
-%  Potential grid
-gridU = [zeros(1, a), U*ones(1, b), zeros(1, c), U*ones(1, b), zeros(1, a)];
+% grid of Al conentration
+grid_x_Al = [zeros(1, a), ones(1, b), zeros(1, c), ones(1, b), zeros(1, a)];
 
-% Mass grid
-gridMeff = [m_GaAs*ones(1, a), m_AlAS*ones(1, b), m_GaAs*ones(1, c), m_AlAS*ones(1, b), m_GaAs*ones(1, a)];
-
-
-% diffusion
+% Get profile Ec
+[grids_Ec, grids_meff] = degradation_AlGaAs( grid_x_Al, checkTime, dx*nm, T );
 
 % get J from V
-% J = getJ(delta*nm, gridMeff*me, gridU*eVtoJ, dU*eVtoJ, EFermi);
-% plot(dU, J);
+for j = 1 : length(checkTime)
+	J = getJ(dx*nm, grids_meff(j, :)*me, grids_Ec(j, :)*eVtoJ, dU*eVtoJ, EFermi);
+	plot(dU, J);
+	hold on;
+end
