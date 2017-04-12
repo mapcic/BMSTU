@@ -1,12 +1,13 @@
-clear; clc;
+%% get_degradation_AlGaAs_Nd: function description
+function [Ec, meff] = get_degradation_AlGaAs_Nd(x_Al, checkTime, dx, T)
 
 e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); me = 9.11*1e-31;
 nm = 1e-9; 
 hbar = 1.054*1e-34; k_B = 1.38e-23;
 
-T = 350;
 kT = T*k_B;
-Time = 10*365*24;
+
+Time = max(checkTime)*365*24; % to hours
 
 % Count layers
 a = 8;
@@ -18,12 +19,13 @@ n_Atoms = 4.42*1e28;
 n_Al = n_Atoms/2;
 purity = 1e-8;
 
-dx = 0.56*nm; 
+% dx = 0.56*nm; 
 dt = 1;
 dtdx2 = dt*60*60/dx^2; 
 
 checkTime = [0, 0.2, 0.5, 0.8, 1:2:10]*365*24;
-grid_n_Al = [zeros(1, a), n_Al*ones(1, b), zeros(1, c), n_Al*ones(1, b), zeros(1, a)];
+% grid_n_Al = [zeros(1, a), n_Al*ones(1, b), zeros(1, c), n_Al*ones(1, b), zeros(1, a)];
+grid_n_Al = x_Al*n_Al;
 len_grid = length(grid_n_Al);
 
 for i = 0 : dt : Time
@@ -49,8 +51,8 @@ for i = 0 : dt : Time
 	
 	grid_n_Al = (Matrix*grid_n_Al')';
 
-	if find(i == checkTime)
-		plot(1:1:a+b+c+b+a, grid_n_Al'./n_Al);
-		hold on;
+	ind = find(i == checkTime); 
+	if ind
+		[Ec(ind, :), meff(ind, :)] = getEcAlGaAs(grid_n_Al);
 	end
 end

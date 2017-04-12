@@ -4,14 +4,10 @@ e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); me = 9.11*1e-31;
 nm = 1e-9; 
 hbar = 1.054*1e-34; k_B = 1.38e-23;
 
-T = 300;
+T = 350;
 kT = T*k_B;
 Time = 10*365*24;
 
-% % Count layers
-% a = 8*6;
-% b = 4*6;
-% c = 6*6;
 % Count layers
 a = 8;
 b = 4;
