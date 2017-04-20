@@ -51,7 +51,8 @@
 	\begin{cases}
 		C^{i+1}_{1} = (1 - \lambda)C^{i}_{1} + \lambda C^{i}_{2};\\
 		C^{i+1}_{j} = \lambda C^{i}_{j-1} + (1 - 2\lambda)C^{i}_{j} + \lambda C^{i}_{j+1},\,j \in [2,\,\dots,\,N-1];\\
-		C^{i+1}_{N} = (1 - \lambda)C^{i}_{N} + \lambda C^{i}_{N-1}.
+		C^{i+1}_{N} = (1 - \lambda)C^{i}_{N} + \lambda C^{i}_{N-1};\\
+		\lambda = D\frac{\Delta t}{\Delta x^{2}}.
 	\end{cases}
 \end{equation}
 
@@ -66,7 +67,8 @@
 	\begin{cases}
 		C^{i+1}_{1} = C^{i}_{1};\\
 		C^{i+1}_{j} = \lambda C^{i}_{j-1} + (1 - 2\lambda)C^{i}_{j} + \lambda C^{i}_{j+1},\,j \in [2,\,\dots,\,N-1];\\
-		C^{i+1}_{N} = C^{i}_{N}.
+		C^{i+1}_{N} = C^{i}_{N};\\
+		\lambda = D\frac{\Delta t}{\Delta x^{2}}.
 	\end{cases}
 \end{equation}
 
@@ -81,5 +83,16 @@
 Тогда уравнение конечно-разностной схемы будет~\cite{MethFD}:
 \begin{gather}\label{eq:diffD(x)tFD}
 	\frac{C_{j}^{i+1} - C_{j}^{i}}{\Delta t} = \frac{ D_{j+1/2}^{i}\frac{C^{i}_{j+1} - C^{i}_{j}}{\Delta x} - D_{j-1/2}^{i}\frac{C^{i}_{j} - C^{i}_{j-1}}{\Delta x} }{\Delta x};\\
-	D_{j\pm1/2}^{i} = \frac{D^{i}_{j} + D^{i}_{j\pm1}}{2}.
+	D_{j\pm1/2}^{i} = \frac{D^{i}_{j} + D^{i}_{j\pm1}}{2} = D_{j\pm}^{i}.
 \end{gather}
+
+Проводя рассуждения аналогичные предыдущему параграфу получит конечно-разностную схему для открытой схемы:
+\begin{equation}
+	\begin{cases}
+		C^{i+1}_{1} = C^{i}_{1};\\
+		C^{i+1}_{j} = \lambda_{-}^{i} C^{i}_{j-1} + (1 - \lambda^{i}_{+} - \lambda^{i}_{-})C^{i}_{j} + \lambda^{i}_{+} C^{i}_{j+1},\,j \in [2,\,\dots,\,N-1];\\
+		C^{i+1}_{N} = C^{i}_{N};\\
+		\lambda^{i}_{+} = D_{j+}^{i}\frac{\Delta t}{\Delta x^{2}};\\
+		\lambda^{i}_{-} = D_{j-}^{i}\frac{\Delta t}{\Delta x^{2}}.
+	\end{cases}
+\end{equation}

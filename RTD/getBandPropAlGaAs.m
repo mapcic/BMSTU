@@ -12,7 +12,7 @@ function [Ec, Eg, me_eff, mp_eff] = getBandPropAlGaAs(C_Al)
 	less45Ec = 0.773*less45.*x;
 	less45Eg = 1.424*less45 + 1.247*less45.*x;
 
-	Ec = more45Ec + less45Ec;
+	Ec = less45Eg + more45Eg;
 	Ec = Ec - min(Ec);
 
 	Eg = more45Eg + less45Eg;
