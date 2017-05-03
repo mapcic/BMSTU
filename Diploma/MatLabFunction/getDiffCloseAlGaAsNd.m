@@ -1,5 +1,5 @@
 %% getDiffCloseAlGaAs: function description
-function [Ec, meff, Alx] = getDiffCloseAlGaAs(x_Al, checkTime, dx, T, Nd)
+function [Ec, meff, Alx] = getDiffCloseAlGaAsNd(x_Al, checkTime, dx, T, Nd)
 	e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1);
 	nm = 1e-9; me = 9.1*1e-31;
 	hbar = 1.054*1e-34; k_B = 1.38e-23;
