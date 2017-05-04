@@ -8,13 +8,13 @@ T = 300; % K
 checkTime = 0:0.5:3; %years
 
 % atoms' radius
-dx = 0.56; %nm
+dx = 0.1; %nm
 
 % Count layers
-rez = 5;
-a = 8; % monolayers
-b = 5;
-c = 6;
+rez = 20;
+a = 30; % monolayers
+b = 30;
+c = 30;
 
 % Fermi Energy
 EFermi = 1.51*1e-20; % J
@@ -32,5 +32,7 @@ accur = 0.000001;
 
 eps = 13.18 - 3.12*Ec;
 
-[V, n] = getConcentrationElectrons(accur, Ec*eVtoJ, meff*me, Ni, eps, dx*nm, [0], rez+1, length(Ec)-rez);
+[V, n] = getConcentrationElectrons(accur, Ec*eVtoJ, meff*me, Ni, eps, dx*nm, [0.5], rez+1, length(Ec)-rez);
 % [V, n] = UN(accur, Ec*eVtoJ, meff*me, Ni, eps, dx*nm, [0], rez+1, length(Ec)-rez);
+
+plot(1 : (rez+a+b+c+b+a+rez), n/max(n), 1 : (rez+a+b+c+b+a+rez), Ec - V);
