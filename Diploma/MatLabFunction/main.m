@@ -7,7 +7,7 @@ T = 800; % K
 
 % checkTime = 0:25:25; %years
 
-checkTime = [0, 10, 20, 40]; %years
+checkTime = [0]; %years
 
 % atoms' radius
 dx = 0.56; %nm
@@ -16,9 +16,9 @@ dx = 0.56; %nm
 
 % Count layers
 % Active field
-a = 15; % monolayers
-b = 10;
-c = 4;
+a = 10; % monolayers
+b = 5;
+c = 20;
 
 sizeHS = a + b + c + b + a;
 
