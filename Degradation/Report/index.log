@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.24)  12 MAY 2017 00:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.23)  13 MAY 2017 03:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1125,45 +1125,36 @@ Package pdftex.def Info: assets/GaAs_E.png used on input line 15.
 <assets/ZnLaer.png, id=279, 331.2375pt x 345.29pt>
 File: assets/ZnLaer.png Graphic file (type png)
  <use assets/ZnLaer.png>
-Package pdftex.def Info: assets/ZnLaer.png used on input line 20.
+Package pdftex.def Info: assets/ZnLaer.png used on input line 21.
 (pdftex.def)             Requested size: 169.00887pt x 176.17986pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 25.
+(babel)             in language append on input line 26.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 25.
+(babel)             in language append on input line 26.
 
 <assets/Zone.png, id=281, 1343.0175pt x 525.965pt>
 File: assets/Zone.png Graphic file (type png)
  <use assets/Zone.png>
-Package pdftex.def Info: assets/Zone.png used on input line 29.
+Package pdftex.def Info: assets/Zone.png used on input line 30.
 (pdftex.def)             Requested size: 469.47049pt x 183.85776pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--41
-
- []
-
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-34.def
+File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
+)
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 41.
+(babel)             in language append on input line 43.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 41.
+(babel)             in language append on input line 43.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 41.
+(babel)             in language append on input line 43.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 41.
-[5
+(babel)             in language append on input line 43.
+ [5
 
 
 
  <./assets/GaAs_E.png> <./assets/ZnLaer.png (PNG copy)>]
-(/usr/share/texmf-dist/tex/latex/ucs/data/uni-34.def
-File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
-)
-Overfull \hbox (12.0pt too wide) in alignment at lines 42--47
-[] [] 
- []
-
-
-Overfull \hbox (12.0pt too wide) in alignment at lines 47--49
+Overfull \hbox (12.0pt too wide) in alignment at lines 44--49
 [] [] 
  []
 
@@ -1173,40 +1164,106 @@ Overfull \hbox (12.0pt too wide) in alignment at lines 49--51
  []
 
 
-Overfull \hbox (12.0pt too wide) in alignment at lines 51--52
+Overfull \hbox (12.0pt too wide) in alignment at lines 51--53
 [] [] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in alignment at lines 52--62
+Overfull \hbox (12.0pt too wide) in alignment at lines 53--54
 [] [] 
  []
 
+
+Overfull \hbox (12.0pt too wide) in alignment at lines 54--64
+[] [] 
+ []
+
+
+Overfull \vbox (1.18597pt too high) has occurred while \output is active []
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 63.
+(babel)             in language append on input line 64.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 63.
+(babel)             in language append on input line 64.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 63.
+(babel)             in language append on input line 64.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 63.
+(babel)             in language append on input line 64.
+
 [6 <./assets/Zone.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 65.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 65.
-Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 67.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 67.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 69.
+(babel)             in language append on input line 106.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 69.
+(babel)             in language append on input line 106.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 71.
+(babel)             in language append on input line 106.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 71.
+(babel)             in language append on input line 106.
+ [7]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 109.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 109.
+
+<assets/FD.png, id=321, 1190.94937pt x 670.75594pt>
+File: assets/FD.png Graphic file (type png)
+ <use assets/FD.png>
+Package pdftex.def Info: assets/FD.png used on input line 124.
+(pdftex.def)             Requested size: 464.77835pt x 261.76775pt.
+
+Underfull \hbox (badness 1286) in paragraph at lines 113--128
+\T2A/cmr/m/n/14.4 ‘и^^?зи^^?че^^?ский смысл ста^^?ти^^?сти^^?ки ‘ерми-^^?ƒира^^
+?ка: ве^^?ро^^?€т^^?ность элек^^?тро^^?на
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 133.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 133.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 133.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 133.
+[8 <./assets/FD.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 133--137
+
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 137.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 137.
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--163
+
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 163.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 163.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 163.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 163.
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 170--177
+
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 180.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 180.
 )
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 36.
@@ -1216,7 +1273,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 36.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 36.
- [7]
+ [10]
 \openout2 = `20-main.aux'.
 
  (./20-main.tex
@@ -1224,15 +1281,14 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 1.
-
-(/usr/share/texmf-dist/tex/latex/ucs/data/uni-32.def
+ (/usr/share/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<assets/3Dk.png, id=306, 417.56pt x 315.1775pt>
+<assets/3Dk.png, id=354, 417.56pt x 315.1775pt>
 File: assets/3Dk.png Graphic file (type png)
  <use assets/3Dk.png>
 Package pdftex.def Info: assets/3Dk.png used on input line 18.
@@ -1245,22 +1301,22 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 28.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 28.
- [8
+ [11
 
 
- <./assets/3Dk.png>] <assets/2Dk.png, id=316, 335.2525pt x 328.22626pt>
+ <./assets/3Dk.png>] <assets/2Dk.png, id=362, 335.2525pt x 328.22626pt>
 File: assets/2Dk.png Graphic file (type png)
 
 <use assets/2Dk.png>
 Package pdftex.def Info: assets/2Dk.png used on input line 33.
 (pdftex.def)             Requested size: 167.62584pt x 164.11272pt.
- <assets/1Dk.png, id=317, 208.78pt x 98.3675pt>
+ <assets/1Dk.png, id=363, 208.78pt x 98.3675pt>
 File: assets/1Dk.png Graphic file (type png)
 
 <use assets/1Dk.png>
 Package pdftex.def Info: assets/1Dk.png used on input line 46.
 (pdftex.def)             Requested size: 104.38972pt x 49.18361pt.
- <assets/gE.png, id=318, 1169.87062pt x 666.23906pt>
+ <assets/gE.png, id=364, 1169.87062pt x 666.23906pt>
 File: assets/gE.png Graphic file (type png)
 
 <use assets/gE.png>
@@ -1274,7 +1330,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 62.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 62.
- [9 <./assets/2Dk.png> <./assets/1Dk.png>]
+ [12 <./assets/2Dk.png> <./assets/1Dk.png>]
 Overfull \hbox (99.18053pt too wide) in alignment at lines 91--96
 [] [] [] [] 
  []
@@ -1308,7 +1364,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 37.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 37.
- [10 <./assets/gE.png (PNG copy)>]
+ [13 <./assets/gE.png (PNG copy)>]
 \openout2 = `21-main.aux'.
 
  (./21-main.tex
@@ -1333,7 +1389,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 38.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 38.
- [11
+ [14
 
 
 ]
@@ -1361,7 +1417,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 34.
 
-[12
+[15
 
 
 ]
@@ -1381,18 +1437,18 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 86.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 86.
- [13]
+ [16]
 
-LaTeX Warning: Citation `getMeshkov' on page 14 undefined on input line 86.
-
-
-LaTeX Warning: Citation `Meshkov' on page 14 undefined on input line 86.
+LaTeX Warning: Citation `getMeshkov' on page 17 undefined on input line 86.
 
 
-LaTeX Warning: Citation `Meshkov' on page 14 undefined on input line 86.
+LaTeX Warning: Citation `Meshkov' on page 17 undefined on input line 86.
 
 
-LaTeX Warning: Citation `Makeev' on page 14 undefined on input line 86.
+LaTeX Warning: Citation `Meshkov' on page 17 undefined on input line 86.
+
+
+LaTeX Warning: Citation `Makeev' on page 17 undefined on input line 86.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 89--94
@@ -1400,7 +1456,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--94
  []
 
 
-LaTeX Warning: Citation `MFTIne' on page 14 undefined on input line 95.
+LaTeX Warning: Citation `MFTIne' on page 17 undefined on input line 95.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 100--104
@@ -1416,7 +1472,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 39.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 39.
- [14]
+ [17]
 \openout2 = `24-main.aux'.
 
  (./24-main.tex
@@ -1433,7 +1489,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 40.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 40.
- [15
+ [18
 
 
 ]
@@ -1456,7 +1512,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 37.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 37.
- [16
+ [19
 
 
 ]
@@ -1468,14 +1524,14 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 73.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 73.
- [17]
+ [20]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 75.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 75.
 
 
-LaTeX Warning: Citation `MethFD' on page 18 undefined on input line 83.
+LaTeX Warning: Citation `MethFD' on page 21 undefined on input line 83.
 
 )
 Package babel Info: Redefining russian shorthand "|
@@ -1486,7 +1542,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 41.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 41.
- [18]
+ [21]
 \openout2 = `25-main.aux'.
 
  (./25-main.tex
@@ -1503,7 +1559,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 42.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 42.
- [19
+ [22
 
 
 ]
@@ -1580,7 +1636,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 46.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 46.
- [20
+ [23
 
 
 
@@ -1625,7 +1681,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 47.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 47.
- [21
+ [24
 
 
 ]
@@ -1661,7 +1717,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 48.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 48.
- [22
+ [25
 
 
 ]
@@ -1702,7 +1758,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 50.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 50.
- [23
+ [26
 
 
 
@@ -1723,7 +1779,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 51.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 51.
- [24
+ [27
 
 
 ]
@@ -1740,47 +1796,46 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: FFA76351867AB4C47CB4D2AF15CBE7C9;12209.
+(rerunfilecheck)             Checksum: F2EA685E34373705AB8C22DDF3134ED4;12209.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
  ) 
 Here is how much of TeX's memory you used:
- 35267 strings out of 493013
- 764302 string characters out of 6139316
- 965850 words of memory out of 5000000
- 37985 multiletter control sequences out of 15000+600000
- 16134 words of font info for 48 fonts, out of 8000000 for 9000
+ 35314 strings out of 493013
+ 764905 string characters out of 6139316
+ 965851 words of memory out of 5000000
+ 38002 multiletter control sequences out of 15000+600000
+ 18611 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,12n,98p,1187b,851s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour/public/cm/cmsy10.720pk> </u
-sr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr12.pk> </home/mapcic/.t
-exlive/texmf-var/fonts/pk/ljfour/public/cm/cmmi12.600pk> </home/mapcic/.texlive
-/texmf-var/fonts/pk/ljfour/public/cm/cmmi12.864pk> </usr/share/texmf-dist/fonts
-/pk/ljfour/public/cm/dpi600/cmsy7.pk> </home/mapcic/.texlive/texmf-var/fonts/pk
-/ljfour/public/cm/cmex10.864pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfou
-r/public/amsfonts/symbols/msbm10.600pk> </usr/share/texmf-dist/fonts/pk/ljfour/
-public/cm/dpi600/cmr7.pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour/publ
-ic/amsfonts/symbols/msbm7.600pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/
-cm/dpi600/cmmi7.pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour/public/ams
-fonts/symbols/msbm10.864pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour/pu
-blic/cm/cmsy10.864pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour/public/c
-m/cmr12.720pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1
-440.600pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsy10.pk> <
-/usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk> </usr/share/te
-xmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmmi10.pk> </home/mapcic/.texlive/tex
-mf-var/fonts/pk/ljfour/public/cm/cmmi12.720pk> </home/mapcic/.texlive/texmf-var
-/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk> </home/mapcic/.texlive/texmf-var/fon
-ts/pk/ljfour/lh/lh-t2a/labx1728.600pk> </home/mapcic/.texlive/texmf-var/fonts/p
-k/ljfour/lh/lh-t2a/lacc2986.600pk> </home/mapcic/.texlive/texmf-var/fonts/pk/lj
-four/lh/lh-t2a/lacc1440.600pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour
-/lh/lh-t2a/lacc1728.600pk>
-Output written on index.pdf (24 pages, 496692 bytes).
+ 66i,13n,98p,1187b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
+.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/
+type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm
+-super/sfcc1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728
+.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2986.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fo
+nts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/cm-super/sfti1440.pfb>
+Output written on index.pdf (27 pages, 644718 bytes).
 PDF statistics:
- 962 PDF objects out of 1000 (max. 8388607)
- 485 compressed objects within 5 object streams
- 112 named destinations out of 1000 (max. 500000)
- 441 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 571 PDF objects out of 1000 (max. 8388607)
+ 495 compressed objects within 5 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 446 words of extra memory for PDF output out of 10000 (max. 10000000)
 

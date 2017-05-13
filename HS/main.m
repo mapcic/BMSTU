@@ -13,7 +13,7 @@ dx = 0.5; %nm
 % Count layers
 rez = 10;
 a = 10; % monolayers
-b = 10;
+b = 6;
 c = 8;
 
 % Fermi Energy
@@ -23,13 +23,13 @@ EFermi = 1.51*1e-20; % J
 dU = 0:0.01:0.6;
 
 Ec = [zeros(1, rez), zeros(1, a), ones(1, b), zeros(1, c), ones(1, b), zeros(1, a), zeros(1, rez)];
-meff = [0.067*ones(1, rez), 0.067*ones(1, a), 0.15*ones(1, b), 0.067*ones(1, c), 0.15*ones(1, b), 0.067*ones(1, a), 0.067*ones(1, rez)];
+meff = [0.067*ones(1, rez), 0.067*ones(1, a), 0.067*ones(1, b), 0.067*ones(1, c), 0.067*ones(1, b), 0.067*ones(1, a), 0.067*ones(1, rez)];
 linV = [zeros(1, rez), linspace(0, 0.5, length([zeros(1, a), ones(1, b), zeros(1, c), ones(1, b), zeros(1, a)])), zeros(1, rez)];
 
 Nd = 2.5*1e24;
 ni = 1e12;
 Ni = [Nd*ones(1, rez), ni*ones(1, a), ni*ones(1, b), ni*ones(1, c), ni*ones(1, b), ni*ones(1, a), Nd*ones(1, rez)];
-accur = 0.0000001;
+accur = 0.00000000001;
 
 eps = 13.18 - 3.12*Ec;
 
