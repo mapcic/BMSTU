@@ -1,1 +1,52 @@
 \section{Метод конечных разностей для самосогласованного решение системы Шредингера--Пуассона}
+Для решения системы Шредингера-Пуассона (\ref{eq:P-S}) применяют метод Гумеля. Метод Гумеля заключается в учете характера зависимости концентрации электронов от самосогласованного потенциала ($V_{S}$):
+\begin{gather}
+	n(z) = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}} \exp \frac{E_{F} - E_{c} +eV_{s}(z)}{k_{B}T} = n_{0}\exp\frac{V_{S}(z)}{V_{ref}};\\
+	n_{0} = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}} \exp \frac{E_{F} - E_{c} }{k_{B}T};\\
+	V_{ref} = \frac{k_{B}T}{e},
+\end{gather}
+\begin{conditions}
+	$V_{s}$ & самосогласованный потенциал;\\
+	$V_{ref}$ & опорный потенциал;\\
+	$m$ & эффективная масса электрона.
+\end{conditions}
+Тогда связь <<старого>> и <<нового>> потенциала:
+\begin{gather}
+	\begin{cases}
+		n_{old} = n_{0}\exp\frac{V_{old}}{V_{ref}};\\
+		n_{new} = n_{0}\exp\frac{V_{new}}{V_{ref}};
+	\end{cases}\\
+	\label{eq:nNewOld}
+	n_{new} = n_{old}\exp\frac{V_{new} - V_{old}}{V_{ref}};
+\end{gather}
+
+Подставляя (\ref{eq:nNewOld}) в (\ref{eq:P-S}):
+\begin{equation}
+ 	\frac{d}{dz}\varepsilon(z)\frac{d}{z}V_{new} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\exp\bigg( \frac{V_{new} - V_{old}}{V_{ref}} \bigg) - N_{D}(z)\bigg];
+\end{equation}
+
+Так как $\frac{V_{new} - V_{old}}{V_{ref}}$ мало, используя разложение в ряд Маклорена $\exp(x) \approx 1 + x$, получим:
+\begin{equation}
+	\frac{d}{dz}\varepsilon(z)\frac{d}{z}V_{new} - n_{old}\frac{eV_{new}}{\varepsilon_{0}V_{ref}} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\bigg( 1 - \frac{V_{old}}{V_{ref}} \bigg) - N_{D}(z)\bigg];
+\end{equation}
+
+Применяя метод конечных разностей, получим:
+\begin{equation}
+	\begin{cases}
+		a^{i}V_{new}^{i-1} + b^{i}V_{new}^{i} + c^{i}V^{i+1}_{new} = \frac{e\Delta^{2}}{\varepsilon_{0}\varepsilon^{i}}\bigg( n_{old}^{i}\bigg( 1 - \frac{V_{old}^{i}}{V_{ref}} \bigg) - N_{D}^{i} \bigg);\\
+		a^{i} = 1;\\
+		b^{i} = -1 - \frac{\varepsilon^{i+1}}{\varepsilon^{i}} -\frac{e\Delta^{2}n_{old}^{i}}{\varepsilon_{0} V_{ref}\varepsilon_{i}};\\
+		c^{i} = \frac{\varepsilon^{i+1}}{\varepsilon^{i}};
+	\end{cases}
+\end{equation}
+Граничные условия:
+\begin{equation}
+	V^{1}_{new} = 0;
+	V^{N}_{new} = V;
+\end{equation}
+
+И продолжаем рассчитывать эту систему до достижения максимальной погрешности $\epsilon_{V}$, если выполняется условие:
+\begin{equation}
+ 	\max(|V_{new}^{i} - V_{old}^{i}|) < \epsilon_{V},
+\end{equation} 
+процесс итерации останавливается.

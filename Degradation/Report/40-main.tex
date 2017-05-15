@@ -1,54 +1,42 @@
 \chapter{Исследование параметров РТГС на основе $Al_{x}Ga_{1-x}As$}
-\section{Исследование парметров ямы}
+\section{Исследование параметров ямы}
+Энергетический спектр в бесконечно глубокой потенциальной яме:
+\begin{gather}
+	\label{eq:En}
+	E_{n} = \frac{\pi^{2}\hbar^{2}n^{2}}{2mL^{2}};\\
+	\Delta E_{n} = E_{n+1} - E_{n} = \frac{\pi^{2}\hbar^{2}}{2mL^{2}}(2n + 1);\\
+	\label{eq:dEn1}
+	\Delta E_{1} = \min(\Delta E_{n}) = \frac{3\pi^{2}\hbar^{2}}{2mL^{2}},
+\end{gather}
+\begin{conditions}
+	$E_{n}$ & энергия $n$-ого связного состояния;\\
+	$\hbar$ & постоянная Дирака;\\
+	$n$ & номер ($1,\,,2,\dots$) связного состояния;\\
+	$L$ & ширина ямы.
+\end{conditions}
+
+Из зависимостей~\ref{eq:En},~\ref{eq:dEn1}  видно, что с увеличением ширины ямы, энергия основного состояния уменьшается ($n = 1$), так же, как и минимальное расстояние, между энергетическими уровнями. Условие размерного квантования для потенциальной ямы:
+\begin{equation}
+	\Delta E_{1} \gg 3k_{B}T.
+\end{equation}
+
+В случаи ямы с конечной высотой, энергия основного и остальных состояний понижается, при этом минимальная высота барьера ограничивает состояние с максимальной энергией. В потенциальной яме конечной высоты всегда будет хотя бы одно связное состояние.
 
 \subsection{Исследование глубины ямы}
-\subsubsection{ВАХ РТГС}
+Варьирую процентное содержание $Al$ в $Al_{x}Ga_{1-x}As$, можно изменять высоту барьеров и глубину ямы соответственно. Рассмотрим вольт-амперную характеристику и прозрачность резонансно-туннельной структуры.
+
+Так как в ходе деградации ГС высота барьеров будет уменьшаться, так как атомы $Al$ будут диффундировать в структуру из барьеров, рассмотрим РГТС (рис.~\ref{img:rtgs}) с высотой потенциальных барьеров:
+\begin{enumerate}
+	\item $1.0 eV$;
+	\item $0.7 eV$;
+	\item $0.5 eV$;
+	\item $0.3 eV$;
+\end{enumerate}
+
+
 \subsubsection{Прозрачность РТГС}
+\subsubsection{ВАХ РТГС}
 
 \subsection{Исследование ширины ямы}
 \subsubsection{ВАХ РТГС}
 \subsubsection{Прозрачность РТГС}
-
-% % \section{Алгорит моделирования деградации ГС}
-% % \begin{figure}[h]
-% %   \centering
-% %   \includegraphics[width=0.7\linewidth]{assets/AlgDegrVAC}
-% %   \caption{Блок схема алгорит моделирования деградации ГС}
-% %   \label{img:AlgDegrVAC}
-% % \end{figure}
-% % \section{Начальные условия}
-% \section{Моделирование диффузионного размытия в <<закрытой системе>> $i\!-\!GaAs/i\!-\!Al_{45}Ga_{55}As$}
-% \begin{figure}[h]
-% 	\centering
-%     \includegraphics[width=0.3\textwidth]{DifCloseAlGaAs3D}
-%     \caption{Структура}
-% \end{figure}
-% \begin{figure}[h]
-% 	\centering
-%     \includegraphics[width=0.8\textwidth]{DifCloseAlGaAs}
-%     \caption{Профиль дна зоны проводимости}
-% \end{figure}
-
-% \begin{figure}[h]
-%   \centering
-%   \includegraphics[width=\linewidth]{DCAlGaAs}
-%   \caption{Диффузионное размытие}
-% \end{figure}
-
-% \begin{figure}[h]
-%   \centering
-%   \includegraphics[width=\linewidth]{JDCAlGaAs}
-%   \caption{Деградация ВАХ}
-% \end{figure}
-
-% \begin{figure}[h]
-%   \centering
-%   \includegraphics[width=\linewidth]{DCAlGaAsNd}
-%   \caption{Диффузионное размытие с учетом примеси, $Nd = 5*10^{15}sm^{-3}$}
-% \end{figure}
-
-% \begin{figure}[h]
-%   \centering
-%   \includegraphics[width=\linewidth]{JDCAlGaAsNd}
-%   \caption{Деградация ВАХ с учетом примеси, $Nd = 5*10^{15}sm^{-3}$}
-% \end{figure}
