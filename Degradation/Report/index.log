@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.23)  15 MAY 2017 04:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.24)  16 MAY 2017 05:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -987,7 +987,7 @@ enefit from \pgfplotsset{compat=1.14} (current compat level: 1.12).
 (./00-titlepage.tex (/usr/share/texmf-dist/tex/latex/ucs/data/uni-4.def
 File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
 )
-<assets/bmstu-logo.png, id=229, 319.1925pt x 376.40625pt>
+<assets/bmstu-logo.png, id=217, 319.1925pt x 376.40625pt>
 File: assets/bmstu-logo.png Graphic file (type png)
 
 <use assets/bmstu-logo.png>
@@ -1117,13 +1117,13 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 10.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 10.
-<assets/GaAs_E.png, id=325, 441.65pt x 378.41376pt>
+<assets/GaAs_E.png, id=310, 441.65pt x 378.41376pt>
 File: assets/GaAs_E.png Graphic file (type png)
  <use assets/GaAs_E.png>
 Package pdftex.def Info: assets/GaAs_E.png used on input line 15.
 (pdftex.def)             Requested size: 211.26028pt x 181.01292pt.
 
-<assets/ZnLaer.png, id=326, 331.2375pt x 345.29pt>
+<assets/ZnLaer.png, id=311, 331.2375pt x 345.29pt>
 File: assets/ZnLaer.png Graphic file (type png)
  <use assets/ZnLaer.png>
 Package pdftex.def Info: assets/ZnLaer.png used on input line 21.
@@ -1133,7 +1133,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 26.
 
-<assets/Zone.png, id=328, 1343.0175pt x 525.965pt>
+<assets/Zone.png, id=313, 1343.0175pt x 525.965pt>
 File: assets/Zone.png Graphic file (type png)
  <use assets/Zone.png>
 Package pdftex.def Info: assets/Zone.png used on input line 30.
@@ -1210,7 +1210,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 109.
 
-<assets/FD.png, id=369, 1190.94937pt x 670.75594pt>
+<assets/FD.png, id=355, 1190.94937pt x 670.75594pt>
 File: assets/FD.png Graphic file (type png)
  <use assets/FD.png>
 Package pdftex.def Info: assets/FD.png used on input line 124.
@@ -1327,7 +1327,7 @@ Overfull \hbox (12.0pt too wide) in alignment at lines 24--32
 [] [] [] [] 
  []
 
-<assets/gE.png, id=412, 1169.87062pt x 666.23906pt>
+<assets/gE.png, id=398, 1169.87062pt x 666.23906pt>
 File: assets/gE.png Graphic file (type png)
  <use assets/gE.png>
 Package pdftex.def Info: assets/gE.png used on input line 37.
@@ -1340,7 +1340,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 42.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 42.
-<assets/3Dk.png, id=414, 417.56pt x 315.1775pt>
+<assets/3Dk.png, id=400, 417.56pt x 315.1775pt>
 File: assets/3Dk.png Graphic file (type png)
  <use assets/3Dk.png>
 Package pdftex.def Info: assets/3Dk.png used on input line 46.
@@ -1372,7 +1372,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 58.
 
-<assets/2Dk.png, id=432, 335.2525pt x 328.22626pt>
+<assets/2Dk.png, id=419, 335.2525pt x 328.22626pt>
 File: assets/2Dk.png Graphic file (type png)
  <use assets/2Dk.png>
 Package pdftex.def Info: assets/2Dk.png used on input line 62.
@@ -1382,7 +1382,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 72.
 
-<assets/1Dk.png, id=434, 208.78pt x 98.3675pt>
+<assets/1Dk.png, id=421, 208.78pt x 98.3675pt>
 File: assets/1Dk.png Graphic file (type png)
  <use assets/1Dk.png>
 Package pdftex.def Info: assets/1Dk.png used on input line 76.
@@ -1421,7 +1421,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 21.
 
-<assets/rtgs.png, id=449, 596.2275pt x 363.3575pt>
+<assets/rtgs.png, id=436, 596.2275pt x 363.3575pt>
 File: assets/rtgs.png Graphic file (type png)
  <use assets/rtgs.png>
 Package pdftex.def Info: assets/rtgs.png used on input line 37.
@@ -1463,7 +1463,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 50.
 
-<assets/rtgsAlGaAs.png, id=465, 845.1575pt x 363.3575pt>
+<assets/rtgsAlGaAs.png, id=452, 845.1575pt x 363.3575pt>
 File: assets/rtgsAlGaAs.png Graphic file (type png)
 
 <use assets/rtgsAlGaAs.png>
@@ -1473,7 +1473,7 @@ Package pdftex.def Info: assets/rtgsAlGaAs.png used on input line 54.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<assets/DifCloseAlGaAs.png, id=467, 754.82pt x 327.2225pt>
+<assets/DifCloseAlGaAs.png, id=454, 754.82pt x 327.2225pt>
 File: assets/DifCloseAlGaAs.png Graphic file (type png)
 
 <use assets/DifCloseAlGaAs.png>
@@ -1880,25 +1880,84 @@ Package babel Info: Redefining russian shorthand "~
 
 ]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 38.
+(babel)             in language append on input line 36.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 38.
+(babel)             in language append on input line 36.
+ <assets/qwt.png, id=628, 1020.81375pt x 488.57532pt>
+File: assets/qwt.png Graphic file (type png)
+ <use assets/qwt.png>
+Package pdftex.def Info: assets/qwt.png used on input line 39.
+(pdftex.def)             Requested size: 510.40562pt x 244.28706pt.
+
+Overfull \hbox (40.93513pt too wide) in paragraph at lines 39--40
+ [][] 
+ []
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 39.
+(babel)             in language append on input line 44.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 39.
+(babel)             in language append on input line 44.
+<assets/qwj.png, id=629, 1020.81375pt x 488.57532pt>
+File: assets/qwj.png Graphic file (type png)
+ <use assets/qwj.png>
+Package pdftex.def Info: assets/qwj.png used on input line 47.
+(pdftex.def)             Requested size: 510.40562pt x 244.28706pt.
+
+Overfull \hbox (40.93513pt too wide) in paragraph at lines 47--48
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 41.
+(babel)             in language append on input line 52.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 41.
+(babel)             in language append on input line 52.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 42.
+(babel)             in language append on input line 59.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 42.
+(babel)             in language append on input line 59.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 43.
+(babel)             in language append on input line 59.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 43.
+(babel)             in language append on input line 59.
+[35 <./assets/qwt.png (PNG copy)>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 60.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 60.
+
+<assets/qwwt.png, id=642, 1020.81375pt x 488.57532pt>
+File: assets/qwwt.png Graphic file (type png)
+ <use assets/qwwt.png>
+Package pdftex.def Info: assets/qwwt.png used on input line 63.
+(pdftex.def)             Requested size: 510.40562pt x 244.28706pt.
+
+Overfull \hbox (40.93513pt too wide) in paragraph at lines 63--64
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 67.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 67.
+<assets/qwwj.png, id=643, 1020.81375pt x 488.57532pt>
+File: assets/qwwj.png Graphic file (type png)
+ <use assets/qwwj.png>
+Package pdftex.def Info: assets/qwwj.png used on input line 70.
+(pdftex.def)             Requested size: 510.40562pt x 244.28706pt.
+
+Overfull \hbox (40.93513pt too wide) in paragraph at lines 70--71
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 )
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 46.
@@ -1908,38 +1967,59 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 46.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 46.
- [35]
+ [36 <./assets/qwj.png (PNG copy)>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 46.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 46.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 46.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 46.
+ [37 <./assets/qwwt.png (PNG copy)> <./assets/qwwj.png (PNG copy)>]
 \openout2 = `41-main.aux'.
 
  (./41-main.tex
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 42.
+(babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 42.
+(babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 44.
+(babel)             in language append on input line 3.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 44.
+(babel)             in language append on input line 3.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 12.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 12.
+
+<assets/qbwt.png, id=657, 1020.81375pt x 488.57532pt>
+File: assets/qbwt.png Graphic file (type png)
+ <use assets/qbwt.png>
+Package pdftex.def Info: assets/qbwt.png used on input line 15.
+(pdftex.def)             Requested size: 510.40562pt x 244.28706pt.
+
+Overfull \hbox (40.93513pt too wide) in paragraph at lines 15--16
+ [][] 
+ []
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 46.
+(babel)             in language append on input line 20.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 46.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 48.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 48.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 49.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 49.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 50.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 50.
+(babel)             in language append on input line 20.
+<assets/qbwj.png, id=658, 1020.81375pt x 488.57532pt>
+File: assets/qbwj.png Graphic file (type png)
+ <use assets/qbwj.png>
+Package pdftex.def Info: assets/qbwj.png used on input line 23.
+(pdftex.def)             Requested size: 510.40562pt x 244.28706pt.
+
+Overfull \hbox (40.93513pt too wide) in paragraph at lines 23--24
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 )
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 47.
@@ -1949,13 +2029,23 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 47.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 47.
- [36
+ [38
 
 
-]
+ <./assets/qbwt.png (PNG copy)>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 47.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 47.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 47.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 47.
+ [39 <./assets/qbwj.png (PNG copy)>]
 \openout2 = `42-main.aux'.
 
- (./42-main.tex
+
+(./42-main.tex
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 43.
 Package babel Info: Redefining russian shorthand "~
@@ -1985,7 +2075,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 48.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 48.
- [37
+ [40
 
 
 ]
@@ -2017,6 +2107,87 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 2.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 2.
+<assets/DOAlGaAs.png, id=678, 1212.02812pt x 658.71094pt>
+File: assets/DOAlGaAs.png Graphic file (type png)
+
+<use assets/DOAlGaAs.png>
+Package pdftex.def Info: assets/DOAlGaAs.png used on input line 5.
+(pdftex.def)             Requested size: 484.80266pt x 263.4797pt.
+
+Overfull \hbox (15.33217pt too wide) in paragraph at lines 5--6
+ [][] 
+ []
+
+<assets/JDOAlGaAs.png, id=679, 1219.55624pt x 663.98062pt>
+File: assets/JDOAlGaAs.png Graphic file (type png)
+
+<use assets/JDOAlGaAs.png>
+Package pdftex.def Info: assets/JDOAlGaAs.png used on input line 12.
+(pdftex.def)             Requested size: 487.81386pt x 265.58754pt.
+
+Overfull \hbox (18.34337pt too wide) in paragraph at lines 12--13
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<assets/DOAlGaAsNd.png, id=680, 1199.98312pt x 675.27281pt>
+File: assets/DOAlGaAsNd.png Graphic file (type png)
+
+<use assets/DOAlGaAsNd.png>
+Package pdftex.def Info: assets/DOAlGaAsNd.png used on input line 19.
+(pdftex.def)             Requested size: 479.98476pt x 270.10434pt.
+
+Overfull \hbox (10.51427pt too wide) in paragraph at lines 19--20
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<assets/JDOAlGaAsNd.png, id=681, 1197.72469pt x 666.99188pt>
+File: assets/JDOAlGaAsNd.png Graphic file (type png)
+
+<use assets/JDOAlGaAsNd.png>
+Package pdftex.def Info: assets/JDOAlGaAsNd.png used on input line 26.
+(pdftex.def)             Requested size: 479.08139pt x 266.79202pt.
+
+Overfull \hbox (9.6109pt too wide) in paragraph at lines 26--27
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<assets/DAlGaAs_Si.png, id=682, 1437.87187pt x 723.45282pt>
+File: assets/DAlGaAs_Si.png Graphic file (type png)
+
+<use assets/DAlGaAs_Si.png>
+Package pdftex.def Info: assets/DAlGaAs_Si.png used on input line 33.
+(pdftex.def)             Requested size: 575.13857pt x 289.376pt.
+
+Overfull \hbox (105.66808pt too wide) in paragraph at lines 33--34
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<assets/JDAlGaAs_Si.png, id=683, 1177.39874pt x 660.21657pt>
+File: assets/JDAlGaAs_Si.png Graphic file (type png)
+
+<use assets/JDAlGaAs_Si.png>
+Package pdftex.def Info: assets/JDAlGaAs_Si.png used on input line 40.
+(pdftex.def)             Requested size: 470.95116pt x 264.08194pt.
+
+Overfull \hbox (1.48067pt too wide) in paragraph at lines 40--41
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 )
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 50.
@@ -2026,11 +2197,39 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 50.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 50.
- [38
+ [41
 
 
 
+ <./assets/DOAlGaAs.png (PNG copy)>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 50.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 50.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 50.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 50.
+ [42 <./assets/JDOAlGaAs.png (PNG copy)> <./assets/DOAlGaAsNd.png (PNG copy)>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 50.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 50.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 50.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 50.
+ [43 <./assets/JDOAlGaAsNd.png (PNG copy)> <./assets/DAlGaAs_Si.png (PNG copy)>
 ]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 50.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 50.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 50.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 50.
+ [44 <./assets/JDAlGaAs_Si.png (PNG copy)>]
 \openout2 = `51-main.aux'.
 
  (./51-main.tex
@@ -2047,7 +2246,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 51.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 51.
- [39
+ [45
 
 
 ]
@@ -2073,7 +2272,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: B656602836CD37C7282B0C7FC9A6EAB8;15148.
+(rerunfilecheck)             Checksum: FE3D3ECFCB46D21E43D700308E330E0B;14518.
 
 
 LaTeX Warning: There were undefined references.
@@ -2081,35 +2280,42 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
  ) 
 Here is how much of TeX's memory you used:
- 35474 strings out of 493013
- 767058 string characters out of 6139316
+ 35565 strings out of 493013
+ 768593 string characters out of 6139316
  966851 words of memory out of 5000000
- 38047 multiletter control sequences out of 15000+600000
+ 38104 multiletter control sequences out of 15000+600000
  18611 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,15n,98p,1187b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/te
-xmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/
-type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm
--super/sfcc1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1728
-.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2986.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fo
-nts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/cm-super/sfti1440.pfb>
-Output written on index.pdf (39 pages, 775242 bytes).
+ </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour/public/cm/cmsy10.720pk> </u
+sr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr12.pk> </home/mapcic/.t
+exlive/texmf-var/fonts/pk/ljfour/public/cm/cmmi12.600pk> </home/mapcic/.texlive
+/texmf-var/fonts/pk/ljfour/public/cm/cmmi12.864pk> </home/mapcic/.texlive/texmf
+-var/fonts/pk/ljfour/public/amsfonts/symbols/msbm10.600pk> </home/mapcic/.texli
+ve/texmf-var/fonts/pk/ljfour/public/amsfonts/symbols/msbm7.600pk> </usr/share/t
+exmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr7.pk> </home/mapcic/.texlive/texm
+f-var/fonts/pk/ljfour/lh/lh-t2a/lati1440.600pk> </home/mapcic/.texlive/texmf-va
+r/fonts/pk/ljfour/public/amsfonts/symbols/msbm10.864pk> </home/mapcic/.texlive/
+texmf-var/fonts/pk/ljfour/public/cm/cmex10.864pk> </usr/share/texmf-dist/fonts/
+pk/ljfour/public/cm/dpi600/cmsy7.pk> </home/mapcic/.texlive/texmf-var/fonts/pk/
+ljfour/public/amsfonts/symbols/msam10.864pk> </usr/share/texmf-dist/fonts/pk/lj
+four/public/cm/dpi600/cmmi7.pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfou
+r/lh/lh-t2a/larm1000.600pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour/pu
+blic/cm/cmsy10.864pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour/public/c
+m/cmr12.720pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1
+440.600pk> </usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsy10.pk> <
+/usr/share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk> </usr/share/te
+xmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmmi10.pk> </home/mapcic/.texlive/tex
+mf-var/fonts/pk/ljfour/public/cm/cmmi12.720pk> </home/mapcic/.texlive/texmf-var
+/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk> </home/mapcic/.texlive/texmf-var/fon
+ts/pk/ljfour/lh/lh-t2a/labx1728.600pk> </home/mapcic/.texlive/texmf-var/fonts/p
+k/ljfour/lh/lh-t2a/lacc2986.600pk> </home/mapcic/.texlive/texmf-var/fonts/pk/lj
+four/lh/lh-t2a/lacc1440.600pk> </home/mapcic/.texlive/texmf-var/fonts/pk/ljfour
+/lh/lh-t2a/lacc1728.600pk>
+Output written on index.pdf (45 pages, 1686748 bytes).
 PDF statistics:
- 780 PDF objects out of 1000 (max. 8388607)
- 684 compressed objects within 7 object streams
- 218 named destinations out of 1000 (max. 500000)
- 533 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1342 PDF objects out of 1440 (max. 8388607)
+ 753 compressed objects within 8 object streams
+ 240 named destinations out of 1000 (max. 500000)
+ 569 words of extra memory for PDF output out of 10000 (max. 10000000)
 
