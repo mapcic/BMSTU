@@ -10,7 +10,7 @@ dx = 0.56; %nm
 dx = dx/dis;
 
 % Count layers
-a = 10; % monolayers
+a = 8; % monolayers
 b = 8;
 c = 6;
 
@@ -24,11 +24,11 @@ sizeHS = a + b + c + b + a;
 EFermi = 1.51*1e-20; % J
 
 % Applyied voltage
-dU = 0:0.001:0.3;
+dU = 0:0.01:0.5;
 
 % Ec
 Ec = [...
-	zeros(1, a), 0.7*ones(1, b), zeros(1, c), 0.7*ones(1, b), zeros(1, a);
+	zeros(1, a), 1*ones(1, b), zeros(1, c), 1*ones(1, b), zeros(1, a);
 	% zeros(1, a), 0.7*ones(1, b), zeros(1, c), 0.7*ones(1, b), zeros(1, a);
 	% zeros(1, a), 0.5*ones(1, b), zeros(1, c), 0.5*ones(1, b), zeros(1, a);
 	% zeros(1, a), 0.3*ones(1, b), zeros(1, c), 0.3*ones(1, b), zeros(1, a)...

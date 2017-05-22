@@ -12,9 +12,9 @@ function J = getJ(dx, meff, Ec, dU, EFermi)
 	% Reserves
 	r = 5;
 	% Active field
-	% a = 8; % monolayers
-	% b = 5;
-	% c = 6;
+	a = 8; % monolayers
+	b = 5;
+	c = 6;
 
 	% ni = 1e12;
 	% Nd = 1e24;
@@ -27,6 +27,6 @@ function J = getJ(dx, meff, Ec, dU, EFermi)
 		% Uj = Ec - linspace( 0, dU(j), length(Ec) ) - V(r+1:length(Ec)+r)*eVtoJ;
 		Uj = Ec - linspace( 0, dU(j), length(Ec) );
 		dTDEz = @(Ez) TDEz(dx, meff, Uj, Ez, EFermi);
-		J(j) = J(j)*integral(dTDEz, 0, 1*eVtoJ, 'AbsTol', 1e-30);
+		J(j) = J(j)*integral(dTDEz, 0, max(1)*eVtoJ, 'AbsTol', 1e-45);
 	end
 end
