@@ -3,7 +3,7 @@ function Vnew = solvePoisonEq(dU, Vold, nold, eps, Ni, dx)
 	k_B = 1.38e-23; eps0 = 8.85e-12;
 
 	T = 300;
-	Vref = k_B*T*JtoEV;
+	Vref = k_B*T*JtoEv;
 
 	lenV = length(Vold);
 	
