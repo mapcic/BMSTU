@@ -5,8 +5,8 @@ function nz = getNz(Ui, meff, dx, boundL, boundR)
 
 	EFermi=1.51e-20;
 
-	Nc3D = 4*pi*((2*meff(1)/((2*pi*hbar)^2))^(3/2));
-	Nc3DActive = sqrt(2)*(meff(end)^(3/2))*k_B*T/(((2*pi)^2)*hbar^3);
+	Nc3D = 4*pi*(2*meff(1)/(2*pi*hbar)^2)^(3/2);
+	Nc3DActive = sqrt(2)*meff(end)^(3/2)*k_B*T/((2*pi)^2*hbar^3);
 	
 	function res = NEz(Ui, meff, dx, Ez, U1, Un)
 		[waveL, waveR] = getWaveFunction(dx, meff, Ui, Ez);
@@ -16,10 +16,10 @@ function nz = getNz(Ui, meff, dx, boundL, boundR)
 		
 		Ez = repmat(Ez', 1, length(Ui));
 		
-		waveL = Nc3DActive*((waveL)./sqrt(Ez - Ui(1))).*log(1 + exp((EFermi + U1 - Ez)/(k_B*T)));
+		waveL = Nc3DActive*(waveL)./sqrt(Ez - Ui(1)).*log(1 + exp((EFermi + U1 - Ez)/(k_B*T)));
 		waveL( Ez <= Ui(1) ) = 0;
 		
-		waveR = Nc3DActive*(waveR./sqrt(Ez - Ui(end))).*log(1 + exp((EFermi + Un - Ez)/(k_B*T)));
+		waveR = Nc3DActive*waveR./sqrt(Ez - Ui(end)).*log(1 + exp((EFermi + Un - Ez)/(k_B*T)));
 		waveR( Ez <= Ui(end) ) = 0;
 		
 		res = waveL + waveR;
@@ -34,14 +34,14 @@ function nz = getNz(Ui, meff, dx, boundL, boundR)
 	nzL = zeros(1, length(U1));
 	nzR = zeros(1, length(U2));
 
-	for I = 1 : length(U1)
-		foo = @(Ez) sqrt(Ez - U1(I))./(1 + exp((Ez - (EFermi + Ui(1)))/(k_B*T)));
-		nzL(I) = Nc3D*integral(foo, U1(I), 2*e, 'AbsTol', 1E-25);
+	for j = 1 : length(U1)
+		foo = @(Ez) sqrt(Ez - U1(j))./(1 + exp((Ez - (EFermi + Ui(1)))/(k_B*T)));
+		nzL(j) = Nc3D*integral(foo, U1(j), 2*e, 'AbsTol', 1e-25);
 	end
 
-	for I = 1 : length(U2)
-		foo = @(Ez) sqrt(Ez - U2(I))./(1 + exp((Ez - (EFermi + Ui(end)))/(k_B*T)));
-		nzR(I) = Nc3D*integral(foo, U2(I), 2*e, 'AbsTol', 1E-25);
+	for j = 1 : length(U2)
+		foo = @(Ez) sqrt(Ez - U2(j))./(1 + exp((Ez - (EFermi + Ui(end)))/(k_B*T)));
+		nzR(j) = Nc3D*integral(foo, U2(j), 2*e, 'AbsTol', 1e-25);
 	end
 
 	nz = [nzL, nzA, nzR];
