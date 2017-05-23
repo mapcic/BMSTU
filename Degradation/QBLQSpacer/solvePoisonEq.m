@@ -14,6 +14,8 @@ function Vnew = solvePoisonEq(dU, Vold, nold, eps, Ni, dx)
 		-(eps(1:end-2)./eps(3:end))...
 		-e*dx^2/(eps0*Vref)./eps(3:end).*nold(2:end-1);
 	d2 = [1, d2, 1];
+
+	hyi
 	
 	d3 = eps(1:end-2)./eps(3:end);
 	d3 = [0, d3];
