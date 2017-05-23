@@ -16,7 +16,7 @@ function J = getJ(dx, meff, Ec, dU, EFermi, r, a, b, c)
 	eps = 13.18 - 3.12*[zeros(1, r), zeros(1, a), ones(1, b), zeros(1, c), ones(1, b), zeros(1, a), zeros(1, r)];
 
 	for j = 1:length(dU)
-		[V, n] = getConcentrationElectrons(0.01,...
+		[V, n] = getConcentrationElectrons(0.001,...
 			[Ec(1)*ones(1, r), Ec, Ec(end)*ones(1, r)],...
 			[meff(1)*ones(1, r), meff, meff(end)*ones(1, r)],...
 			Ni,...
@@ -29,9 +29,9 @@ function J = getJ(dx, meff, Ec, dU, EFermi, r, a, b, c)
 		Uj = Ec - V(r+1:length(Ec)+r)*eVtoJ;
 		% Uj = Ec - linspace( 0, dU(j), length(Ec) );
 		dTDEz = @(Ez) TDEz(dx, meff, Uj, Ez, EFermi);
-		J(j) = J(j)*integral(dTDEz, 0, max(Uj), 'AbsTol', 1e-30);
-		hold on;
-		plot(1:length(Uj), Uj);
+		J(j) = J(j)*integral(dTDEz, 0, max(Uj), 'AbsTol', 1e-50);
+		% hold on;
+		% plot(1:length(Uj), Uj);
 	end
 	% plot(dU, J);
 end
