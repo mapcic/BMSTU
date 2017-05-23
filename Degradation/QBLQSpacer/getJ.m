@@ -26,7 +26,7 @@ function J = getJ(dx, meff, Ec, dU, EFermi, r, a, b, c)
 			r + 1,...
 			r + length(Ec)...
 		);
-		Uj = Ec - V(r+1:length(Ec)+r);
+		Uj = Ec - V(r+1:length(Ec)+r)*JtoEv;
 		% Uj = Ec - linspace( 0, dU(j), length(Ec) );
 		dTDEz = @(Ez) TDEz(dx, meff, Uj, Ez, EFermi);
 		J(j) = J(j)*integral(dTDEz, 0, max(Uj), 'AbsTol', 1e-30);
