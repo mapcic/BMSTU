@@ -5,7 +5,7 @@ me = 9.11*1e-31; nm = 1e-9;
 
 T = 360; % K
 
-checkTime = 0:1:10; %years
+checkTime = 0; %years
 
 % atoms' radius
 dx = 0.56; %nm
