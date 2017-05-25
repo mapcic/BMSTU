@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.23)  25 MAY 2017 20:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.23)  25 MAY 2017 20:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,14 +993,51 @@ File: assets/bmstu-logo.png Graphic file (type png)
 <use assets/bmstu-logo.png>
 Package pdftex.def Info: assets/bmstu-logo.png used on input line 9.
 (pdftex.def)             Requested size: 191.51697pt x 225.84547pt.
+<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 24.
+
+(/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <7> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 24.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
+
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+LaTeX Font Info:    Try loading font information for PD1+cmr on input line 24.
+LaTeX Font Info:    No file PD1cmr.fd. on input line 24.
+LaTeX Font Info:    Try loading font information for PU+cmr on input line 24.
+LaTeX Font Info:    No file PUcmr.fd. on input line 24.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 26.
+(babel)             in language append on input line 43.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 26.
+(babel)             in language append on input line 43.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 26.
+(babel)             in language append on input line 43.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 26.
+(babel)             in language append on input line 43.
  [1
 
 
@@ -1011,43 +1048,7 @@ Package babel Info: Redefining russian shorthand "~
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./assets/bmstu-logo.png>])
- (./index.toc<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 2.
-
-(/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <7> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 2.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2.
-
-(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2.
-LaTeX Font Info:    Try loading font information for PD1+cmr on input line 2.
-LaTeX Font Info:    No file PD1cmr.fd. on input line 2.
-LaTeX Font Info:    Try loading font information for PU+cmr on input line 2.
-LaTeX Font Info:    No file PUcmr.fd. on input line 2.
-
+ (./index.toc
 Underfull \hbox (badness 1533) in paragraph at lines 29--29
  [][] [][][]\T2A/cmr/m/n/14.4 ћетод ко^^?неч^^?ных раз^^?но^^?стей дл€ ре^^?ше^
 ^?ни€ од^^?но^^?мер^^?но^^?го 
@@ -1117,13 +1118,13 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 10.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 10.
-<assets/GaAs_E.png, id=340, 441.65pt x 378.41376pt>
+<assets/GaAs_E.png, id=342, 441.65pt x 378.41376pt>
 File: assets/GaAs_E.png Graphic file (type png)
  <use assets/GaAs_E.png>
 Package pdftex.def Info: assets/GaAs_E.png used on input line 15.
 (pdftex.def)             Requested size: 211.26028pt x 181.01292pt.
 
-<assets/ZnLaer.png, id=341, 331.2375pt x 345.29pt>
+<assets/ZnLaer.png, id=343, 331.2375pt x 345.29pt>
 File: assets/ZnLaer.png Graphic file (type png)
  <use assets/ZnLaer.png>
 Package pdftex.def Info: assets/ZnLaer.png used on input line 21.
@@ -1133,7 +1134,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 26.
 
-<assets/Zone.png, id=343, 1343.0175pt x 525.965pt>
+<assets/Zone.png, id=345, 1343.0175pt x 525.965pt>
 File: assets/Zone.png Graphic file (type png)
  <use assets/Zone.png>
 Package pdftex.def Info: assets/Zone.png used on input line 30.
@@ -1210,7 +1211,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 109.
 
-<assets/FD.png, id=384, 1190.94937pt x 670.75594pt>
+<assets/FD.png, id=386, 1190.94937pt x 670.75594pt>
 File: assets/FD.png Graphic file (type png)
  <use assets/FD.png>
 Package pdftex.def Info: assets/FD.png used on input line 124.
@@ -1327,7 +1328,7 @@ Overfull \hbox (12.0pt too wide) in alignment at lines 24--32
 [] [] [] [] 
  []
 
-<assets/gE.png, id=427, 1169.87062pt x 666.23906pt>
+<assets/gE.png, id=429, 1169.87062pt x 666.23906pt>
 File: assets/gE.png Graphic file (type png)
  <use assets/gE.png>
 Package pdftex.def Info: assets/gE.png used on input line 37.
@@ -1340,7 +1341,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 42.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 42.
-<assets/3DBulk.png, id=429, 423.5825pt x 341.275pt>
+<assets/3DBulk.png, id=431, 423.5825pt x 341.275pt>
 File: assets/3DBulk.png Graphic file (type png)
  <use assets/3DBulk.png>
 Package pdftex.def Info: assets/3DBulk.png used on input line 46.
@@ -1372,7 +1373,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 58.
 
-<assets/2DWire.png, id=447, 459.7175pt x 421.575pt>
+<assets/2DWire.png, id=449, 459.7175pt x 421.575pt>
 File: assets/2DWire.png Graphic file (type png)
  <use assets/2DWire.png>
 Package pdftex.def Info: assets/2DWire.png used on input line 62.
@@ -1382,7 +1383,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 72.
 
-<assets/1Ddot.png, id=449, 299.1175pt x 102.3825pt>
+<assets/1Ddot.png, id=451, 299.1175pt x 102.3825pt>
 File: assets/1Ddot.png Graphic file (type png)
  <use assets/1Ddot.png>
 Package pdftex.def Info: assets/1Ddot.png used on input line 76.
@@ -1425,7 +1426,7 @@ Package babel Info: Redefining russian shorthand "~
 
 LaTeX Warning: Reference `fig:Anderson' on page 16 undefined on input line 16.
 
-<assets/HJ.png, id=462, 1146.2825pt x 546.04pt>
+<assets/HJ.png, id=464, 1146.2825pt x 546.04pt>
 File: assets/HJ.png Graphic file (type png)
  <use assets/HJ.png>
 Package pdftex.def Info: assets/HJ.png used on input line 20.
@@ -1446,7 +1447,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 31.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 31.
- <assets/rtgs.png, id=476, 596.2275pt x 363.3575pt>
+ <assets/rtgs.png, id=478, 596.2275pt x 363.3575pt>
 File: assets/rtgs.png Graphic file (type png)
 
 <use assets/rtgs.png>
@@ -1485,7 +1486,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Warning: Reference `tab:AlGaAs' on page 18 undefined on input line 61.
 
-<assets/rtgsAlGaAs.png, id=490, 845.1575pt x 363.3575pt>
+<assets/rtgsAlGaAs.png, id=492, 845.1575pt x 363.3575pt>
 File: assets/rtgsAlGaAs.png Graphic file (type png)
 
 <use assets/rtgsAlGaAs.png>
@@ -1495,7 +1496,7 @@ Package pdftex.def Info: assets/rtgsAlGaAs.png used on input line 65.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<assets/DifCloseAlGaAs.png, id=491, 754.82pt x 327.2225pt>
+<assets/DifCloseAlGaAs.png, id=493, 754.82pt x 327.2225pt>
 File: assets/DifCloseAlGaAs.png Graphic file (type png)
 
 <use assets/DifCloseAlGaAs.png>
@@ -1728,7 +1729,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--34
 
  []
 
-<assets/Diffusion.png, id=576, 891.33pt x 529.98pt>
+<assets/Diffusion.png, id=578, 891.33pt x 529.98pt>
 File: assets/Diffusion.png Graphic file (type png)
  <use assets/Diffusion.png>
 Package pdftex.def Info: assets/Diffusion.png used on input line 38.
@@ -1782,13 +1783,13 @@ Package babel Info: Redefining russian shorthand "~
 
 LaTeX Warning: Reference `fig:OD' on page 31 undefined on input line 38.
 
-<assets/CD.png, id=608, 618.31pt x 349.305pt>
+<assets/CD.png, id=610, 618.31pt x 349.305pt>
 File: assets/CD.png Graphic file (type png)
  <use assets/CD.png>
 Package pdftex.def Info: assets/CD.png used on input line 43.
 (pdftex.def)             Requested size: 422.52057pt x 238.70216pt.
 
-<assets/OD.png, id=609, 919.435pt x 357.335pt>
+<assets/OD.png, id=611, 919.435pt x 357.335pt>
 File: assets/OD.png Graphic file (type png)
  <use assets/OD.png>
 Package pdftex.def Info: assets/OD.png used on input line 50.
@@ -1844,7 +1845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--13
 
  []
 
-<assets/RTHSModel.png, id=642, 1969.3575pt x 738.76pt>
+<assets/RTHSModel.png, id=644, 1969.3575pt x 738.76pt>
 File: assets/RTHSModel.png Graphic file (type png)
 
 <use assets/RTHSModel.png>
@@ -1971,7 +1972,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 36.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 36.
- <assets/qwt.png, id=689, 1020.81375pt x 488.57532pt>
+ <assets/qwt.png, id=691, 1020.81375pt x 488.57532pt>
 File: assets/qwt.png Graphic file (type png)
  <use assets/qwt.png>
 Package pdftex.def Info: assets/qwt.png used on input line 39.
@@ -1981,7 +1982,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 46.
 
-<assets/qwj.png, id=691, 851.43094pt x 467.49657pt>
+<assets/qwj.png, id=693, 851.43094pt x 467.49657pt>
 File: assets/qwj.png Graphic file (type png)
  <use assets/qwj.png>
 Package pdftex.def Info: assets/qwj.png used on input line 49.
@@ -2008,7 +2009,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 67.
 
-<assets/qwwt.png, id=707, 1177.39874pt x 666.99188pt>
+<assets/qwwt.png, id=709, 1177.39874pt x 666.99188pt>
 File: assets/qwwt.png Graphic file (type png)
  <use assets/qwwt.png>
 Package pdftex.def Info: assets/qwwt.png used on input line 70.
@@ -2021,7 +2022,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 76.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 76.
-<assets/qwwj.png, id=709, 852.18375pt x 469.755pt>
+<assets/qwwj.png, id=711, 852.18375pt x 469.755pt>
 File: assets/qwwj.png Graphic file (type png)
  <use assets/qwwj.png>
 Package pdftex.def Info: assets/qwwj.png used on input line 81.
@@ -2075,7 +2076,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 14.
 
-<assets/qbwt.png, id=728, 1020.81375pt x 488.57532pt>
+<assets/qbwt.png, id=730, 1020.81375pt x 488.57532pt>
 File: assets/qbwt.png Graphic file (type png)
  <use assets/qbwt.png>
 Package pdftex.def Info: assets/qbwt.png used on input line 17.
@@ -2085,7 +2086,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 24.
 
-<assets/qbwj.png, id=730, 1437.87187pt x 723.45282pt>
+<assets/qbwj.png, id=732, 1437.87187pt x 723.45282pt>
 File: assets/qbwj.png Graphic file (type png)
  <use assets/qbwj.png>
 Package pdftex.def Info: assets/qbwj.png used on input line 28.
@@ -2136,7 +2137,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 11.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 11.
- <assets/qslt.png, id=746, 1437.87187pt x 723.45282pt>
+ <assets/qslt.png, id=748, 1437.87187pt x 723.45282pt>
 File: assets/qslt.png Graphic file (type png)
 
 <use assets/qslt.png>
@@ -2146,7 +2147,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 22.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 22.
- <assets/qslj.png, id=747, 1437.87187pt x 723.45282pt>
+ <assets/qslj.png, id=749, 1437.87187pt x 723.45282pt>
 File: assets/qslj.png Graphic file (type png)
 
 <use assets/qslj.png>
@@ -2169,7 +2170,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 33.
 
-<assets/qslqj.png, id=753, 1437.87187pt x 723.45282pt>
+<assets/qslqj.png, id=755, 1437.87187pt x 723.45282pt>
 File: assets/qslqj.png Graphic file (type png)
  <use assets/qslqj.png>
 Package pdftex.def Info: assets/qslqj.png used on input line 38.
@@ -2223,14 +2224,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-<assets/RTHSModelDiff.png, id=765, 1969.3575pt x 632.3625pt>
+<assets/RTHSModelDiff.png, id=767, 1969.3575pt x 632.3625pt>
 File: assets/RTHSModelDiff.png Graphic file (type png)
 
 <use assets/RTHSModelDiff.png>
 Package pdftex.def Info: assets/RTHSModelDiff.png used on input line 8.
 (pdftex.def)             Requested size: 422.52057pt x 135.66582pt.
 
-<assets/RTHS.png, id=766, 1128.215pt x 345.29pt>
+<assets/RTHS.png, id=768, 1128.215pt x 345.29pt>
 File: assets/RTHS.png Graphic file (type png)
  <use assets/RTHS.png>
 Package pdftex.def Info: assets/RTHS.png used on input line 30.
@@ -2252,14 +2253,14 @@ Package babel Info: Redefining russian shorthand "~
 
 
  <./assets/RTHSModelDiff.png> <./assets/RTHS.png>]
-<assets/DOAlGaAs.png, id=777, 1437.87187pt x 723.45282pt>
+<assets/DOAlGaAs.png, id=779, 1437.87187pt x 723.45282pt>
 File: assets/DOAlGaAs.png Graphic file (type png)
 
 <use assets/DOAlGaAs.png>
 Package pdftex.def Info: assets/DOAlGaAs.png used on input line 42.
 (pdftex.def)             Requested size: 436.60411pt x 219.67584pt.
 
-<assets/JDOAlGaAs.png, id=778, 1437.87187pt x 723.45282pt>
+<assets/JDOAlGaAs.png, id=780, 1437.87187pt x 723.45282pt>
 File: assets/JDOAlGaAs.png Graphic file (type png)
 
 <use assets/JDOAlGaAs.png>
@@ -2274,14 +2275,14 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 56.
  [49 <./assets/DOAlGaAs.png (PNG copy)> <./assets/JDOAlGaAs.png (PNG copy)>]
-<assets/DOAlGaAsNd.png, id=789, 1445.4pt x 723.45282pt>
+<assets/DOAlGaAsNd.png, id=791, 1445.4pt x 723.45282pt>
 File: assets/DOAlGaAsNd.png Graphic file (type png)
 
 <use assets/DOAlGaAsNd.png>
 Package pdftex.def Info: assets/DOAlGaAsNd.png used on input line 62.
 (pdftex.def)             Requested size: 375.57782pt x 187.98291pt.
 
-<assets/JDOAlGaAsNd.png, id=790, 1437.87187pt x 723.45282pt>
+<assets/JDOAlGaAsNd.png, id=792, 1437.87187pt x 723.45282pt>
 File: assets/JDOAlGaAsNd.png Graphic file (type png)
 
 <use assets/JDOAlGaAsNd.png>
@@ -2319,14 +2320,14 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 1.
 
-<assets/DAlGaAs_Si.png, id=803, 1437.87187pt x 723.45282pt>
+<assets/DAlGaAs_Si.png, id=805, 1437.87187pt x 723.45282pt>
 File: assets/DAlGaAs_Si.png Graphic file (type png)
 
 <use assets/DAlGaAs_Si.png>
 Package pdftex.def Info: assets/DAlGaAs_Si.png used on input line 7.
 (pdftex.def)             Requested size: 469.47049pt x 236.21223pt.
 
-<assets/JDAlGaAs_Si.png, id=804, 1437.87187pt x 723.45282pt>
+<assets/JDAlGaAs_Si.png, id=806, 1437.87187pt x 723.45282pt>
 File: assets/JDAlGaAs_Si.png Graphic file (type png)
 
 <use assets/JDAlGaAs_Si.png>
@@ -2404,11 +2405,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
  ) 
 Here is how much of TeX's memory you used:
- 35675 strings out of 493013
- 770309 string characters out of 6139316
+ 35681 strings out of 493013
+ 770392 string characters out of 6139316
  966852 words of memory out of 5000000
- 38174 multiletter control sequences out of 15000+600000
- 18611 words of font info for 51 fonts, out of 8000000 for 9000
+ 38176 multiletter control sequences out of 15000+600000
+ 20290 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,15n,98p,1187b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/
@@ -2428,11 +2429,12 @@ type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 .pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc2986.pfb></usr/shar
 e/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fo
 nts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/cm-super/sfti1440.pfb>
-Output written on index.pdf (54 pages, 2129774 bytes).
+c/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti
+1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
+Output written on index.pdf (54 pages, 2153831 bytes).
 PDF statistics:
- 946 PDF objects out of 1000 (max. 8388607)
- 804 compressed objects within 9 object streams
+ 954 PDF objects out of 1000 (max. 8388607)
+ 810 compressed objects within 9 object streams
  270 named destinations out of 1000 (max. 500000)
  659 words of extra memory for PDF output out of 10000 (max. 10000000)
 
