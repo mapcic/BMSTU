@@ -29,7 +29,7 @@ sizeHS = a + b + c + b + a;
 EFermi = 1.51*1e-20; % J
 
 % Applyied voltage
-dU = 0:0.01:0.6;
+dU = 0:0.005:0.6;
 
 % Ec
 Ec1 = [zeros(1, a(1)), 0.5*ones(1, b), zeros(1, c), 0.5*ones(1, b), zeros(1, a(1))];
@@ -43,7 +43,7 @@ meff2 = [0.067*ones(1, a(2)), 0.15*ones(1, b), 0.067*ones(1, c), 0.15*ones(1, b)
 meff3 = [0.067*ones(1, a(3)), 0.15*ones(1, b), 0.067*ones(1, c), 0.15*ones(1, b), 0.067*ones(1, a(3))];
 meff4 = [0.067*ones(1, a(4)), 0.15*ones(1, b), 0.067*ones(1, c), 0.15*ones(1, b), 0.067*ones(1, a(4))];
 
-reserve = 15;
+reserve = 20;
 
 % numPoint = 5000;
 

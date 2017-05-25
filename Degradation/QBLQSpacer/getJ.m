@@ -29,7 +29,7 @@ function J = getJ(dx, meff, Ec, dU, EFermi, r, a, b, c)
 		Uj = Ec - V(r+1:length(Ec)+r)*eVtoJ;
 		% Uj = Ec - linspace( 0, dU(j), length(Ec) );
 		dTDEz = @(Ez) TDEz(dx, meff, Uj, Ez, EFermi);
-		J(j) = J(j)*integral(dTDEz, 0, max(Uj), 'AbsTol', 1e-100);
+		J(j) = J(j)*integral(dTDEz, 0, max(Uj), 'AbsTol', 1e-200);
 		% hold on;
 		% plot(1:length(Uj), Uj);
 	end

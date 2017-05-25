@@ -38,7 +38,7 @@ meff2 = [0.067*ones(1, a), 0.15*ones(1, b), 0.067*ones(1, c(2)), 0.15*ones(1, b)
 meff3 = [0.067*ones(1, a), 0.15*ones(1, b), 0.067*ones(1, c(3)), 0.15*ones(1, b), 0.067*ones(1, a)];
 meff4 = [0.067*ones(1, a), 0.15*ones(1, b), 0.067*ones(1, c(4)), 0.15*ones(1, b), 0.067*ones(1, a)];
 
-numPoint = 5000;
+numPoint = 50000;
 
 Tr1 = getTransperent(...
 	dx*nm, ...
