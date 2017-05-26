@@ -96,4 +96,23 @@ Diffusion in GaAs and Related Compounds: Resent Developments~/ U.~Gosele,
 \newblock М.: Наука, 1987. ---
 \newblock 288~{с.}
 
+\bibitem{FDDiff}
+\selectlanguageifdefined{english}
+\BibEmph{Becker,~T.~W.} Numerical Modeling of Earth Systems~/ T.~W.~Becker,
+  J.~P.~Kaus. ---
+\newblock California: USC, 2016. ---
+\newblock 222~pp.
+
+\bibitem{Vetrova}
+\selectlanguageifdefined{russian}
+\BibEmph{Ветрова,~Н.~А.} Определение управляемых
+  параметров для
+  конструкторско-технологической
+  оптимизации СВЧ смесителей радиосигналов
+  на резонансно-туннельных диодах по
+  критерию их надежности~/ Н.~А.~Ветрова,
+  В.~Д.~Шашурин, Н.~В.~Назаров~// \BibEmph{Наука и
+  образование}. ---
+\newblock 2011.
+
 \end{thebibliography}

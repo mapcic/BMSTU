@@ -28,13 +28,11 @@ Reallocated glb_str_ptr (elt_size=8) to 10 items from 0.
 Reallocated global_strs (elt_size=20001) to 10 items from 0.
 Reallocated glb_str_end (elt_size=8) to 10 items from 0.
 Database file #1: index.bib
-Warning--I didn't find a database entry for "FDDiff"
 
 Here's how much of BibTeX's memory you used:
- Cites:                10 out of 750
- Fields:              272 out of 5000
- Hash table:        35099 out of 35307
- Strings:             727 out of 35307
- Free string pool:   7498 out of 65000
+ Cites:                12 out of 750
+ Fields:              332 out of 5000
+ Hash table:        35098 out of 35307
+ Strings:             738 out of 35307
+ Free string pool:   8030 out of 65000
  Wizard functions:   2674 out of 3000
-(There was 1 warning)
