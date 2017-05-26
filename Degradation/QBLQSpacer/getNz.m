@@ -26,7 +26,7 @@ function nz = getNz(Ui, meff, dx, boundL, boundR)
 	end
 
 	foo = @(Ez) NEz( Ui(boundL: boundR), meff(boundL: boundR), dx, Ez, Ui(1), Ui(end) );
-	nzA = integral(foo, Ui(end), 2*e, 'AbsTol', 1E-25, 'ArrayValued', true);
+	nzA = integral(foo, Ui(end), 2*e, 'AbsTol', 1E-100, 'ArrayValued', true);
 
 	U1 = Ui(1: boundL-1);
 	U2 = Ui(boundR + 1: end);
@@ -36,12 +36,12 @@ function nz = getNz(Ui, meff, dx, boundL, boundR)
 
 	for j = 1 : length(U1)
 		foo = @(Ez) sqrt(Ez - U1(j))./(1 + exp((Ez - (EFermi + Ui(1)))/(k_B*T)));
-		nzL(j) = Nc3D*integral(foo, U1(j), 2*e, 'AbsTol', 1e-25);
+		nzL(j) = Nc3D*integral(foo, U1(j), 2*e, 'AbsTol', 1e-100);
 	end
 
 	for j = 1 : length(U2)
 		foo = @(Ez) sqrt(Ez - U2(j))./(1 + exp((Ez - (EFermi + Ui(end)))/(k_B*T)));
-		nzR(j) = Nc3D*integral(foo, U2(j), 2*e, 'AbsTol', 1e-25);
+		nzR(j) = Nc3D*integral(foo, U2(j), 2*e, 'AbsTol', 1e-100);
 	end
 
 	nz = [nzL, nzA, nzR];

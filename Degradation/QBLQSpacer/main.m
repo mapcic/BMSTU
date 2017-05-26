@@ -14,7 +14,7 @@ dx = dx/dis;
 % b = 6;
 % c = 6;
 
-a = [10, 15, 20, 30]; % monolayers
+a = [12, 15, 20, 25]; % monolayers
 b = 5;
 c = 6;
 
