@@ -92,7 +92,7 @@
 	\frac{\delta}{\delta t} C = \frac{\delta}{\delta x}D\frac{\delta}{\delta x} C;
 \end{equation}
 
-Тогда уравнение конечно-разностной схемы будет~\cite{MethFD}:
+Тогда уравнение конечно-разностной схемы будет~\cite{FDDiff}:
 \begin{gather}\label{eq:diffD(x)tFD}
 	\frac{C_{j}^{i+1} - C_{j}^{i}}{\Delta t} = \frac{ D_{j+1/2}^{i}\frac{C^{i}_{j+1} - C^{i}_{j}}{\Delta x} - D_{j-1/2}^{i}\frac{C^{i}_{j} - C^{i}_{j-1}}{\Delta x} }{\Delta x};\\
 	D_{j\pm1/2}^{i} = \frac{D^{i}_{j} + D^{i}_{j\pm1}}{2} = D_{j\pm}^{i}.
