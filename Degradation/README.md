@@ -19,3 +19,5 @@ DActiveNd --> MatLab. Research diffusion of active area with donar dopands.
 DSi --> MatLab. Research diffusion of active area with diffusion of donar dopands from reserves.
 
 Report/assets/ --> All images.
+
+Diffusion --> All model of diffusion.
