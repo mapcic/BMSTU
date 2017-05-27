@@ -11,3 +11,9 @@ QWBScript --> MatLab. Research width of potentional barrier.
 QBLSpacer --> MatLab. Research width of spaser.
 
 QBLQSpacer --> Matlab. Reasrch width of spaser and accumulation of charge.
+
+DActive --> MatLab. Research diffusion of active area.
+
+DActiveNd --> MatLab. Research diffusion of active area with donar dopands.
+
+DSi --> MatLab. Research diffusion of active area with diffusion of donar dopands from reserves.
