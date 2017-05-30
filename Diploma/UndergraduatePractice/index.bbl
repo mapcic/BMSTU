@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 \def\selectlanguageifdefined#1{
 \expandafter\ifx\csname date#1\endcsname\relax
 \else\language\csname l@#1\endcsname\fi}
@@ -6,58 +6,6 @@
 \ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
 \ifx\undefined\BibAnnote\long\def\BibAnnote#1{}\else\fi
 \ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
-
-\bibitem{Kalashnikov}
-\selectlanguageifdefined{russian}
-\BibEmph{Бонч-Бруевич,~В.~Л.} Физика
-  полупроводников~/ В.~Л.~Бонч-Бруевич,
-  С.~Г.~Калашников. ---
-\newblock М.: Мир, 1977. ---
-\newblock 678~{с.}
-
-\bibitem{Shilaev}
-\selectlanguageifdefined{russian}
-\BibEmph{Шиляев,~П.А.} Полупроводниковые
-  гетероструктуры --- гетеропереход:
-  учебно-методическое пособие~/ П.А.~Шиляев,
-  Д.А.~Павлов. ---
-\newblock Н.Новгород: Нижегородский
-  госуниверситет, 2009. ---
-\newblock 18~{с.}
-
-\bibitem{Shinkarenko}
-\selectlanguageifdefined{russian}
-\BibEmph{Шинкаренко,~В.~Г.} Электрические
-  свойства полупроводников:
-  учебно-методическое пособие~/
-  В.~Г.~Шинкаренко. ---
-\newblock М.: МФТИ, 2012. ---
-\newblock 80~{с.}
-
-\bibitem{Harrison}
-\selectlanguageifdefined{english}
-\BibEmph{Harrison,~W.~A.} Electronic Structure and the Properties of Solids:
-  The Physics of the Chemical Bond~/ W.~A.~Harrison. ---
-\newblock Massachusetts: Courier Corporation, 2012. ---
-\newblock 582~pp.
-
-\bibitem{Usanov}
-\selectlanguageifdefined{russian}
-\BibEmph{Усанов,~Д.~А.} Физические основы
-  наноэлектроники~/ Д.~А.~Усанов,
-  А.~В.~Скрипаль. ---
-\newblock Саратов: ил. Электронное издание, 2013.
-  ---
-\newblock 128~{с.}
-
-\bibitem{Moskaluk}
-\selectlanguageifdefined{russian}
-\BibEmph{Москалюк,~В.~А.}
-  Сверхбыстродействующие приборы
-  электроники~/ В.~А.~Москалюк, В.~И.~Тимофеев,
-  А.~В.~Федяй. ---
-\newblock К.: НТУУ <<КПИ>>, 2012. ---
-\newblock 479~{с.}
 
 \bibitem{getMeshkov}
 \selectlanguageifdefined{russian}
@@ -103,16 +51,13 @@ Diffusion in GaAs and Related Compounds: Resent Developments~/ U.~Gosele,
 \newblock California: USC, 2016. ---
 \newblock 222~pp.
 
-\bibitem{Vetrova}
+\bibitem{Moskaluk}
 \selectlanguageifdefined{russian}
-\BibEmph{Ветрова,~Н.~А.} Определение управляемых
-  параметров для
-  конструкторско-технологической
-  оптимизации СВЧ смесителей радиосигналов
-  на резонансно-туннельных диодах по
-  критерию их надежности~/ Н.~А.~Ветрова,
-  В.~Д.~Шашурин, Н.~В.~Назаров~// \BibEmph{Наука и
-  образование}. ---
-\newblock 2011.
+\BibEmph{Москалюк,~В.~А.}
+  Сверхбыстродействующие приборы
+  электроники~/ В.~А.~Москалюк, В.~И.~Тимофеев,
+  А.~В.~Федяй. ---
+\newblock К.: НТУУ <<КПИ>>, 2012. ---
+\newblock 479~{с.}
 
 \end{thebibliography}
