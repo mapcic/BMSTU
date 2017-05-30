@@ -34,11 +34,9 @@
 
 Выделим два граничных приближения для концентрации:
 \begin{enumerate}
-	\item <<Закрытая система>> ~--- концентрация на границе не изменяется ($J_{0}^{i} = 0$, $J_{N+1}^{i} = 0$), см. рис.\ref{fig:CD};
-	\item <<Открытая система>> ~--- поток частиц подходящий к границе равен потоку уходящих частиц ($J_{0}^{i} = J_{1}^{i}$, $J_{N}^{i} = J_{N+1}^{i}$), см. рис.\ref{fig:OD}.
+	\item <<Закрытая система>> ~--- концентрация на границе не изменяется ($J_{0}^{i} = 0$, $J_{N+1}^{i} = 0$), см. рис.\ref{fig:DS}, a);
+	\item <<Открытая система>> ~--- поток частиц подходящий к границе равен потоку уходящих частиц ($J_{0}^{i} = J_{1}^{i}$, $J_{N}^{i} = J_{N+1}^{i}$), см. рис.\ref{fig:DS}, б).
 \end{enumerate}
-
-
 
 % \begin{figure}
 %     \centering
@@ -55,19 +53,34 @@
 %     \caption{Pictures of animals}\label{fig:animals}
 % \end{figure}
 
+\noindent
+\begin{minipage}{0.4\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{assets/CD}
+	а)
+\end{minipage}
+~
+\begin{minipage}{0.6\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{assets/OD}
+	б)
+\end{minipage}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\linewidth]{assets/CD}
-	\caption{"Закрытая" система диффузии}
-	\label{fig:CD}
+	% \includegraphics[width=0.9\linewidth]{assets/CD}
+	\caption{a) <<Закрытая>>, б) <<Открытая>> система диффузии}
+	\label{fig:DS}
 \end{figure}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\linewidth]{assets/OD}
-	\caption{"Открытая" система диффузии}
-	\label{fig:OD}
-\end{figure}
+
+
+% \begin{figure}
+% 	\centering
+% 	\includegraphics[width=0.8\linewidth]{assets/OD}
+% 	\caption{"Открытая" система диффузии}
+% 	\label{fig:OD}
+% \end{figure}
+
 
 Для <<закрытой системы>> должно выполняться условие $J_{0}^{i} = 0$, $J_{N+1}^{i} = 0$. Рассмотрим (\ref{eq:diffdx1}), (\ref{eq:diffFD}) для точки $j = 1$:
 \begin{gather*}
