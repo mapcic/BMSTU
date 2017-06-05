@@ -1,4 +1,4 @@
-% getJ: function description dx, meff, Ec, Ez
+ % getJ: function description dx, meff, Ec, Ez
 function J = getJ(dx, meff, Ec, dU, EFermi, r, a, b, c)
 	e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); 
 	hbar = 1.054*1e-34; k_B = 1.38e-23;
