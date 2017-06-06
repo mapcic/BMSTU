@@ -1,4 +1,4 @@
-function Vnew = solvePoisonEq(dU, Vold, nold, eps, Ni, dx)
+function Vnew = solvePoisonEq(Vold, nold, eps, Ni, dx)
 	e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); 	
 	k_B = 1.38e-23; eps0 = 8.85e-12;
 
@@ -22,7 +22,7 @@ function Vnew = solvePoisonEq(dU, Vold, nold, eps, Ni, dx)
 		e/eps0*dx^2 ...
 		./eps(1:end-2)...
 		.*(nold(2:end-1).*(1-Vold(2:end-1)/Vref)-Ni(2:end-1));
-	dfree = [0, dfree, dU*JtoEv]';
+	dfree = [0, dfree, 0]';
 	
 	Matrix = diag(d1, -1) + diag(d2) + diag(d3, 1);
 	Vnew = (Matrix\dfree)';
