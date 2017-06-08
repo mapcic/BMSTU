@@ -1,13 +1,27 @@
 % 8 Листинги
 
 \usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+% \DeclareCaptionFormat{listing} {
+%   \begin{tabular}{r}
+%     #1#2#3
+%   \end{tabular}
+% }
+ 
+% \DeclareCaptionFont{black}{\color{black}}
+ 
+% \captionsetup[lstlisting]{format=listing,
+%         singlelinecheck=true, margin=10pt}
 
 % Значения по умолчанию
 \lstset{
   basicstyle= \footnotesize,
   breakatwhitespace=true,% разрыв строк только на whitespacce
   breaklines=false,       % переносить длинные строки
-  captionpos=b,          % подписи снизу -- вроде не надо
+  % captionpos=b,          % подписи снизу -- вроде не надо
   inputencoding=utf8x,
   numbers=left,          % нумерация слева
   numberstyle=\footnotesize,
@@ -17,6 +31,19 @@
   stepnumber=1,
   tabsize=4,              % кому нужны табы по 8 символов?
   frame=lines
+}
+
+% Matlab
+\lstset{language=Matlab,
+  basicstyle=\color{red},
+  morekeywords={matlab2tikz},
+  morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+  identifierstyle=\color{black},
+  stringstyle=\color{mylilas},
+  emph=[1]{for,end,break},emphstyle=[1]\color{red},
+  commentstyle=\color{mygreen},
+  stringstyle=\color{mylilas},
+  keywordstyle=\color{blue}
 }
 
 % Стиль для псевдокода: строчки обычно короткие, поэтому размер шрифта побольше

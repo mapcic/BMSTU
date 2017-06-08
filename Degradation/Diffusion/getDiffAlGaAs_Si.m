@@ -1,5 +1,5 @@
 %% getDiffOpenAlGaAsNd: function description
-function [Ec, meff, Alx, Six] = getDiffOpenAlGaAs(x_Al, checkTime, dx, T, n_Si)
+function [Ec, meff, Alx, Six] = getDiffAlGaAs_Si(x_Al, checkTime, dx, T, n_Si)
 	e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1);
 	nm = 1e-9; me = 9.1*1e-31;
 	hbar = 1.054*1e-34; k_B = 1.38e-23;
@@ -50,7 +50,7 @@ function [Ec, meff, Alx, Six] = getDiffOpenAlGaAs(x_Al, checkTime, dx, T, n_Si)
 		if (ind & j ~= 0)
 			[Ec(ind, :), ~, meff(ind, :), ~] = getBandPropAlGaAs(C_Al(2:end-1)');
 			Alx(ind, :) = C_Al(2:end-1)'./n_Al;
-			Six(ind, :) = C_Si(2:end-1)';
+			Six(ind, :) = C_Si(2:end-1)'./n_Si;
 		end
 	end
 end
