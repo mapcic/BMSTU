@@ -1,9 +1,10 @@
+% Img 4.5, 4.6
 clear; clc;
 
 e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); 
 me = 9.11*1e-31; nm = 1e-9;
 
-T = 500; % K
+T = 650; % K
 
 checkTime = [0, 1, 5, 10]; %years
 
@@ -46,4 +47,4 @@ for j = 1 : length(checkTime)
 	);
 end
 
-showResult(grids_C_Al, grids_Ec, checkTime, J, sizeHS, dx, T, dU, Nd);
+showResult(grids_C_Al, grids_Ec, checkTime, J, sizeHS, dx, T, dU, Nd); % Img 4.5, 4.6

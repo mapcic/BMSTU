@@ -1,4 +1,6 @@
-% img 2.5, 2.7, 2.9
+\chapter{Диффизия в закрытой и открытой системе}
+\label{app:Diff}
+\begin{lstlisting}[style=realcode,language=Matlab,caption={Функция расчета диффузионного расплытия атомов $Al$ в <<открытой>> системе $i$-$Al_{x}Ga_{1-x}As$},label={lst:mainDiff}]
 clear; clc;
 
 e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); 
@@ -29,3 +31,4 @@ showResult(dx, sizeHS, grids_C_Al, 'Open Diffusion System', checkTime); %img 2.7
 
 [~, ~, grids_C_Al, grids_C_Si] = getDiffAlGaAs_Si(grid_x_Al, checkTime, dx*nm, 430, nSi);
 showResultSi(dx, sizeHS, grids_C_Al, grids_C_Si, 'Not Constant $D$', checkTime); %img 2.9
+\end{lstlisting}

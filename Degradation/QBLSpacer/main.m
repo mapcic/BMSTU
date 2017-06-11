@@ -1,3 +1,4 @@
+% Img 3.8, 3.9
 clear; clc;
 
 e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); 
@@ -97,4 +98,4 @@ J4 = getJ(dx*nm, ...
 );
 
 
-showResult(dx*nm, sizeHS, Ec1, Ec2, Ec3, Ec4, J1, J2, J3, J4, dU, Tr1, Tr2, Tr3, Tr4, a);
+showResult(dx*nm, sizeHS, Ec1, Ec2, Ec3, Ec4, J1, J2, J3, J4, dU, Tr1, Tr2, Tr3, Tr4, a); % Img 3.8, 3.9

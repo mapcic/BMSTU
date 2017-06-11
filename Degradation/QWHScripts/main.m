@@ -1,3 +1,5 @@
+%Img 3.2, 3.3
+
 clear; clc;
 
 e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); 
@@ -59,4 +61,4 @@ for j = 1 : length(Ec(:, 1))
 	);
 end
 
-showResult(dx*nm, sizeHS, Ec, J, dU, Tr);
+showResult(dx*nm, sizeHS, Ec, J, dU, Tr);  %Img 3.2, 3.3

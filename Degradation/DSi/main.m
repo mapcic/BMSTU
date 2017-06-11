@@ -1,3 +1,4 @@
+%Img 4.7, 4.8
 clear; clc;
 
 e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); 
@@ -44,4 +45,4 @@ for j = 1 : length(checkTime)
 	);
 end
 
-showResult(grids_C_Al, Six/Nd, grids_Ec, checkTime, J, sizeHS, dx, T, dU, Nd);
+showResult(grids_C_Al, Six/Nd, grids_Ec, checkTime, J, sizeHS, dx, T, dU, Nd); %Img 4.7, 4.8

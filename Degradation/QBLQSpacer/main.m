@@ -10,14 +10,9 @@ dx = 0.56; %nm
 dx = dx/dis;
  
 % Count layers
-% a = [3, 7, 10, 15]; % monolayers
-% b = 6;
-% c = 6;
-
-a = [12, 15, 20, 25]; % monolayers
-b = 5;
+a = [3, 7, 10, 15]; % monolayers
+b = 6;
 c = 6;
-
 
 a = a*dis;
 b = b*dis;
@@ -120,4 +115,4 @@ J4 = getJ(dx*nm, ...
 toc
 
 % showResult(dx*nm, sizeHS, Ec1, Ec2, Ec3, Ec4, J1, J2, J3, J4, dU, Tr1, Tr2, Tr3, Tr4, a);
-showResult(dx*nm, sizeHS, Ec1, Ec2, Ec3, Ec4, J1, J2, J3, J4, dU, a);
+showResult(dx*nm, sizeHS, Ec1, Ec2, Ec3, Ec4, J1, J2, J3, J4, dU, a); % img 3.8 img 3.9

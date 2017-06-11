@@ -45,4 +45,4 @@ for j = 1 : length(checkTime)
 	);
 end
 
-showResult(grids_C_Al, grids_Ec, checkTime, J, sizeHS, dx, T, dU);
+showResult(grids_C_Al, grids_Ec, checkTime, J, sizeHS, dx, T, dU); % Img 4.3, Img 4.4

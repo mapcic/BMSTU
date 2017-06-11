@@ -20,4 +20,4 @@ DSi --> MatLab. Research diffusion of active area with diffusion of donar dopand
 
 Report/assets/ --> All images.
 
-Diffusion --> All model of diffusion.
+Diffusion --> Fig from Chapter 2.2.
