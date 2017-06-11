@@ -1,4 +1,4 @@
-\section{Токоперенос через ГС}
+\section{Плотность тока через ГС}
 Один из способов расчета плотности тока через гетероструктуру~--- это формула Цу--Есаки:
 \begin{equation}
 	\label{eq:J}
@@ -15,6 +15,7 @@
 	$k_{B}$ & постоянная Больцмана.
 \end{conditions}
 \begin{equation}
+	\label{eq:De}
 	D(E) = \ln\frac{1 + \exp{\frac{E_{F}-E}{k_{B}T}} }{ 1 + \exp{\frac{E_{F}-E-eV}{k_{B}T}} },
 \end{equation}
 \begin{conditions}
@@ -44,6 +45,7 @@
 \end{conditions}
 Тогда коэффициент туннельной прозрачности:
 \begin{equation}
+	\label{eq:T}
 	T(E) = |T_{L}|^{2}\frac{|k_{R}|m_{L}}{|k_{L}|m_{R}},
 \end{equation}
 \begin{conditions}
@@ -111,6 +113,7 @@
 Приближение Хартри сводит многоэлектронное уравнение Шредингера к одноэлектронному, в котором электрон движется в некотором эффективном поле, создаваемом другими электронами. Это поле называется самосогласованным.
 Распределение заряда в структуре определяется с помощью уравнения Пуассона:
 \begin{equation}
+	\label{eq:poisson}
 	\frac{d}{dz}\varepsilon(z)\frac{d}{z}V_{s} = \frac{e}{\varepsilon_{0}}[n(z) - N_{D}(z)],
 \end{equation}
 \begin{conditions}

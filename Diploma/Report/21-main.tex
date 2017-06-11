@@ -32,18 +32,30 @@
     \end{longtable}
 \end{center}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{gE.png}
-	\caption{Плотность состояний в 3D, 2D, 1D, 0D, где $g(E) = \rho_{energy}$}
-	\label{DOS}
-\end{figure}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=\textwidth]{gE.png}
+% 	\caption{Плотность состояний в 3D, 2D, 1D, 0D, где $g(E) = \rho_{energy}$}
+% 	\label{DOS}
+% \end{figure}
 
 \subsection{Трехмерное тело}
-Рассмотрим 3D кристалл (bulk) на рис.~\ref{fig:3DBulk}:
+Рассмотрим 3D кристалл (bulk) на рис.~\ref{fig:3DBulk}:\\
+
+\noindent
+\begin{minipage}[b]{0.4\textwidth}
+	\centering
+    \includegraphics[width=\textwidth]{assets/3DBulk}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.55\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{assets/gE3D}
+\end{minipage}
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{3DBulk.png}
+	% \includegraphics[scale=0.5]{3DBulk.png}
 	\caption{k-пространство (шар)}
 	\label{fig:3DBulk}
 \end{figure}
@@ -56,27 +68,51 @@
 \end{gather*}
 
 \subsection{Двухмерное тело}
-Рассмотрим 2D кристалл (well) на рис.~\ref{fig:2DWire}:
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.5]{2DWire.png}
-	\caption{k-пространство (круг)}
-	\label{fig:2DWire}
-\end{figure}
-
+Рассмотрим 2D кристалл (well) на рис.~\ref{fig:2DWire}.
 \begin{gather*} 
 	G(E) = \frac{V_{circul}}{V_{single-state}} = J_{z}\frac{\frac{1}{4}\pi k^{2}}{\frac{\pi^2}{S}} = \frac{k^{2}}{2\pi} = \frac{mS}{\pi\hbar^{2}}E;\\
 	g(E) = \frac{dG(E)}{dE} = \frac{m}{\pi\hbar^{2}}S.
 \end{gather*}
 
-\subsection{Одномерное тело}
-Рассмотрим 1D кристалл (wire)  на рис.~\ref{fig:1Ddot}:
+\noindent
+\begin{minipage}[b]{0.35\textwidth}
+	\centering
+    \includegraphics[width=\textwidth]{assets/2DWire}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.6\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{assets/gE2D}
+\end{minipage}
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{1Ddot.png}
+	% \includegraphics[scale=0.5]{2DWire.png}
+	\caption{k-пространство (круг)}
+	\label{fig:2DWire}
+\end{figure}
+
+\subsection{Одномерное тело}
+Рассмотрим 1D кристалл (wire)  на рис.~\ref{fig:1Ddot}:
+
+\noindent
+\begin{minipage}[b]{0.3\textwidth}
+	\centering
+    \includegraphics[width=\textwidth]{assets/1Ddot}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.6\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{assets/gE1D}
+\end{minipage}
+
+\begin{figure}[h]
+	\centering
+	% \includegraphics[scale=0.5]{1Ddot.png}
 	\caption{k-пространство (линия)}
 	\label{fig:1Ddot}
 \end{figure}
+
 \begin{gather*} 
 	G(E) = \frac{V_{line}}{V_{single-state}} = J_{z}\frac{k}{\frac{\pi}{L}} = \frac{kL}{pi} = \frac{\sqrt{2m}L}{\pi\hbar}E^{\frac{1}{2}};\\
 	g(E) = \frac{dG(E)}{dE} = \frac{\sqrt{m}L}{\sqrt{2}\pi\hbar}E^{-\frac{1}{2}}.
