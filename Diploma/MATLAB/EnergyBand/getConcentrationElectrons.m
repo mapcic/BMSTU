@@ -6,12 +6,14 @@ function [Vnew, nold] = getConcentrationElectrons(accur, Ec, meff, Ni, eps, dx)
 	Vnew = zeros(1, lenEc);
 	Vold = Vnew + 10;
 	
-	while ( max(abs(Vnew - Vold)) > accur )
+	while ( max(abs(Vnew - Vold)) > 1e-100 )
 		Vold = Vnew;
+
 		Ui = Ec - Vold*eVtoJ;
 
 		nold = getNz(Ui, meff);
-        	Vnew = solvePoisonEq(Vold, nold, eps, Ni, dx);
+
+    	Vnew = solvePoisonEq(Vold, nold, eps, Ni, dx);
 	end
 	Ui = Ec - Vnew*eVtoJ;
 	nold = getNz(Ui, meff);
