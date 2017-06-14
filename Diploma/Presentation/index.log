@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.23)  24 APR 2017 07:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.23)  14 JUN 2017 08:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1233,40 +1233,48 @@ File: t2aenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 sty)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 19.
+(hyperref)                removing `\\' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 24.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 24.
 
 (./index.aux)
 \openout1 = `index.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 23.
-LaTeX Font Info:    Try loading font information for T2A+cmr on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 24.
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 24.
  (/usr/share/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for T2A+lmss on input line 23.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Try loading font information for T2A+lmss on input line 24.
 
-LaTeX Font Info:    No file T2Almss.fd. on input line 23.
+LaTeX Font Info:    No file T2Almss.fd. on input line 24.
 
 
 LaTeX Font Warning: Font shape `T2A/lmss/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 23.
+(Font)              using `T2A/cmr/m/n' instead on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1334,7 +1342,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1344,60 +1352,60 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count159
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
  (./index.out)
 (./index.out)
 \@outlinefile=\write5
 \openout5 = `index.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 23.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 24.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 23.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 24.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 23.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 24.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 23.
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 24.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> T2A/lmr/m/n on input line 23.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 23.
+(Font)                  OT1/lmss/m/n --> T2A/lmr/m/n on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T2A/lmss/bx/n on input line 23.
+(Font)                  OT1/lmr/bx/n --> T2A/lmss/bx/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T2A/lmss/bx/n on input line 23.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 23.
+(Font)                  OT1/lmr/bx/n --> T2A/lmss/bx/n on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T2A/lmss/m/n on input line 23.
+(Font)                  OT1/lmss/m/n --> T2A/lmss/m/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T2A/lmss/m/n on input line 23.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 23.
+(Font)                  OT1/lmss/bx/n --> T2A/lmss/m/n on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T2A/lmss/m/it on input line 23.
+(Font)                  OT1/lmr/m/it --> T2A/lmss/m/it on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T2A/lmss/m/it on input line 23.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 23.
+(Font)                  OT1/lmr/bx/it --> T2A/lmss/m/it on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T2A/lmtt/m/n on input line 23.
+(Font)                  OT1/lmtt/m/n --> T2A/lmtt/m/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T2A/lmtt/m/n on input line 23.
+(Font)                  OT1/lmtt/m/n --> T2A/lmtt/m/n on input line 24.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T2A/lmss/m/n --> T2A/lmss/bx/n on input line 23.
+(Font)                  T2A/lmss/m/n --> T2A/lmss/bx/n on input line 24.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T2A/lmss/m/it --> T2A/lmss/bx/it on input line 23.
+(Font)                  T2A/lmss/m/it --> T2A/lmss/bx/it on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T2A/lmr/bx/n on input line 23.
+(Font)                  OT1/lmss/bx/n --> T2A/lmr/bx/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T2A/lmss/bx/n --> T2A/lmss/bx/n on input line 23.
+(Font)                  T2A/lmss/bx/n --> T2A/lmss/bx/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T2A/lmss/m/n --> T2A/lmss/bx/n on input line 23.
+(Font)                  T2A/lmss/m/n --> T2A/lmss/bx/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T2A/lmss/m/it --> T2A/lmss/bx/it on input line 23.
+(Font)                  T2A/lmss/m/it --> T2A/lmss/bx/it on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T2A/lmtt/m/n --> T2A/lmtt/bx/n on input line 23.
+(Font)                  T2A/lmtt/m/n --> T2A/lmtt/bx/n on input line 24.
 
 (/usr/share/texmf-dist/tex/latex/beamer/base/translator/dicts/translator-basic-
 dictionary/translator-basic-dictionary-English.dict
@@ -1423,200 +1431,207 @@ Dictionary: translator-numbers-dictionary, Language: English
 m-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 23.
+LaTeX Info: Redefining \includegraphics on input line 24.
  (./index.nav)
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 28.
 
-LaTeX Font Warning: Font shape `T2A/lmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 27.
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<assets/DiplomaTrouble1.png, id=48, 835.12pt x 584.1825pt>
-File: assets/DiplomaTrouble1.png Graphic file (type png)
-
-<use assets/DiplomaTrouble1.png>
-Package pdftex.def Info: assets/DiplomaTrouble1.png used on input line 45.
-(pdftex.def)             Requested size: 239.00558pt x 167.18901pt.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 45.
-
- (/usr/share/texmf-dist/tex/latex/lm/ot1lmss.fd
+(/usr/share/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 45.
- (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 28.
+
+(/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 45.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 28.
 
 
 (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 45.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 28.
 
 
 (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 45.
+(Font)              <14.4> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 45.
+(Font)              <10> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 45.
-LaTeX Font Info:    Try loading font information for U+msa on input line 45.
+(Font)              <7> on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 45.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Font Warning: Font shape `T2A/lmss/m/it' undefined
-(Font)              using `T2A/lmss/m/n' instead on input line 45.
+(Font)              using `T2A/lmss/m/n' instead on input line 28.
 
-<assets/Flash.png, id=50, 503.8825pt x 291.0875pt>
-File: assets/Flash.png Graphic file (type png)
- <use assets/Flash.png>
-Package pdftex.def Info: assets/Flash.png used on input line 45.
-(pdftex.def)             Requested size: 159.333pt x 92.04393pt.
 
-[2
+LaTeX Font Warning: Font shape `T2A/lmss/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 28.
 
- <./assets/DiplomaTrouble1.png> <./assets/Flash.png>]
-<assets/DiplomaTrouble2.png, id=78, 816.04875pt x 354.32375pt>
-File: assets/DiplomaTrouble2.png Graphic file (type png)
+[1
 
-<use assets/DiplomaTrouble2.png>
-Package pdftex.def Info: assets/DiplomaTrouble2.png used on input line 52.
-(pdftex.def)             Requested size: 358.50229pt x 155.65962pt.
- [3
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<assets/Trouble.png, id=44, 405.515pt x 927.465pt>
+File: assets/Trouble.png Graphic file (type png)
+ <use assets/Trouble.png>
+Package pdftex.def Info: assets/Trouble.png used on input line 54.
+(pdftex.def)             Requested size: 87.63496pt x 200.43417pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 54.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <24.88> on input line 54.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <20.74> on input line 54.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 54.
 
- <./assets/DiplomaTrouble2.png>] [4
+Overfull \hbox (4.96193pt too wide) in paragraph at lines 54--54
+[]$\OMS/lmsy/m/n/24.88 )$  
+ []
+
+<assets/AlgWrk.png, id=46, 941.5175pt x 1565.85pt>
+File: assets/AlgWrk.png Graphic file (type png)
+ <use assets/AlgWrk.png>
+Package pdftex.def Info: assets/AlgWrk.png used on input line 54.
+(pdftex.def)             Requested size: 131.45245pt x 218.62018pt.
+
+Overfull \hbox (4.96193pt too wide) in paragraph at lines 54--54
+[]$\OMS/lmsy/m/n/24.88 )$  
+ []
+
+<assets/Cond.png, id=47, 941.5175pt x 1646.15pt>
+File: assets/Cond.png Graphic file (type png)
+ <use assets/Cond.png>
+Package pdftex.def Info: assets/Cond.png used on input line 54.
+(pdftex.def)             Requested size: 124.87943pt x 218.32733pt.
+ [2
+
+ <./assets/Trouble.png> <./assets/AlgWrk.png> <./assets/Cond.png>] [3
 
 ]
-<assets/StuctStructZone.png, id=132, 582.175pt x 683.55376pt>
-File: assets/StuctStructZone.png Graphic file (type png)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 119.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 119.
 
-<use assets/StuctStructZone.png>
-Package pdftex.def Info: assets/StuctStructZone.png used on input line 84.
-(pdftex.def)             Requested size: 179.25114pt x 210.46011pt.
+<assets/Diffusion.png, id=103, 891.33pt x 529.98pt>
+File: assets/Diffusion.png Graphic file (type png)
+ <use assets/Diffusion.png>
+Package pdftex.def Info: assets/Diffusion.png used on input line 119.
+(pdftex.def)             Requested size: 159.333pt x 94.73724pt.
+
+<assets/Approx.png, id=104, 891.33pt x 168.63pt>
+File: assets/Approx.png Graphic file (type png)
+ <use assets/Approx.png>
+Package pdftex.def Info: assets/Approx.png used on input line 119.
+(pdftex.def)             Requested size: 167.30318pt x 31.65149pt.
+
+[4
+
+ <./assets/Diffusion.png> <./assets/Approx.png>]
+<assets/CD.png, id=139, 620.3175pt x 363.3575pt>
+File: assets/CD.png Graphic file (type png)
+ <use assets/CD.png>
+Package pdftex.def Info: assets/CD.png used on input line 161.
+(pdftex.def)             Requested size: 153.3612pt x 89.83006pt.
+
+<assets/OD.png, id=140, 794.97pt x 365.365pt>
+File: assets/OD.png Graphic file (type png)
+ <use assets/OD.png>
+Package pdftex.def Info: assets/OD.png used on input line 161.
+(pdftex.def)             Requested size: 199.1693pt x 91.53615pt.
  [5
 
- <./assets/StuctStructZone.png>] [6
+ <./assets/CD.png> <./assets/OD.png>]
+<assets/DCloseBox.png, id=176, 1067.99pt x 455.7025pt>
+File: assets/DCloseBox.png Graphic file (type png)
 
-]
+<use assets/DCloseBox.png>
+Package pdftex.def Info: assets/DCloseBox.png used on input line 192.
+(pdftex.def)             Requested size: 119.50279pt x 50.98965pt.
+ <assets/DCAl.png, id=177, 1445.4pt x 723.45282pt>
+File: assets/DCAl.png Graphic file (type png)
+
+<use assets/DCAl.png>
+Package pdftex.def Info: assets/DCAl.png used on input line 192.
+(pdftex.def)             Requested size: 199.1693pt x 99.68205pt.
+ <assets/DOpenBox.png, id=178, 1670.24pt x 455.7025pt>
+File: assets/DOpenBox.png Graphic file (type png)
+
+<use assets/DOpenBox.png>
+Package pdftex.def Info: assets/DOpenBox.png used on input line 192.
+(pdftex.def)             Requested size: 199.1693pt x 54.33426pt.
+
+<assets/DOAl.png, id=179, 1437.87187pt x 723.45282pt>
+File: assets/DOAl.png Graphic file (type png)
+ <use assets/DOAl.png>
+Package pdftex.def Info: assets/DOAl.png used on input line 192.
+(pdftex.def)             Requested size: 199.1693pt x 100.20088pt.
+
+[6
+
+ <./assets/DCloseBox.png> <./assets/DCAl.png (PNG copy)> <./assets/DOpenBox.png
+> <./assets/DOAl.png (PNG copy)>]
+Overfull \hbox (26.34459pt too wide) detected at line 227
+[] \OMS/lmsy/m/n/9 ) [] \OT1/lmss/m/n/9 = []\OML/lmm/m/it/9 ;  [] []
+ []
+
+<assets/ODSI.png, id=208, 794.97pt x 676.5275pt>
+File: assets/ODSI.png Graphic file (type png)
+ <use assets/ODSI.png>
+Package pdftex.def Info: assets/ODSI.png used on input line 227.
+(pdftex.def)             Requested size: 179.25114pt x 152.54245pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 227.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 227.
+
+Overfull \hbox (31.63542pt too wide) detected at line 227
+[][][] [][]
+ []
+
 [7
 
-]
-Overfull \hbox (23.61765pt too wide) detected at line 161
-[]
+ <./assets/ODSI.png>] <assets/DSiBox.png, id=244, 1672.2475pt x 455.7025pt>
+File: assets/DSiBox.png Graphic file (type png)
+
+<use assets/DSiBox.png>
+Package pdftex.def Info: assets/DSiBox.png used on input line 248.
+(pdftex.def)             Requested size: 159.333pt x 43.41734pt.
+ <assets/DSi.png, id=245, 1184.17406pt x 659.46375pt>
+File: assets/DSi.png Graphic file (type png)
+
+<use assets/DSi.png>
+Package pdftex.def Info: assets/DSi.png used on input line 248.
+(pdftex.def)             Requested size: 239.00558pt x 133.09792pt.
+ [8
+
+ <./assets/DSiBox.png> <./assets/DSi.png (PNG copy)>]
+Overfull \hbox (16.08443pt too wide) in paragraph at lines 285--285
+[]  
  []
 
+<assets/HSModel.png, id=271, 1796.7125pt x 776.9025pt>
+File: assets/HSModel.png Graphic file (type png)
 
-Overfull \hbox (23.61761pt too wide) detected at line 161
-[]
- []
-
-[8
-
-] <assets/DifCloseAlGaAs3D.png, id=244, 493.845pt x 654.445pt>
-File: assets/DifCloseAlGaAs3D.png Graphic file (type png)
-
-<use assets/DifCloseAlGaAs3D.png>
-Package pdftex.def Info: assets/DifCloseAlGaAs3D.png used on input line 181.
-(pdftex.def)             Requested size: 79.66649pt x 105.57213pt.
+<use assets/HSModel.png>
+Package pdftex.def Info: assets/HSModel.png used on input line 285.
+(pdftex.def)             Requested size: 286.80426pt x 124.01057pt.
  [9
 
- <./assets/DifCloseAlGaAs3D.png>]
-<assets/D1CAlGaAs.png, id=272, 514.92375pt x 636.12656pt>
-File: assets/D1CAlGaAs.png Graphic file (type png)
-
-<use assets/D1CAlGaAs.png>
-Package pdftex.def Info: assets/D1CAlGaAs.png used on input line 197.
-(pdftex.def)             Requested size: 149.37697pt x 184.53021pt.
-
-<assets/D1OAlGaAs.png, id=273, 517.935pt x 635.37375pt>
-File: assets/D1OAlGaAs.png Graphic file (type png)
-
-<use assets/D1OAlGaAs.png>
-Package pdftex.def Info: assets/D1OAlGaAs.png used on input line 197.
-(pdftex.def)             Requested size: 149.37697pt x 183.24538pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 197.
- [10
-
- <./assets/D1CAlGaAs.png (PNG copy)> <./assets/D1OAlGaAs.png (PNG copy)>]
-<assets/D1CAlGaAsNd.png, id=300, 522.45187pt x 642.14906pt>
-File: assets/D1CAlGaAsNd.png Graphic file (type png)
-
-<use assets/D1CAlGaAsNd.png>
-Package pdftex.def Info: assets/D1CAlGaAsNd.png used on input line 213.
-(pdftex.def)             Requested size: 149.37697pt x 183.60228pt.
-File: assets/D1CAlGaAsNd.png Graphic file (type png)
- <use assets/D1CAlGaAsNd.png>
-Package pdftex.def Info: assets/D1CAlGaAsNd.png used on input line 213.
-(pdftex.def)             Requested size: 149.37697pt x 183.60228pt.
- [11
-
- <./assets/D1CAlGaAsNd.png (PNG copy)>]
-<assets/D1AlGaAs_Si.png, id=326, 520.19344pt x 646.66594pt>
-File: assets/D1AlGaAs_Si.png Graphic file (type png)
-
-<use assets/D1AlGaAs_Si.png>
-Package pdftex.def Info: assets/D1AlGaAs_Si.png used on input line 222.
-(pdftex.def)             Requested size: 151.3706pt x 188.1697pt.
-
-Overfull \vbox (2.0788pt too high) detected at line 222
- []
-
-[12
-
- <./assets/D1AlGaAs_Si.png (PNG copy)>] [13
-
-]
-<assets/J1DCAlGaAs.png, id=379, 542.025pt x 660.96938pt>
-File: assets/J1DCAlGaAs.png Graphic file (type png)
-
-<use assets/J1DCAlGaAs.png>
-Package pdftex.def Info: assets/J1DCAlGaAs.png used on input line 245.
-(pdftex.def)             Requested size: 139.4179pt x 170.0124pt.
-
-<assets/J1DOAlGaAs.png, id=380, 528.47438pt x 663.22781pt>
-File: assets/J1DOAlGaAs.png Graphic file (type png)
-
-<use assets/J1DOAlGaAs.png>
-Package pdftex.def Info: assets/J1DOAlGaAs.png used on input line 245.
-(pdftex.def)             Requested size: 139.4179pt x 174.96516pt.
- [14
-
- <./assets/J1DCAlGaAs.png (PNG copy)> <./assets/J1DOAlGaAs.png (PNG copy)>]
-<assets/J1DCAlGaAsNd.png, id=406, 539.76656pt x 659.46375pt>
-File: assets/J1DCAlGaAsNd.png Graphic file (type png)
-
-<use assets/J1DCAlGaAsNd.png>
-Package pdftex.def Info: assets/J1DCAlGaAsNd.png used on input line 263.
-(pdftex.def)             Requested size: 139.4179pt x 170.33957pt.
-File: assets/J1DCAlGaAsNd.png Graphic file (type png)
- <use assets/J1DCAlGaAsNd.png>
-Package pdftex.def Info: assets/J1DCAlGaAsNd.png used on input line 263.
-(pdftex.def)             Requested size: 139.4179pt x 170.33957pt.
- [15
-
- <./assets/J1DCAlGaAsNd.png (PNG copy)>]
-<assets/J1DAlGaAs_Si.png, id=431, 542.025pt x 660.21657pt>
-File: assets/J1DAlGaAs_Si.png Graphic file (type png)
-
-<use assets/J1DAlGaAs_Si.png>
-Package pdftex.def Info: assets/J1DAlGaAs_Si.png used on input line 272.
-(pdftex.def)             Requested size: 151.3706pt x 184.37582pt.
- [16
-
- <./assets/J1DAlGaAs_Si.png (PNG copy)>]
+ <./assets/HSModel.png>]
 \tf@nav=\write6
 \openout6 = `index.nav'.
 
@@ -1626,14 +1641,13 @@ Package pdftex.def Info: assets/J1DAlGaAs_Si.png used on input line 272.
 \tf@snm=\write8
 \openout8 = `index.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 274.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 274.
-
-(./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 274.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 274.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
+ (./index.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 376B901197B2434BCF889FDAD8EDA351;195.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1642,35 +1656,47 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 274.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 289.
  ) 
 Here is how much of TeX's memory you used:
- 20872 strings out of 493013
- 368500 string characters out of 6139316
- 428330 words of memory out of 5000000
- 23928 multiletter control sequences out of 15000+600000
- 23378 words of font info for 41 fonts, out of 8000000 for 9000
+ 20930 strings out of 493013
+ 369177 string characters out of 6139316
+ 425448 words of memory out of 5000000
+ 23981 multiletter control sequences out of 15000+600000
+ 55602 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,14n,55p,568b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,55p,405b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dis
-t/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm
--mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/
-usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf-dist/fonts/
+t/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm
+-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/
+share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-dist/fonts/
 type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.
 pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-d
-ist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/l
-m/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share
-/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1
-/public/lm/lmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm144
-0.pfb>
-Output written on index.pdf (16 pages, 1064844 bytes).
+ist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/l
+m/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/
+texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></u
+sr/share/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf-dist/font
+s/type1/public/lm/lmss9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10
+.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf-d
+ist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/l
+m/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/
+texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msam7.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm
+0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/
+share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dis
+t/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on index.pdf (9 pages, 1212964 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 455 compressed objects within 5 object streams
- 34 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 396 PDF objects out of 1000 (max. 8388607)
+ 321 compressed objects within 4 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{color}
 
 \DeclareGraphicsRule{.gif}{eps}{.gif.bb}{‘convert #1 ’eps:-’ }
 
@@ -14,7 +15,7 @@
 % цветовая схема
 \usecolortheme{dove}
 
-\title{Моделирование деградации процессов записи/удаления в энергонезависимой памяти на основе квантовых точек}
+\title{Моделирование термической деградации $AlGaAs$ гетероструктур}
 
 \author[Прохоров М.Д.]{Выполнил: студент гр. РЛ6--82 Прохоров М.Д.\\ Руководитель: к.т.н. доц. Данилов И.И}
 \date{Москва, 2017}
@@ -29,249 +30,263 @@
 % \begin{frame}
 % 	\tableofcontents
 % \end{frame} 
-\section{Постановка проблемы}
+% \section{Постановка проблемы}
 \begin{frame}
 	\frametitle{Постановка проблемы}
 	\begin{columns}
-	\column{0.6\textwidth}
+	\column{0.22\textwidth}
 		\begin{center}
-			\includegraphics[width=\textwidth]{assets/DiplomaTrouble1}
+			\includegraphics[width=\textwidth]{assets/Trouble}
 		\end{center}
-	\column{0.4\textwidth}
+	\column{0.05\textwidth}
+		\Huge{$\Rightarrow$}
+	\column{0.33\textwidth}
 		\begin{center}
-			\includegraphics[width=\textwidth]{assets/Flash}
+			\includegraphics[width=\textwidth]{assets/AlgWrk}
+		\end{center}
+	\column{0.05\textwidth}
+		\Huge{$\Rightarrow$}
+	\column{0.33\textwidth}
+		\begin{center}
+			\includegraphics[width=0.95\textwidth]{assets/Cond}
 		\end{center}
 	\end{columns}
 \end{frame}
-\begin{frame}
-	\frametitle{Постановка проблемы}
-	\begin{center}
-		\includegraphics[width=0.9\textwidth]{assets/DiplomaTrouble2}
-	\end{center}
-	Необходимо разработать алгоритм расчета деградации основных параметров QD-Flash для обеспечения заданного уровня надежности еще на этапе проектирования.
-\end{frame}
+
 \begin{frame}
 	\frametitle{Цели и задачи}
+	\color{blue}
 	Цель работы:
 	\begin{itemize}
-		\item Нахождение модели деградации процессов записи/стирания информации в запоминающих устройствах на основе квантовых точек.
+		\item Разработка модели термической деградации слоистых гетероструктур на основе GaAs для интеграции в методику обеспечения заданного уровня надёжности устройства на их основе.
 	\end{itemize}
 	Задачи работы:
 	\begin{itemize}
-		\item Исследования механизма деградации гетероструктуры и математического метода моделирования деградации гетероструктуры;
-		\item Исследование устройства работы запоминающего устройства на основе квантовых точек и математической модели моделирования процессов записи/стирания информации;
-		\item Разработка алгоритма расчета деградации процессов записи/стирания информации в запоминающем устройстве на основе квантовых точек.
+		\item Исследование математического аппарата для моделирования диффузионного размытия гетероструктур под действием градиента концентрации при фиксированной температуре системы;
+		\item Исследование математического аппарата для моделирования токопереноса через гетероструктуру;
+		\item Разработка алгоритма термической деградации гетероструктуры на основе $GaAs$.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Деградация зонной структуры}
+	\frametitle{Численное моделирование физических процессов}
+	\centering
+	{\color{blue} Метод конечных разностей:}
 	\begin{columns}
-	\column{0.5\textwidth}
-		\begin{center}
-			\includegraphics[width=0.9\textwidth]{assets/StuctStructZone}
-		\end{center}
-	\column{0.5\textwidth}
-			Термическая деградации зонной структуры запоминающего устройства обуславливается диффузионным расплытием гетеропереходов:
-			\begin{itemize}
-				\item $i$--$GaAs$/$n^{+}$--$Al_{x}Ga_{1-x}As$;
-				\item $n^{+}$--$Al_{x}Ga_{1-x}As$/$i$--$InAs$;
-				\item $i$--$InAs$/$i$--$Al_{y}Ga_{1-y}As$;
-				\item $i$--$Al_{y}Ga_{1-y}As$/$i$--$GaAs$.
-			\end{itemize}
-			Необходимо выяснить какие процессы доминируют, и какими можно пренебречь.
+	\column{0.45\textwidth}
+		\centering
+			{\color{red}Аппроксимация первой производной:}
+			\small
+			\begin{gather*}
+				\frac{d}{dx}S(x_{0}) = \frac{S(x_{0} + \Delta x) - S(x_{0})}{\Delta x };
+			\end{gather*}
+	\column{0.55\textwidth}
+		\centering
+		{\color{red}Аппроксимация второй производной:}
+			\small
+			\begin{gather*}
+				\frac{d^{2}}{dx^{2}}S(x_{0})  = \frac{S(x_{0} + \Delta x) - 2S(x_{0}) + S(x_{0} - x \Delta)}{ \Delta x ^{2}};
+			\end{gather*}
 	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Диффузионное размытие}
-	Диффузионное расплытие описывается с законами Фика:
-	\begin{gather*}
-		\overline{J} = - D \nabla C,\,
-		\overline{J}_{x} = - \overline{e}_{x}D_{x} \frac{\delta}{\delta x} C_{x};\\
-		\frac{\delta}{\delta t}C = - \nabla (D \nabla C),\,
-		\frac{\delta}{\delta t}C_{x} = - \frac{\delta}{\delta x} D_{x} \frac{\delta}{\delta x} C_{x};\\
-		D_{i-Al_{x}Ga_{1-x}As} = D_{0}\exp\bigg[-\frac{E_{a}}{k_{B}T}\bigg],\, D_{Al,Si} = D_{i-Al_{x}Ga_{1-x}As}\Big( \frac{N_{D}}{n_{i}} \Big)^{3}.
-	\end{gather*}
-	Для моделирования диффузионных процессов используются численные методы, одни из них~--- <<Метод конечных разностей>>. Метод заключается в аппроксимации дифференциальных операторов конечными разностями:
-	\begin{gather*}
-		\frac{\delta y_{i} }{\delta x } = \frac{y_{i+1} - y_{i}}{\Delta x};\\
-		\frac{\delta^{2} y_{i} }{\delta x^{2} } = \frac{y_{i+1} - 2y_{i} + y_{i-1}}{\Delta x^2}.
-	\end{gather*}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Конечно-разностная схема для решения II закона Фика, при постоянном коэффициенте диффузии}
+\rule{ \textwidth}{0.5mm}
+{\color{blue} Конечно-разностная схема}
 	\begin{columns}
-	\column{0.5\textwidth}
-		<<Закрытая>> система:
-		\begin{equation*}
-			\begin{cases}
-				C^{i+1}_{1} = (1 - \lambda)C^{i}_{1} + \lambda C^{i}_{2};\\
-				C^{i+1}_{k} = \lambda C^{i}_{k-1} + (1 - 2\lambda)C^{i}_{k} + \lambda C^{i}_{k+1};\\
-				k \in [2,\,\dots,\,N-1];\\
-				C^{i+1}_{N} = (1 - \lambda)C^{i}_{N} + \lambda C^{i}_{N-1};\\
-				\lambda = D\frac{\Delta t}{\Delta x^{2}}.
-			\end{cases}
-		\end{equation*}
-	\column{0.5\textwidth}
-		<<Открытая>> система:
-		\begin{equation*}
-			\begin{cases}
-				C^{i+1}_{1} = C^{i}_{1};\\
-				C^{i+1}_{k} = \lambda C^{i}_{k-1} + (1 - 2\lambda)C^{i}_{k} + \lambda C^{i}_{k+1};\\
-				k \in [2,\,\dots,\,N-1];\\
-				C^{i+1}_{N} = C^{i}_{N};\\
-				\lambda = D\frac{\Delta t}{\Delta x^{2}}.
-			\end{cases}
-		\end{equation*}
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Конечно-разностная схема для решения II закона Фика, при коэффициенте диффузии зависящем от концентрации}
-	\begin{columns}
-	\column{0.5\textwidth}
-		<<Закрытая>> система:
-		\begin{equation*}
-			\begin{cases}
-				C^{i+1}_{1} = (1 - \lambda_{+})C^{i}_{1} + \lambda_{+} C^{i}_{2};\\
-				C^{i+1}_{k} = \lambda_{-}^{i} C^{i}_{k-1} + (1 - \lambda^{i}_{+} - \lambda^{i}_{-})C^{i}_{k} + \lambda^{i}_{+} C^{i}_{k+1},\\
-				k \in [2,\,\dots,\,N-1];\\
-				C^{i+1}_{N} = (1 - \lambda_{-})C^{i}_{N} + \lambda_{-} C^{i}_{N-1};\\
-				\lambda^{i}_{+} = D_{j+}^{i}\frac{\Delta t}{\Delta x^{2}};\\
-				\lambda^{i}_{-} = D_{j-}^{i}\frac{\Delta t}{\Delta x^{2}};\\
-				D_{j\pm}^{i} = \frac{D^{i}_{j} + D^{i}_{j\pm1}}{2}.
-			\end{cases}
-		\end{equation*}
-	\column{0.5\textwidth}
-		<<Открытая>> система:
-		\begin{equation*}
-			\begin{cases}
-				C^{i+1}_{1} = C^{i}_{1};\\
-				C^{i+1}_{k} = \lambda_{-}^{i} C^{i}_{k-1} + (1 - \lambda^{i}_{+} - \lambda^{i}_{-})C^{i}_{k} + \lambda^{i}_{+} C^{i}_{k+1};\\
-				k \in [2,\,\dots,\,N-1];\\
-				C^{i+1}_{N} = C^{i}_{N};\\
-				\lambda^{i}_{+} = D_{j+}^{i}\frac{\Delta t}{\Delta x^{2}};\\
-				\lambda^{i}_{-} = D_{j-}^{i}\frac{\Delta t}{\Delta x^{2}};\\
-				D_{j\pm}^{i} = \frac{D^{i}_{j} + D^{i}_{j\pm1}}{2}.
-			\end{cases}
-		\end{equation*}
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Исследование диффузионного расплытия гетероструктур}
-	\begin{columns}
-	\column{0.6\textwidth}
-		Исследуем расплытие данных гетероструктур:
-		\begin{itemize}
-			\item $i$--$GaAs$/$n^{+}$--$Al_{x}Ga_{1-x}As$;
-			\item $n^{+}$--$Al_{x}Ga_{1-x}As$/$i$--$InAs$;
-			\item $i$--$InAs$/$i$--$Al_{y}Ga_{1-y}As$;
-			\item $i$--$Al_{y}Ga_{1-y}As$/$i$--$GaAs$.
-		\end{itemize}
-		на примере симметричной ГС при различных температурах и выявим доминирующий процесс.
 	\column{0.4\textwidth}
-		Структура для определения доминирующего диффузионного процесса:
+		\centering
+		{\color{red}Уравнения диффузии:}
+		\begin{equation*}
+			\frac{\delta}{\delta t} C = \frac{\delta}{\delta x}D\frac{\delta}{\delta x} C;
+		\end{equation*}
+	\column{0.6\textwidth}
+		\centering
+		{\color{red}Уравнение Шредингера:}
+		\begin{equation*}
+			-\frac{\hbar^{2}}{2}\frac{d}{dx}\frac{1}{m(x)}\frac{d}{dx}\psi(x) + U(x)\psi(x) = E\psi(x);
+		\end{equation*}\\
+	\end{columns}
+
+	\begin{columns}
+	\column{0.4\textwidth}
 		\begin{center}
-			\includegraphics[width=0.5\textwidth]{assets/DifCloseAlGaAs3D}
+			\includegraphics[width=\textwidth]{assets/Diffusion}
+		\end{center}
+	\column{0.6\textwidth}
+		\begin{center}
+			\includegraphics[width=.7\textwidth]{assets/Approx}
 		\end{center}
 	\end{columns}
+
 \end{frame}
 
 \begin{frame}
-	\frametitle{Моделирование диффузионного размытия $i\!-\!GaAs/i\!-\!Al_{45}Ga_{55}As$}
+	\frametitle{Численное моделирование диффузии}
+	{\color{blue}Коэффициент диффузии постоянен:}
+	\begin{equation*}
+		\begin{cases}
+			D = Const;\\
+			\frac{\delta}{\delta t} C = D \frac{\delta^{2}}{\delta x^{2}} C;
+		\end{cases} \Rightarrow
+		\frac{C^{i+1}_{j} - C^{i}_{j}}{\Delta t} = \frac{C^{i}_{j+1} - 2C^{i}_{j} + C^{i}_{j-1}}{\Delta x^2},\,\text{где }
+		C^{i}_{j} = C(x_{j}, t_{i}).
+	\end{equation*}
+
 	\begin{columns}
 	\column{0.5\textwidth}
-		\begin{center}
-			\includegraphics[width=0.75\textwidth]{assets/D1CAlGaAs}
-		\end{center}
-		<<Закрытая>> система при $T = 800K$.
+		\centering
+		{\color{red}<<Закрытая>> система:}\\
+		\includegraphics[width=0.77\linewidth]{assets/CD}
+		\small
+		\begin{equation*}
+		\begin{cases}
+			C^{i+1}_{1} = (1 - \lambda)C^{i}_{1} + \lambda C^{i}_{2};\\
+			C^{i+1}_{j} = \lambda C^{i}_{j-1} + (1 - 2\lambda)C^{i}_{j} + \lambda C^{i}_{j+1};\\
+			C^{i+1}_{N} = (1 - \lambda)C^{i}_{N} + \lambda C^{i}_{N-1};\\
+			\lambda = D\frac{\Delta t}{\Delta x^{2}}.
+		\end{cases}
+		\end{equation*}
 	\column{0.5\textwidth}
-		\begin{center}
-			\includegraphics[width=0.75\textwidth]{assets/D1OAlGaAs}
-		\end{center}
-		<<Открытая>> система при $T = 800K$.
+		\centering
+		{\color{red}<<Открытая>> система:}\\
+	   	\includegraphics[width=\linewidth]{assets/OD}
+		\small
+		\begin{equation*}
+		\begin{cases}
+			C^{i+1}_{1} = C^{i}_{1};\\
+			C^{i+1}_{j} = \lambda C^{i}_{j-1} + (1 - 2\lambda)C^{i}_{j} + \lambda C^{i}_{j+1};\\
+			C^{i+1}_{N} = C^{i}_{N};\\
+			\lambda = D\frac{\Delta t}{\Delta x^{2}}.
+		\end{cases}
+		\end{equation*}
 	\end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Моделирование диффузионного размытия $n\!-\!GaAs/n\!-\!Al_{45}Ga_{55}As$}
+	\frametitle{Численное моделирование диффузии}
+Диффузионное размытие {\color{blue} $i$-$GaAs/i$-$Al_{x}Ga_{1-x}As/i$-$GaAs$}:
+	\begin{columns}
+	\column{0.7\textwidth}
+		\begin{equation*}
+			\label{eq:DNd}
+			D_{Al} = D_{0}\exp\bigg[-\frac{E_{a}}{k_{B}T}\bigg] = D_{0}\exp\bigg[-\frac{3.5}{k_{B}T}\bigg]
+		\end{equation*}
+	\column{0.3\textwidth}
+		\begin{itemize}
+			\item $a = 10$ нм;
+			\item $b = 30$ нм;
+		\end{itemize}
+	\end{columns}
+
 	\begin{columns}
 	\column{0.5\textwidth}
-		\begin{center}
-			\includegraphics[width=0.75\textwidth]{assets/D1CAlGaAsNd}
-		\end{center}
-		<<Закрытая>> система при $T = 640K$ и $Nd = 5*10^{15} sm^{-3}$.
+	\centering
+		{\color{red}<<Закрытая>> система:}\\
+	   	\includegraphics[width=0.6\linewidth]{assets/DCloseBox}\\
+	   	\includegraphics[width=\linewidth]{assets/DCAl}
 	\column{0.5\textwidth}
-		\begin{center}
-			\includegraphics[width=0.75\textwidth]{assets/D1CAlGaAsNd}
-		\end{center}
-		<<Закрытая>> система при $T = 640K$ и $Nd = 5*10^{15} sm^{-3}$.
+	\centering
+		{\color{red}<<Открытая>> система:}\\
+	   	\includegraphics[width=\linewidth]{assets/DOpenBox}\\
+	   	\includegraphics[width=\linewidth]{assets/DOAl}
+
 	\end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Моделирование диффузионного размытия $n^{+}\!-\!GaAs/i\!-\!GaAs/i\!-\!Al_{45}Ga_{55}As/ n^{+}\!-\!GaAs$}
-		\begin{center}
-			\includegraphics[width=0.38\textwidth]{assets/D1AlGaAs_Si}
+	\frametitle{Численное моделирование диффузии}
+	{\color{blue}Коэффициент диффузии зависит от концентрации}:
+	\small
+	\begin{equation*}
+		\begin{cases}
+			D \neq Const;\\
+			\frac{\delta}{\delta t} C = \frac{\delta}{\delta x} D \frac{\delta}{\delta x} C;
+		\end{cases} \Rightarrow
+		\frac{C_{j}^{i+1} - C_{j}^{i}}{\Delta t} = \frac{ D_{j+1/2}^{i}\frac{C^{i}_{j+1} - C^{i}_{j}}{\Delta x} - D_{j-1/2}^{i}\frac{C^{i}_{j} - C^{i}_{j-1}}{\Delta x} }{\Delta x},\,\text{где }		
+		\begin{cases}
+			D_{j\pm1/2}^{i} = \frac{D^{i}_{j} + D^{i}_{j\pm1}}{2} = D_{j\pm}^{i};\\
+			C^{i}_{j} = C(x_{j}, t_{i}).
+		\end{cases}
+	\end{equation*}
+		{\color{red}<<Открытая>> система с проникновением примеси из границ исследуемой области:}\\
+		\begin{columns}
+		\column{0.45\textwidth}
+		   	\includegraphics[width=\linewidth]{assets/ODSI}
+		\column{0.55\textwidth}
+			\large
+			\begin{equation*}
+				\label{eq:DFromC}
+				\begin{cases}
+					C^{i+1}_{1} = C^{i}_{1};\\
+					C^{i+1}_{j} = \lambda_{-}^{i} C^{i}_{j-1} + (1 - \lambda^{i}_{+} - \lambda^{i}_{-})C^{i}_{j} + \lambda^{i}_{+} C^{i}_{j+1};\\
+					C^{i+1}_{N} = C^{i}_{N};\\
+					\lambda^{i}_{+} = D_{j+}^{i}\frac{\Delta t}{\Delta x^{2}};\\
+					\lambda^{i}_{-} = D_{j-}^{i}\frac{\Delta t}{\Delta x^{2}}.
+				\end{cases}
+			\end{equation*}
+		\end{columns}
 
-			Система при $T = 350K$ и $Nd = 2*10^{17} sm^{-3}$
-		\end{center}
+\end{frame}
+\begin{frame}
+	\frametitle{Численное моделирование диффузии}
+	Диффузионное размытие {\color{blue} $n^{+}$-$GaAs/i$-$GaAs/i$-$Al_{x}Ga_{1-x}As/i$-$GaAs/n^{+}$-$GaAs$}:
+	\begin{equation*}
+		D_{Al,Si} = D_{0}\exp\bigg[-\frac{E_{a}}{k_{B}T}\bigg]\Big( \frac{N_{D}}{n_{i}} \Big)^{3} = D_{0}\exp\bigg[-\frac{3.5}{k_{B}T}\bigg]\Big( \frac{N_{D}}{n_{i}} \Big)^{3}
+	\end{equation*}
+	{\color{red}<<Открытая>> система с проникновением частиц из границ исследуемой области:}\\
+	\centering
+   	% \includegraphics[width=0.3\linewidth]{assets/DSiBox}\\
+   	% \includegraphics[width=0.6\linewidth]{assets/DSi}
+\begin{columns}
+\column{0.4\textwidth}
+   	\includegraphics[width=\linewidth]{assets/DSiBox}
+   	\begin{itemize}
+   		\item $a = 10$ нм;
+   		\item $b = 30$ нм;
+   	\end{itemize}
+\column{0.6\textwidth}
+   	\includegraphics[width=\linewidth]{assets/DSi}
+\end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Численный метод моделирования токопереноса через гетероструктуру}
-	При моделировании токопереноса через гетероструктуру воспользуемся методом конечных разностей:
+	\frametitle{Численное моделирование токопереноса}
+
+\begin{columns}
+\column{0.275\textwidth}
+	\vspace{0pt} 
+	{\color{blue}\large Формула Цу-Есаки:}
+	{\footnotesize
+	\begin{gather*}
+		J(V) = \frac{2mek_{B}T}{(2\pi)^{2}\hbar^{3}}\int\limits_{0}^{\infty}T(E)D(E)dE;
+	\end{gather*}}
+	{\color{red}Функция снабжения:}
+	{\footnotesize
+	\begin{gather*}
+		D(E) = \ln\frac{1 + \exp{\frac{E_{F}-E}{k_{B}T}} }{ 1 + \exp{\frac{E_{F}-E-eV}{k_{B}T}} };
+	\end{gather*}}
+	{\color{red}Прозрачность ГС:}
+	{\footnotesize
+	\begin{gather*}
+		T(E) = |T_{L}|^{2}\frac{|k_{R}|m_{L}}{|k_{L}|m_{R}};\\
+		\psi_{L} = \exp [ik_{L}z];\\
+		\psi_{R} = T_{L}\psi_{L} = T_{L}\exp [ik_{L}z];
+	\end{gather*}}
+\column{0.01\textwidth}
+	\rule[1mm]{0.2ex}{70mm}
+\column{0.72\textwidth}
+	{\color{blue}\large Численное решение уравнение Шредингера:}
+   	\includegraphics[width=\linewidth]{assets/HSModel}
+\begin{equation*}
+	\psi_{i-1}\frac{m^{*}_{i+1}}{m^{*}_{i-1}} + \psi_{i}\bigg(  \frac{2\Delta^{2}m^{*}_{i+1}}{\hbar^{2}}(E-U_{i}) - \frac{m^{*}_{i+1}}{m^{*}_{i-1}} - 1 \bigg) + \psi_{i+1} = 0,
+\end{equation*}
+
+\end{columns}
+
 \end{frame}
 
-\begin{frame}
-	\frametitle{Моделирование моделирование деградации ВАХ ГС $i\!-\!GaAs/i\!-\!Al_{45}Ga_{55}As$}
-	\begin{columns}
-	\column{0.5\textwidth}
-		\begin{center}
-			\includegraphics[width=0.7\textwidth]{assets/J1DCAlGaAs}
 
-			<<Закрытая>> система при $T = 800K$.
-		\end{center}
-	\column{0.5\textwidth}
-		\begin{center}
-			\includegraphics[width=0.7\textwidth]{assets/J1DOAlGaAs}
-
-			<<Открытая>> система при $T = 800K$.
-		\end{center}
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Моделирование моделирование деградации ВАХ ГС $n\!-\!GaAs/n\!-\!Al_{45}Ga_{55}As$}
-	\begin{columns}
-	\column{0.5\textwidth}
-		\begin{center}
-			\includegraphics[width=0.7\textwidth]{assets/J1DCAlGaAsNd}
-
-			<<Закрытая>> система при $T = 640K$ и $Nd = 5*10^{15} sm^{-3}$.
-		\end{center}
-	\column{0.5\textwidth}
-		\begin{center}
-			\includegraphics[width=0.7\textwidth]{assets/J1DCAlGaAsNd}
-
-			<<Закрытая>> система при $T = 640K$ и $Nd = 5*10^{15} sm^{-3}$.
-		\end{center}
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Моделирование моделирование деградации ВАХ ГС $n^{+}\!-\!GaAs/i\!-\!GaAs/i\!-\!Al_{45}Ga_{55}As/ n^{+}\!-\!GaAs$}
-		\begin{center}
-			\includegraphics[width=0.38\textwidth]{assets/J1DAlGaAs_Si}
-
-			Система при $T = 350K$ и $Nd = 2*10^{17} sm^{-3}$
-		\end{center}
-\end{frame}
 
 \end{document}
+
 
 % \begin{frame}
 % 	\frametitle{Цели и задачи}
@@ -281,3 +296,5 @@
 % \column{0.5\textwidth}
 % \column{0.5\textwidth}
 % \end{columns}
+
+% \rule[4mm]{0.2ex}{60mm}
