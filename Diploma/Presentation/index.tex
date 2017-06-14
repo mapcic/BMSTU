@@ -6,10 +6,8 @@
 \usepackage{amsmath}
 \usepackage{color}
 
-\DeclareGraphicsRule{.gif}{eps}{.gif.bb}{‘convert #1 ’eps:-’ }
-
 % отключить клавиши навигации
-% \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{navigation symbols}{}
 % тема оформления
 \usetheme{default}
 % цветовая схема
@@ -252,8 +250,17 @@
 
 \begin{columns}
 \column{0.275\textwidth}
-	\vspace{0pt} 
+	\centering
 	{\color{blue}\large Формула Цу-Есаки:}
+\column{0.72\textwidth}
+	\centering
+	{\color{blue}\large Численное решение уравнение Шредингера:}
+\end{columns}
+
+
+\begin{columns}
+\column{0.29\textwidth}
+	% {\color{blue}\large Формула Цу-Есаки:}
 	{\footnotesize
 	\begin{gather*}
 		J(V) = \frac{2mek_{B}T}{(2\pi)^{2}\hbar^{3}}\int\limits_{0}^{\infty}T(E)D(E)dE;
@@ -273,23 +280,29 @@
 \column{0.01\textwidth}
 	\rule[1mm]{0.2ex}{70mm}
 \column{0.72\textwidth}
-	{\color{blue}\large Численное решение уравнение Шредингера:}
+	% {\color{blue}\large Численное решение уравнение Шредингера:}
    	\includegraphics[width=\linewidth]{assets/HSModel}
-\begin{equation*}
-	\psi_{i-1}\frac{m^{*}_{i+1}}{m^{*}_{i-1}} + \psi_{i}\bigg(  \frac{2\Delta^{2}m^{*}_{i+1}}{\hbar^{2}}(E-U_{i}) - \frac{m^{*}_{i+1}}{m^{*}_{i-1}} - 1 \bigg) + \psi_{i+1} = 0,
-\end{equation*}
+
+   	{\color{red}Конечно-разностная схема для внутренних точек:}
+   	
+   	{\scriptsize
+	\begin{equation*}
+		\psi_{i-1}\frac{m^{*}_{i+1}}{m^{*}_{i-1}} + \psi_{i}\bigg(  \frac{2\Delta^{2}m^{*}_{i+1}}{\hbar^{2}}(E-U_{i}) - \frac{m^{*}_{i+1}}{m^{*}_{i-1}} - 1 \bigg) + \psi_{i+1} = 0,
+	\end{equation*}}
 
 
+{\color{red}Конечно-разностная схема для граничных точек:}
 \begin{columns}
 \column{0.5\textwidth}
+	\footnotesize
 	\begin{gather*}
-		\label{eq:ShBound}
 		\begin{cases}
 			(ik_{L}-1)\psi_{1} + \psi_{2} = 2ik_{L}\Delta;\\
 			\psi_{N-1} + (ik_{R}\Delta - 1)\psi_{N} = 0;
 		\end{cases}
 	\end{gather*}
 \column{0.5\textwidth}
+	\footnotesize
 	\begin{gather*}
 		\begin{cases}
 			(ik_{L}-1)\psi_{1} + \psi_{2} = 0\Delta;\\
@@ -297,13 +310,29 @@
 		\end{cases}
 	\end{gather*}
 \end{columns}
-
-
 \end{columns}
-
 \end{frame}
 
+\begin{frame}
+	\frametitle{Численное моделирование токопереноса}
+	\begin{columns}
+	\column{0.5\textwidth}
+	   	\includegraphics[width=\linewidth]{assets/BHS}
 
+		{\scriptsize $\bullet$ $a = 5$ нм; $\bullet$ $b = 5$ нм; $\bullet$ $\Delta E_{c} = 1$эВ.}
+	\column{0.01\textwidth}
+		\rule[1mm]{0.2ex}{70mm}
+	\column{0.5\textwidth}
+	   	\includegraphics[width=\linewidth]{assets/RTHS}
+
+		{\scriptsize $\bullet$ $a = 5$ нм; $\bullet$ $b = 5$ нм; $\bullet$ $c = 5$ нм; $\bullet$ $\Delta E_{c} = 1$эВ.}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Учет самосогласованного потенциала}
+	
+\end{frame}
 
 \end{document}
 
