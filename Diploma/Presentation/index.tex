@@ -331,7 +331,25 @@
 
 \begin{frame}
 	\frametitle{Учет самосогласованного потенциала}
-	
+	{\color{blue}Уравнеие Пуассона:}
+	\begin{equation*}
+		\frac{d}{dz}\varepsilon(z)\frac{d}{z}V_{s} = \frac{e}{\varepsilon_{0}}[n(z) - N_{D}(z)];
+	\end{equation*}
+
+\begin{columns}
+\column{0.5\textwidth}
+	{\color{red}Концентрация электронов в ГС:}
+	\footnotesize
+	\begin{gather*}
+		{\tiny n(z) = \begin{cases}
+					\sum\limits_{L,R}\int\limits_{U_{l(r)}}^{\infty} \frac{|\psi_{L(R)}|^{2}}{\sqrt{E - U_{L(R)}}} \ln \bigg( 1 + \exp\bigg[ -\frac{E - E_{F} - U_{la(ra)}}{k_{B}T} \bigg] \bigg);\\
+					N^{3D} \int\limits_{0}^{+\infty}\! \frac{\sqrt[]{E}}{e^{\frac{E-\mu}{kT}}+1} \,dE;
+				\end{cases}}\\
+		N^{A} = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}};\\
+		N^{3D} = \frac{2^{1/2}m^{3/2}}{\pi^{2}\hbar^{3}}; 
+	\end{gather*}
+\column{0.5\textwidth}
+\end{columns}
 \end{frame}
 
 \end{document}
