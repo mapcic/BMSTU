@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{color}
+\usepackage[export]{adjustbox}
 
 % отключить клавиши навигации
 \setbeamertemplate{navigation symbols}{}
@@ -341,7 +342,7 @@
 	{\color{red}Концентрация электронов в ГС:}
 	\footnotesize
 	\begin{gather*}
-		{\tiny n(z) = \begin{cases}
+		{\tiny \begin{cases}
 					\sum\limits_{L,R}\int\limits_{U_{l(r)}}^{\infty} \frac{|\psi_{L(R)}|^{2}}{\sqrt{E - U_{L(R)}}} \ln \bigg( 1 + \exp\bigg[ -\frac{E - E_{F} - U_{la(ra)}}{k_{B}T} \bigg] \bigg);\\
 					N^{3D} \int\limits_{0}^{+\infty}\! \frac{\sqrt[]{E}}{e^{\frac{E-\mu}{kT}}+1} \,dE;
 				\end{cases}}\\
@@ -349,7 +350,169 @@
 		N^{3D} = \frac{2^{1/2}m^{3/2}}{\pi^{2}\hbar^{3}}; 
 	\end{gather*}
 \column{0.5\textwidth}
+	{\color{red}Конечно-разностная схема. Метод Гулеля:}
+	\tiny
+	\begin{gather*}
+	n(z) = n_{0}\exp\frac{V_{S}(z)}{V_{ref}};\,
+	n_{0} = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}} \exp \frac{E_{F} - E_{c} }{k_{B}T};\,
+	V_{ref} = \frac{k_{B}T}{e};\\
+	n_{new} = n_{old}\exp\frac{V_{new} - V_{old}}{V_{ref}}
+\end{gather*}
+\begin{equation*}
+	\frac{d}{dz}\varepsilon(z)\frac{d}{z}V_{new} - n_{old}\frac{eV_{new}}{\varepsilon_{0}V_{ref}} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\bigg( 1 - \frac{V_{old}}{V_{ref}} \bigg) - N_{D}(z)\bigg];
+\end{equation*}
 \end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Исследование влияния параметров РТГС на ВАХ}
+	{\color{blue} Исследуемая модель:}
+	\begin{columns}
+	\column{0.35\textwidth}
+	   	\includegraphics[width=\linewidth]{assets/BD}
+	\column{0.65\textwidth}
+	   	\includegraphics[width=\linewidth]{assets/RTHS}
+	\end{columns}
+
+\begin{columns}
+\column{0.33\textwidth}
+	{\color{red} Параметры ямы:}
+	\footnotesize
+	\begin{itemize}
+		\item Ширина ямы (<<c>>): \begin{itemize}
+			\footnotesize
+			\item 10 монослоев;
+			\item 7 монослоев;
+			\item 5 монослоев;
+			\item 3 монослоев;
+		\end{itemize}
+		\item Глубина ямы (<<$\Delta E_{w}$>>): \begin{itemize}
+			\footnotesize
+			\item -0.3 eV;
+			\item 0.3 eV;
+			\item 0.7 eV;
+			\item 1 eV;
+		\end{itemize} 
+	\end{itemize}
+\column{0.01\textwidth}
+	\rule[0mm]{0.2ex}{40mm}
+\column{0.33\textwidth}
+	{\color{red} Параметры барьеров:}
+	\footnotesize
+	\begin{itemize}
+		\item Ширина барьеров (<<b>>): \begin{itemize}
+			\footnotesize
+			\item 10 монослоев;
+			\item 7 монослоев;
+			\item 5 монослоев;
+			\item 3 монослоев;
+		\end{itemize}
+		\item Высота барьера (<<$\Delta E_{b}$>>): \begin{itemize}
+			\footnotesize
+			\item -0.3 eV;
+			\item 0.3 eV;
+			\item 0.7 eV;
+			\item 1 eV;
+		\end{itemize} 
+	\end{itemize}
+\column{0.01\textwidth}
+	\rule[0mm]{0.2ex}{40mm}
+\column{0.33\textwidth}
+	{\color{red} Параметры спейсеров:}
+	\footnotesize
+	\begin{itemize}
+		\item Ширина спейсера (<<a>>): \begin{itemize}
+			\footnotesize
+			\item 10 монослоев;
+			\item 7 монослоев;
+			\item 5 монослоев;
+			\item 3 монослоев;
+		\end{itemize}
+		\item Ширина спейсера с ССП: \begin{itemize}
+			\footnotesize
+			\item -0.3 eV;
+			\item 0.3 eV;
+			\item 0.7 eV;
+			\item 1 eV;
+		\end{itemize} 
+	\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Исследование влияния параметров ямы РТГС на ВАХ}
+	\begin{columns}
+	\column{0.5\textwidth}
+		{\color{blue} Ширина ямы:}\\
+		{\color{red} Прозрачность РТГС:}
+	   	\includegraphics[width=.88\linewidth,center]{assets/qwwt}\\
+		{\color{red} Плотность тока через РТГС:}
+	   	\includegraphics[width=.88\linewidth,center]{assets/qwwj}
+	\column{0.01\textwidth}
+		\rule[-55mm]{0.2ex}{75mm}
+	\column{0.5\textwidth}
+		{\color{blue} Глубина ямы:}\\
+		{\color{red}\small Прозрачность РТГС:}\\
+	   	\includegraphics[width=.88\linewidth,center]{assets/qwt}\\
+		{\color{red} Плотность тока через РТГС:}\\
+	   	\includegraphics[width=.88\linewidth,center]{assets/qwj}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Исследование влияния параметров барьеров РТГС на ВАХ}
+	\begin{columns}
+	\column{0.5\textwidth}
+		{\color{blue} Ширина барьеров:}\\
+		{\color{red} Прозрачность РТГС:}
+	   	\includegraphics[width=.86\linewidth,center]{assets/qbwt}\\
+		{\color{red} Плотность тока через РТГС:}
+	   	\includegraphics[width=.88\linewidth,center]{assets/qbwj}
+	\column{0.01\textwidth}
+		\rule[-55mm]{0.2ex}{75mm}
+	\column{0.5\textwidth}
+		{\color{blue} Высота барьеров:}\\
+		{\color{red}\small Прозрачность РТГС:}\\
+	   	\includegraphics[width=.88\linewidth,center]{assets/qwt}\\
+		{\color{red} Плотность тока через РТГС:}\\
+	   	\includegraphics[width=.88\linewidth,center]{assets/qwj}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Исследование влияния параметров спейсера РТГС на ВАХ}
+	\begin{columns}
+	\column{0.5\textwidth}
+		{\color{blue} Ширина спейсера:}\\
+		{\color{red} Прозрачность РТГС:}
+	   	\includegraphics[width=.86\linewidth,center]{assets/qslt}\\
+		{\color{red} Плотность тока через РТГС:}
+	   	\includegraphics[width=.86\linewidth,center]{assets/qslj}
+	\column{0.01\textwidth}
+		\rule[-55mm]{0.2ex}{75mm}
+	\column{0.5\textwidth}
+		{\color{blue} Ширина спейсера с учетом ССП:}\\
+		{\color{red} Плотность тока через РТГС:}
+	   	\includegraphics[width=.88\linewidth,center]{assets/qslqj}
+	   	\\[39mm]
+		{\color{red} }
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Моделирование термической деградации ВАХ $Al_{x}Ga_{1-x}As$ РТГС }
+\end{frame}
+
+\begin{frame}
+	\frametitle{Цели и задачи}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Цели и задачи}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Цели и задачи}
 \end{frame}
 
 \end{document}
