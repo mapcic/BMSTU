@@ -388,10 +388,10 @@
 		\end{itemize}
 		\item Глубина ямы (<<$\Delta E_{w}$>>): \begin{itemize}
 			\footnotesize
-			\item -0.3 eV;
 			\item 0.3 eV;
 			\item 0.7 eV;
 			\item 1 eV;
+			\item 1.3 eV;
 		\end{itemize} 
 	\end{itemize}
 \column{0.01\textwidth}
@@ -409,8 +409,8 @@
 		\end{itemize}
 		\item Высота барьера (<<$\Delta E_{b}$>>): \begin{itemize}
 			\footnotesize
-			\item -0.3 eV;
 			\item 0.3 eV;
+			\item 0.5 eV;
 			\item 0.7 eV;
 			\item 1 eV;
 		\end{itemize} 
@@ -430,10 +430,10 @@
 		\end{itemize}
 		\item Ширина спейсера с ССП: \begin{itemize}
 			\footnotesize
-			\item -0.3 eV;
-			\item 0.3 eV;
-			\item 0.7 eV;
-			\item 1 eV;
+			\item 10 монослоев;
+			\item 7 монослоев;
+			\item 5 монослоев;
+			\item 3 монослоев;
 		\end{itemize} 
 	\end{itemize}
 \end{columns}
@@ -500,19 +500,101 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Моделирование термической деградации ВАХ $Al_{x}Ga_{1-x}As$ РТГС }
+	\frametitle{Моделирование термической деградации ВАХ $Al_{x}Ga_{1-x}As$ РТГС}
+	{\color{blue}\large Исследуемая модель:}
+	\begin{columns}
+	\column{0.6\textwidth}
+		{\color{red} Схема:}
+	   	\includegraphics[width=.99\linewidth,center]{assets/RTHSModelDiff}
+	\column{0.3\textwidth}
+		{\color{red} Зонная структура:}
+	   	\includegraphics[width=.99\linewidth,center]{assets/BD}
+	\end{columns}
+{\color{red}Структура}: $n^{+}$-$GaAs$/$i$-$GaAs$/$i$-$Al_{0.4}Ga_{0.6}As$/$i$-$GaAs$/$i$-$Al_{0.4}Ga_{0.6}As$/$i$-$GaAs$/$n^{+}$-$GaAs$
+	\begin{columns}
+	\column{0.33\textwidth}
+		{\color{blue} $Al_{x}Ga_{1-x}As$:}\\
+		{\color{red}\footnotesize Период решетки:}\\
+		\scriptsize
+			$p = 0.56$ нм;\\
+		{\color{red}\footnotesize Ширина запрященной зоны:}\\
+		\scriptsize
+			$p = 0.56$ нм;\\
+		{\color{red}\footnotesize Эффективная масса в ЗП:}\\
+		\scriptsize
+			$p = 0.56$ нм;\\
+		{\color{red}\footnotesize Число атомов:}\\
+		\scriptsize
+			$p = 0.56$ нм;\\
+	\column{0.33\textwidth}
+		{\color{blue} Параметры модели:}\\
+		{\color{red}\footnotesize Размеры:}\\
+		\scriptsize
+			$p = 0.56$ монослоев;\\
+			$p = 0.56$ монослоев;\\
+			$p = 0.56$ монослоев;\\
+		{\color{red}\footnotesize Зонная структура:}\\
+			$\Delta E_{c} = \Delta E_{w} = 123x;$
+	\column{0.33\textwidth}
+		{\color{blue} Параметры диффузии:}
+		\scriptsize
+		\begin{equation*}
+			D_{Al,Si} = D_{0}\exp\bigg[-\frac{E_{a}}{k_{B}T}\bigg]\Big( \frac{N_{D}}{n_{i}} \Big)^{3};
+		\end{equation*}
+		$E_{a} = 3.5$эВ -- энергия активации;\\
+		$T = 360$K -- температура системы;\\
+		$D_{0} = 0.2$ -- предъэксподенциальный множитель;\\
+		$N_{D}$ -- концентрация донорной примеси;\\
+		$n_{i}$ -- концентрация собственных носителей заряда.
+	\end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Цели и задачи}
+	\frametitle{Моделирование термической деградации квантовой области}
+	\centering
+	% {\color{blue}$GaAs$/$Al_{0.4}Ga_{0.6}As$/$GaAs$/$Al_{0.4}Ga_{0.6}As$/$GaAs$}
+	\begin{columns}
+	\column{0.5\textwidth}
+		{\color{blue} $N_{D} = n_{i} = 10^{12} m^{-3},\,T = 800K$:}\\
+		{\color{red} Диффузионное расплытие профиля:}\\
+	   	\includegraphics[width=0.85\linewidth,center]{assets/DCAlGaAs}\\
+		{\color{red} Деградация ВАХ:}
+	   	\includegraphics[width=.9\linewidth,center]{assets/JDCAlGaAs}
+	   	\newline\newline\newline\newline
+	\column{0.01\textwidth}
+		\rule[17mm]{0.2ex}{76mm}
+	\column{0.5\textwidth}
+		{\color{blue} $N_{D} = 10^{18}; n_{i} = 10^{12} m^{-3};\,T = 650K$:}
+		{\color{red} Диффузионное расплытие профиля:}\\
+	   	\includegraphics[width=.85\linewidth,center]{assets/DCAlGaAsNd}\\
+		{\color{red} Деградация ВАХ:}\\
+	   	\includegraphics[width=.9\linewidth,center]{assets/JDCAlGaAsNd}
+	   	\newline\newline\newline\newline
+	\end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Цели и задачи}
+	\frametitle{Моделирование термической деградации квантовой области с учетом приконтактных областей}
+	{\large\color{blue} $N_{D}^{Reserve} = 10^{24}m^{-3};\,N_{D} = n_{i} = 10^{12} m^{-3},\,T = 800K$:}\\
+	\begin{columns}
+	\column{0.5\textwidth}
+		{\color{red} Диффузионное расплытие профиля:}\\
+	   	\includegraphics[width=.99\linewidth,center]{assets/DAlGaAs_Si}\\
+	\column{0.01\textwidth}
+		\rule[0mm]{0.2ex}{40mm}
+	\column{0.5\textwidth}
+		{\color{red} Деградация ВАХ:}\\
+	   	\includegraphics[width=.99\linewidth,center]{assets/JDAlGaAs_Si}\\
+	\end{columns}
+	{\large\color{blue}Вывод:}\\
 \end{frame}
 
 \begin{frame}
-	\frametitle{Цели и задачи}
+	\frametitle{Заключение}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Спасибо за внимание!}
 \end{frame}
 
 \end{document}
