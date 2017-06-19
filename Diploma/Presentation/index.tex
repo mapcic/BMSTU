@@ -321,46 +321,60 @@
 	   	\includegraphics[width=\linewidth]{assets/BHS}
 
 		{\scriptsize $\bullet$ $a = 5$ нм; $\bullet$ $b = 5$ нм; $\bullet$ $\Delta E_{c} = 1$эВ.}
+
+	   	\includegraphics[width=\linewidth]{assets/JBHS}
 	\column{0.01\textwidth}
 		\rule[1mm]{0.2ex}{70mm}
 	\column{0.5\textwidth}
-	   	\includegraphics[width=\linewidth]{assets/RTHS}
+	   	\includegraphics[width=1.05\linewidth]{assets/RTHS}
 
 		{\scriptsize $\bullet$ $a = 5$ нм; $\bullet$ $b = 5$ нм; $\bullet$ $c = 5$ нм; $\bullet$ $\Delta E_{c} = 1$эВ.}
+
+	   	\includegraphics[width=1.05\linewidth]{assets/JRTHS}
 	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Учет самосогласованного потенциала}
-	{\color{blue}Уравнеие Пуассона:}
-	\begin{equation*}
-		\frac{d}{dz}\varepsilon(z)\frac{d}{z}V_{s} = \frac{e}{\varepsilon_{0}}[n(z) - N_{D}(z)];
-	\end{equation*}
 
 \begin{columns}
-\column{0.5\textwidth}
-	{\color{red}Концентрация электронов в ГС:}
-	\footnotesize
+\column{0.7\textwidth}
+	{\color{blue}Уравнеие Пуассона:}
+	{\tiny
+	\begin{equation*}
+		\frac{d}{dx}\varepsilon(x)\frac{d}{x}V_{s} = \frac{e}{\varepsilon_{0}}[n(x) - N_{D}(x)];
+	\end{equation*}
+	}
+	% {\color{red}Концентрация электронов в ГС:}
+	% {\tiny
+	% \begin{gather*}
+	% 	{\tiny n(x) = \begin{cases}
+	% 				\frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}}\sum\limits_{L,R}\int\limits_{U_{l(r)}}^{\infty} \frac{|\psi_{L(R)}|^{2}}{\sqrt{E - U_{L(R)}}} \ln \bigg( 1 + \exp\bigg[ -\frac{E - E_{F} - U_{la(ra)}}{k_{B}T} \bigg] \bigg);\\
+	% 				\frac{2^{1/2}m^{3/2}}{\pi^{2}\hbar^{3}} \int\limits_{0}^{+\infty}\! \frac{\sqrt[]{E}}{e^{\frac{E-\mu}{kT}}+1} \,dE;
+	% 			\end{cases}}
+	% \end{gather*}}
+	% {\color{red}Конечно-разностная схема:}
+	% {\tiny
+	% \begin{gather*}
+	% 	\frac{d}{dx}\varepsilon(x)\frac{d}{x}V_{new} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\exp\bigg( \frac{V_{new} - V_{old}}{V_{ref}} \bigg) - N_{D}(x)\bigg];
+	% \end{gather*}}
+	{\color{red}Метод Гумеля:}
+	{\tiny
 	\begin{gather*}
-		{\tiny \begin{cases}
-					\sum\limits_{L,R}\int\limits_{U_{l(r)}}^{\infty} \frac{|\psi_{L(R)}|^{2}}{\sqrt{E - U_{L(R)}}} \ln \bigg( 1 + \exp\bigg[ -\frac{E - E_{F} - U_{la(ra)}}{k_{B}T} \bigg] \bigg);\\
-					N^{3D} \int\limits_{0}^{+\infty}\! \frac{\sqrt[]{E}}{e^{\frac{E-\mu}{kT}}+1} \,dE;
-				\end{cases}}\\
-		N^{A} = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}};\\
-		N^{3D} = \frac{2^{1/2}m^{3/2}}{\pi^{2}\hbar^{3}}; 
-	\end{gather*}
-\column{0.5\textwidth}
-	{\color{red}Конечно-разностная схема. Метод Гулеля:}
+		n(x) = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}} \exp \frac{E_{F}(x) - E_{c}(x) + eV_{s}(x)}{k_{B}T} =  n_{0}(x)\exp\frac{V_{S}(x)}{V_{ref}};\,\\
+		V_{ref} = \frac{k_{B}T}{e}; n_{0}(x) = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}} \exp \frac{E_{F}(x) - E_{c}(x)}{k_{B}T};\\
+		n_{new} = n_{old}\exp\frac{V_{new} - V_{old}}{V_{ref}};
+	\end{gather*}}
+	{\color{red}Конечно-разностная схема:}
 	\tiny
 	\begin{gather*}
-	n(z) = n_{0}\exp\frac{V_{S}(z)}{V_{ref}};\,
-	n_{0} = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}} \exp \frac{E_{F} - E_{c} }{k_{B}T};\,
-	V_{ref} = \frac{k_{B}T}{e};\\
-	n_{new} = n_{old}\exp\frac{V_{new} - V_{old}}{V_{ref}}
-\end{gather*}
-\begin{equation*}
-	\frac{d}{dz}\varepsilon(z)\frac{d}{z}V_{new} - n_{old}\frac{eV_{new}}{\varepsilon_{0}V_{ref}} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\bigg( 1 - \frac{V_{old}}{V_{ref}} \bigg) - N_{D}(z)\bigg];
-\end{equation*}
+		\frac{d}{dx}\varepsilon(x)\frac{d}{x}V_{new} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\exp\bigg( \frac{V_{new} - V_{old}}{V_{ref}} \bigg) - N_{D}(x)\bigg];\\
+		\frac{d}{dz}\varepsilon(z)\frac{d}{z}V_{new} - n_{old}\frac{eV_{new}}{\varepsilon_{0}V_{ref}} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\bigg( 1 - \frac{V_{old}}{V_{ref}} \bigg) - N_{D}(z)\bigg];
+	\end{gather*}
+
+\column{0.3\textwidth}
+   	\includegraphics[width=\linewidth]{assets/ShPo}
+
 \end{columns}
 \end{frame}
 
@@ -512,29 +526,32 @@
 	\end{columns}
 {\color{red}Структура}: $n^{+}$-$GaAs$/$i$-$GaAs$/$i$-$Al_{0.4}Ga_{0.6}As$/$i$-$GaAs$/$i$-$Al_{0.4}Ga_{0.6}As$/$i$-$GaAs$/$n^{+}$-$GaAs$
 	\begin{columns}
-	\column{0.33\textwidth}
+	\column{0.40\textwidth}
 		{\color{blue} $Al_{x}Ga_{1-x}As$:}\\
-		{\color{red}\footnotesize Период решетки:}\\
+		{\color{red}\footnotesize Период решетки (нм):}\\
 		\scriptsize
-			$p = 0.56$ нм;\\
-		{\color{red}\footnotesize Ширина запрященной зоны:}\\
+			$\Delta x = 0.56533+0.00078x \approx 0.57$;\\
+		{\color{red}\footnotesize Ширина запрященной зоны (эВ):}\\
 		\scriptsize
-			$p = 0.56$ нм;\\
+			$E_{g}^{\Gamma} = \begin{cases}
+				1.424+1.247x, x < 0.45;\\
+				1.656+0.215x+0.143x^{2}, x \geq 0.45;
+			\end{cases}$\\
 		{\color{red}\footnotesize Эффективная масса в ЗП:}\\
 		\scriptsize
-			$p = 0.56$ нм;\\
+			$m_{eff}^{\Gamma} = 0.067+0.083x$ массы электрона;\\
 		{\color{red}\footnotesize Число атомов:}\\
 		\scriptsize
-			$p = 0.56$ нм;\\
-	\column{0.33\textwidth}
+			$N = (4.42-0.17x)10^{22}\,cm^{-3} \approx 4.2*10^{28}\,m^{-3}$\\
+	\column{0.25\textwidth}
 		{\color{blue} Параметры модели:}\\
 		{\color{red}\footnotesize Размеры:}\\
 		\scriptsize
-			$p = 0.56$ монослоев;\\
-			$p = 0.56$ монослоев;\\
-			$p = 0.56$ монослоев;\\
+			$a = 10$ монослоев;\\
+			$b = 6$ монослоев;\\
+			$c = 6$ монослоев;\\
 		{\color{red}\footnotesize Зонная структура:}\\
-			$\Delta E_{c} = \Delta E_{w} = 123x;$
+			$\Delta E_{c} = \Delta E_{w} = 0.6235x$ эВ;
 	\column{0.33\textwidth}
 		{\color{blue} Параметры диффузии:}
 		\scriptsize
@@ -543,7 +560,7 @@
 		\end{equation*}
 		$E_{a} = 3.5$эВ -- энергия активации;\\
 		$T = 360$K -- температура системы;\\
-		$D_{0} = 0.2$ -- предъэксподенциальный множитель;\\
+		$D_{0} = 0.2$ -- предэкспоненциальный множитель;\\
 		$N_{D}$ -- концентрация донорной примеси;\\
 		$n_{i}$ -- концентрация собственных носителей заряда.
 	\end{columns}
