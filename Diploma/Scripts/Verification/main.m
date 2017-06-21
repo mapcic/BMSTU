@@ -78,5 +78,5 @@ SiGrid = [
 	nSip*ones(1, m)
 ];
 
-[diffAlGrid, diffAlGrid] = getDiffusion(AlGrid, SiGrid, niGrid, TmGrid, dx*nm, T);
+[diffAlGrid, diffSiGrid] = getDiffusion(AlGrid, SiGrid, niGrid, TmGrid, dx*nm, T);
 % showResultSi(dx, sizeHS, grids_C_Al, grids_C_Si, 'Not Constant $D$', checkTime);
