@@ -23,11 +23,13 @@ function [resAlGrid, resSiGrid] = getDiffAlGaAs_Si(AlGrid, SiGrid, niGrid, TmGri
 		resSiGrid(1, :) = SiGrid;		
 	end
 
+	len = length(AlGrid);
+
 	AlGrid = AlGrid'; % To multiply
 	SiGrid = SiGrid';
 
 	for j = 0 : dt : time
-		D = 0.17*exp(-3.5/(kT*JtoEv))*(SiGrid'./ni).^3*1e-4;
+		D = 0.17*exp(-3.5/(kT*JtoEv))*(SiGrid'./niGrid).^3*1e-4;
 
 		D_plus = (D(1:len-1) + D(2:len))./2;
 		D_minus = (D(2:len) + D(1:len-1))./2;

@@ -5,7 +5,7 @@ e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1);
 me = 9.11*1e-31; nm = 1e-9;
 hbar = 1.054*1e-34; k_B = 1.38e-23;
 
-TmFrid = [0, 4, 10, 18, 28]; %Times grid. When check diffusion result?
+TmGrid = [0, 4, 10, 18, 28]; %Times grid. When check diffusion result?
 
 T = 273+300; % Temperature in Kelvin
 kT = k_B*T;
