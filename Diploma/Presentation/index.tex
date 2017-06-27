@@ -13,6 +13,7 @@
 \usetheme{default}
 % цветовая схема
 \usecolortheme{dove}
+\setbeamertemplate{footline}[frame number]
 
 \title{Моделирование термической деградации $AlGaAs$ гетероструктур}
 
@@ -22,7 +23,7 @@
 
 \begin{document}
 
-\begin{frame}
+\begin{frame}[plain]
 	\titlepage
 \end{frame} 
 
@@ -57,7 +58,7 @@
 	\color{blue}
 	Цель работы:
 	\begin{itemize}
-		\item Разработка алгоритма прогнозирования деградации слоистых гетероструктур на основе $GaAs$.
+		\item Разработка алгоритма прогнозирования деградации приборов на основе $GaAs$ гетероструктур.
 		% \item Разработка модели термической деградации слоистых гетероструктур на основе GaAs для интеграции в методику обеспечения заданного уровня надёжности устройства на их основе.
 	\end{itemize}
 	Задачи работы:
@@ -65,9 +66,9 @@
 		% \item Исследование математического аппарата для моделирования диффузионного размытия гетероструктур под действием градиента концентрации при фиксированной температуре системы;
 		% \item Исследование математического аппарата для моделирования токопереноса через гетероструктуру;
 		% \item Разработка алгоритма термической деградации гетероструктуры на основе $GaAs$.
-		\item Моделирование диффузионного размытия гетероструктур на основе $GaAs$ под дейсвтвием градиента концентрации при фиксированной температуре;
-		\item Моделирование токопереноса через гетеростуктуру;
-		\item Разработка алгоритма деградации ВАХ гетероструктуры на основе $GaAs$.
+		\item Моделирование диффузионного размытия гетероструктур на основе $GaAs$ под действием градиента концентрации при фиксированной температуре;
+		\item Моделирование токопереноса через гетероструктуру на основе $GaAs$;
+		\item Разработка алгоритма деградации резонансно-туннельной гетероструктуры на основе $GaAs$.
 	\end{itemize}
 \end{frame}
 
@@ -119,6 +120,76 @@
 		\end{center}
 	\end{columns}
 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Численное моделирование диффузии}
+	% \begin{center}
+		{\color{blue} Виды конечно-разностных схем:}
+	% \end{center}
+
+	\begin{columns}
+	\column{0.33\textwidth}
+		{\small\color{red} Явная схема (FTCS):}\\
+		\includegraphics[width=.99\textwidth,center]{assets/FTCS}\\
+		\scriptsize
+		\begin{gather*}
+			\frac{C^{i+1}_{j} - C^{i}_{j}}{\Delta t} = D \frac{C^{i}_{j-1} -2C^{i}_{j} + C^{i}_{j+1}}{\Delta x^{2}}\\
+		\end{gather*}
+		{\small\color{red} Условие сходимости:}
+		$
+			\Delta t \leq \frac{\Delta x^{2}}{2D};
+		$
+	\column{0.01\textwidth}
+		\rule[0mm]{0.2ex}{60mm}
+	\column{0.33\textwidth}
+		{\small\color{red} Неявная схема (BTCS):}\\
+		\includegraphics[width=.99\textwidth,center]{assets/BTCS}\\
+		\scriptsize
+		\begin{gather*}
+			\frac{C^{i}_{j} - C^{i-1}_{j}}{\Delta t} = D \frac{C^{i}_{j-1} -2C^{i}_{j} + C^{i}_{j+1}}{\Delta x^{2}}\\
+		\end{gather*}
+		{\small\color{red} Условие сходимости:}$\forall$
+	\column{0.01\textwidth}
+		\rule[0mm]{0.2ex}{60mm}
+	\column{0.33\textwidth}
+		{\small\color{red} Схема Crank-Nicolson:}\\
+		\includegraphics[width=.99\textwidth,center]{assets/CN}\\
+		\tiny
+		\begin{gather*}
+			\frac{C^{i}_{j} - C^{i-1}_{j}}{\Delta t} = \frac{D}{2} \bigg(\frac{C^{i}_{j-1} -2C^{i}_{j} + C^{i}_{j+1}}{\Delta x^{2}} + \\ +\\ \frac{C^{i-1}_{j-1} -2C^{i-1}_{j} + C^{i-1}_{j+1}}{\Delta x^{2}}\bigg).
+		\end{gather*}
+		{\small\color{red} Условие сходимости:}$\forall$
+	\end{columns}
+	{\color{blue} Проверка схем:}
+	\scriptsize
+	\begin{gather*}
+		\text{\color{red}ГУ: }C(0, t) = C(L, t) = 0;\text{\color{red}НУ: } C(x, 0) = \sin(\pi x/L);\text{\color{red}Концентрация в момент t: } C(x, t) = \sin\bigg(\frac{\pi x}{L}\bigg)\exp\bigg( - \frac{D \pi^{2} t}{L^{2}}  \bigg);
+	\end{gather*}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Численное моделирование диффузии}
+	\begin{columns}
+	\column{0.8\textwidth}
+		{\color{blue} Проверка схем:}\\
+	\column{0.2\textwidth}
+		{\color{blue} Ошибка схем:}\\
+	\end{columns}
+	\begin{columns}
+	\column{0.8\textwidth}
+		\includegraphics[width=.99\textwidth,center]{assets/DifFD}\\
+	\column{0.01\textwidth}
+		\rule[0mm]{0.2ex}{60mm}
+	\column{0.2\textwidth}
+	\scriptsize
+	{\color{red}FTCS}: $O(\Delta x^{2}) + O(\Delta t)$
+	\newline\newline
+	{\color{red}BTCS}: $O(\Delta x^{2}) + O(\Delta t)$
+	\newline\newline
+	{\color{red}Crank-Nicolson}: $O(\Delta x^{2}) + O(\Delta t^{2})$
+	\end{columns}
+	{\color{blue} Вывод:} Численное решение соответствует аналитическому. В качестве основной конечно-разностной схемы диффузии принимается BTCS.
 \end{frame}
 
 \begin{frame}
@@ -286,17 +357,14 @@
 	\rule[1mm]{0.2ex}{70mm}
 \column{0.72\textwidth}
 	% {\color{blue}\large Численное решение уравнение Шредингера:}
-   	\includegraphics[width=\linewidth]{assets/HSModel}
+   	\includegraphics[width=0.8\linewidth,center]{assets/HSModel}
 
-   	{\color{red}Конечно-разностная схема для внутренних точек:}
-   	
-   	{\scriptsize
-	\begin{equation*}
-		\psi_{i-1}\frac{m^{*}_{i+1}}{m^{*}_{i-1}} + \psi_{i}\bigg(  \frac{2\Delta^{2}m^{*}_{i+1}}{\hbar^{2}}(E-U_{i}) - \frac{m^{*}_{i+1}}{m^{*}_{i-1}} - 1 \bigg) + \psi_{i+1} = 0,
-	\end{equation*}}
-
-
-{\color{red}Конечно-разностная схема для граничных точек:}
+{\color{red}Конечно-разностная схема для внутренних точек:}
+\footnotesize
+\begin{gather*}
+	\psi_{i-1}\frac{m^{*}_{i+1}}{m^{*}_{i-1}} + \psi_{i}\bigg(  \frac{2\Delta^{2}m^{*}_{i+1}}{\hbar^{2}}(E-U_{i}) - \frac{m^{*}_{i+1}}{m^{*}_{i-1}} - 1 \bigg) + \psi_{i+1} = 0,
+\end{gather*}
+{\normalsize\color{red}Конечно-разностная схема для граничных точек:}
 \begin{columns}
 \column{0.5\textwidth}
 	\footnotesize
@@ -315,72 +383,76 @@
 		\end{cases}
 	\end{gather*}
 \end{columns}
-\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Численное моделирование токопереноса}
-	\begin{columns}
-	\column{0.5\textwidth}
-	   	\includegraphics[width=\linewidth]{assets/BHS}
-
-		{\scriptsize $\bullet$ $a = 5$ нм; $\bullet$ $b = 5$ нм; $\bullet$ $\Delta E_{c} = 1$эВ.}
-
-	   	\includegraphics[width=\linewidth]{assets/JBHS}
-	\column{0.01\textwidth}
-		\rule[1mm]{0.2ex}{70mm}
-	\column{0.5\textwidth}
-	   	\includegraphics[width=1.05\linewidth]{assets/RTHS}
-
-		{\scriptsize $\bullet$ $a = 5$ нм; $\bullet$ $b = 5$ нм; $\bullet$ $c = 5$ нм; $\bullet$ $\Delta E_{c} = 1$эВ.}
-
-	   	\includegraphics[width=1.05\linewidth]{assets/JRTHS}
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Учет самосогласованного потенциала}
-
-\begin{columns}
-\column{0.7\textwidth}
-	{\color{blue}Уравнеие Пуассона:}
-	{\tiny
-	\begin{equation*}
-		\frac{d}{dx}\varepsilon(x)\frac{d}{x}V_{s} = \frac{e}{\varepsilon_{0}}[n(x) - N_{D}(x)];
-	\end{equation*}
-	}
-	% {\color{red}Концентрация электронов в ГС:}
-	% {\tiny
-	% \begin{gather*}
-	% 	{\tiny n(x) = \begin{cases}
-	% 				\frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}}\sum\limits_{L,R}\int\limits_{U_{l(r)}}^{\infty} \frac{|\psi_{L(R)}|^{2}}{\sqrt{E - U_{L(R)}}} \ln \bigg( 1 + \exp\bigg[ -\frac{E - E_{F} - U_{la(ra)}}{k_{B}T} \bigg] \bigg);\\
-	% 				\frac{2^{1/2}m^{3/2}}{\pi^{2}\hbar^{3}} \int\limits_{0}^{+\infty}\! \frac{\sqrt[]{E}}{e^{\frac{E-\mu}{kT}}+1} \,dE;
-	% 			\end{cases}}
-	% \end{gather*}}
-	% {\color{red}Конечно-разностная схема:}
-	% {\tiny
-	% \begin{gather*}
-	% 	\frac{d}{dx}\varepsilon(x)\frac{d}{x}V_{new} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\exp\bigg( \frac{V_{new} - V_{old}}{V_{ref}} \bigg) - N_{D}(x)\bigg];
-	% \end{gather*}}
-	{\color{red}Метод Гумеля:}
-	{\tiny
+{\normalsize\color{red}Учет самосогласованного потенциала:}
 	\begin{gather*}
-		n(x) = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}} \exp \frac{E_{F}(x) - E_{c}(x) + eV_{s}(x)}{k_{B}T} =  n_{0}(x)\exp\frac{V_{S}(x)}{V_{ref}};\,\\
-		V_{ref} = \frac{k_{B}T}{e}; n_{0}(x) = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}} \exp \frac{E_{F}(x) - E_{c}(x)}{k_{B}T};\\
-		n_{new} = n_{old}\exp\frac{V_{new} - V_{old}}{V_{ref}};
-	\end{gather*}}
-	{\color{red}Конечно-разностная схема:}
-	\tiny
-	\begin{gather*}
-		\frac{d}{dx}\varepsilon(x)\frac{d}{x}V_{new} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\exp\bigg( \frac{V_{new} - V_{old}}{V_{ref}} \bigg) - N_{D}(x)\bigg];\\
 		\frac{d}{dz}\varepsilon(z)\frac{d}{z}V_{new} - n_{old}\frac{eV_{new}}{\varepsilon_{0}V_{ref}} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\bigg( 1 - \frac{V_{old}}{V_{ref}} \bigg) - N_{D}(z)\bigg];
 	\end{gather*}
-
-\column{0.3\textwidth}
-   	\includegraphics[width=\linewidth]{assets/ShPo}
-
 \end{columns}
 \end{frame}
+
+% % \begin{frame}
+% 	\frametitle{Численное моделирование токопереноса}
+% 	\begin{columns}
+% 	\column{0.5\textwidth}
+% 	   	\includegraphics[width=\linewidth]{assets/BHS}
+
+% 		{\scriptsize $\bullet$ $a = 5$ нм; $\bullet$ $b = 5$ нм; $\bullet$ $\Delta E_{c} = 1$эВ.}
+
+% 	   	\includegraphics[width=\linewidth]{assets/JBHS}
+% 	\column{0.01\textwidth}
+% 		\rule[1mm]{0.2ex}{70mm}
+% 	\column{0.5\textwidth}
+% 	   	\includegraphics[width=1.05\linewidth]{assets/RTHS}
+
+% 		{\scriptsize $\bullet$ $a = 5$ нм; $\bullet$ $b = 5$ нм; $\bullet$ $c = 5$ нм; $\bullet$ $\Delta E_{c} = 1$эВ.}
+
+% 	   	\includegraphics[width=1.05\linewidth]{assets/JRTHS}
+% 	\end{columns}
+% \end{frame}
+
+% \begin{frame}
+% 	\frametitle{Учет самосогласованного потенциала}
+
+% \begin{columns}
+% \column{0.7\textwidth}
+% 	{\color{blue}Уравнеие Пуассона:}
+% 	{\tiny
+% 	\begin{equation*}
+% 		\frac{d}{dx}\varepsilon(x)\frac{d}{x}V_{s} = \frac{e}{\varepsilon_{0}}[n(x) - N_{D}(x)];
+% 	\end{equation*}
+% 	}
+% 	% {\color{red}Концентрация электронов в ГС:}
+% 	% {\tiny
+% 	% \begin{gather*}
+% 	% 	{\tiny n(x) = \begin{cases}
+% 	% 				\frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}}\sum\limits_{L,R}\int\limits_{U_{l(r)}}^{\infty} \frac{|\psi_{L(R)}|^{2}}{\sqrt{E - U_{L(R)}}} \ln \bigg( 1 + \exp\bigg[ -\frac{E - E_{F} - U_{la(ra)}}{k_{B}T} \bigg] \bigg);\\
+% 	% 				\frac{2^{1/2}m^{3/2}}{\pi^{2}\hbar^{3}} \int\limits_{0}^{+\infty}\! \frac{\sqrt[]{E}}{e^{\frac{E-\mu}{kT}}+1} \,dE;
+% 	% 			\end{cases}}
+% 	% \end{gather*}}
+% 	% {\color{red}Конечно-разностная схема:}
+% 	% {\tiny
+% 	% \begin{gather*}
+% 	% 	\frac{d}{dx}\varepsilon(x)\frac{d}{x}V_{new} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\exp\bigg( \frac{V_{new} - V_{old}}{V_{ref}} \bigg) - N_{D}(x)\bigg];
+% 	% \end{gather*}}
+% 	{\color{red}Метод Гумеля:}
+% 	{\tiny
+% 	\begin{gather*}
+% 		n(x) = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}} \exp \frac{E_{F}(x) - E_{c}(x) + eV_{s}(x)}{k_{B}T} =  n_{0}(x)\exp\frac{V_{S}(x)}{V_{ref}};\,\\
+% 		V_{ref} = \frac{k_{B}T}{e}; n_{0}(x) = \frac{2^{1/2}m^{3/2}k_{B}T}{(2\pi)^{2}\hbar^{3}} \exp \frac{E_{F}(x) - E_{c}(x)}{k_{B}T};\\
+% 		n_{new} = n_{old}\exp\frac{V_{new} - V_{old}}{V_{ref}};
+% 	\end{gather*}}
+% 	{\color{red}Конечно-разностная схема:}
+% 	\tiny
+% 	\begin{gather*}
+% 		\frac{d}{dx}\varepsilon(x)\frac{d}{x}V_{new} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\exp\bigg( \frac{V_{new} - V_{old}}{V_{ref}} \bigg) - N_{D}(x)\bigg];\\
+% 		\frac{d}{dz}\varepsilon(z)\frac{d}{z}V_{new} - n_{old}\frac{eV_{new}}{\varepsilon_{0}V_{ref}} = \frac{e}{\varepsilon_{0}}\bigg[n_{old}\bigg( 1 - \frac{V_{old}}{V_{ref}} \bigg) - N_{D}(z)\bigg];
+% 	\end{gather*}
+
+% \column{0.3\textwidth}
+%    	\includegraphics[width=\linewidth]{assets/ShPo}
+
+% \end{columns}
+% \end{frame}
 
 \begin{frame}
 	\frametitle{Исследование влияния параметров РТГС на ВАХ}
@@ -463,17 +535,17 @@
 	\column{0.5\textwidth}
 		{\color{blue} Ширина ямы:}\\
 		{\color{red} Прозрачность РТГС:}
-	   	\includegraphics[width=.88\linewidth,center]{assets/qwwt}\\
+	   	\includegraphics[width=.8\linewidth,center]{assets/qwwt}\\
 		{\color{red} Плотность тока через РТГС:}
-	   	\includegraphics[width=.88\linewidth,center]{assets/qwwj}
+	   	\includegraphics[width=.8\linewidth,center]{assets/qwwj}
 	\column{0.01\textwidth}
 		\rule[-55mm]{0.2ex}{75mm}
 	\column{0.5\textwidth}
 		{\color{blue} Глубина ямы:}\\
 		{\color{red}\small Прозрачность РТГС:}\\
-	   	\includegraphics[width=.88\linewidth,center]{assets/qwt}\\
+	   	\includegraphics[width=.8\linewidth,center]{assets/qwht}\\
 		{\color{red} Плотность тока через РТГС:}\\
-	   	\includegraphics[width=.88\linewidth,center]{assets/qwj}
+	   	\includegraphics[width=.8\linewidth,center]{assets/qwhj}
 	\end{columns}
 \end{frame}
 
@@ -483,17 +555,17 @@
 	\column{0.5\textwidth}
 		{\color{blue} Ширина барьеров:}\\
 		{\color{red} Прозрачность РТГС:}
-	   	\includegraphics[width=.86\linewidth,center]{assets/qbwt}\\
+	   	\includegraphics[width=.8\linewidth,center]{assets/qbwt}\\
 		{\color{red} Плотность тока через РТГС:}
-	   	\includegraphics[width=.88\linewidth,center]{assets/qbwj}
+	   	\includegraphics[width=.8\linewidth,center]{assets/qbwj}
 	\column{0.01\textwidth}
 		\rule[-55mm]{0.2ex}{75mm}
 	\column{0.5\textwidth}
 		{\color{blue} Высота барьеров:}\\
 		{\color{red}\small Прозрачность РТГС:}\\
-	   	\includegraphics[width=.88\linewidth,center]{assets/qwt}\\
+	   	\includegraphics[width=.8\linewidth,center]{assets/qbht}\\
 		{\color{red} Плотность тока через РТГС:}\\
-	   	\includegraphics[width=.88\linewidth,center]{assets/qwj}
+	   	\includegraphics[width=.8\linewidth,center]{assets/qbhj}
 	\end{columns}
 \end{frame}
 
@@ -503,17 +575,17 @@
 	\column{0.5\textwidth}
 		{\color{blue} Ширина спейсера:}\\
 		{\color{red} Прозрачность РТГС:}
-	   	\includegraphics[width=.86\linewidth,center]{assets/qslt}\\
+	   	\includegraphics[width=.8\linewidth,center]{assets/qslt}\\
 		{\color{red} Плотность тока через РТГС:}
-	   	\includegraphics[width=.86\linewidth,center]{assets/qslj}
+	   	\includegraphics[width=.8\linewidth,center]{assets/qslj}
 	\column{0.01\textwidth}
 		\rule[-55mm]{0.2ex}{75mm}
 	\column{0.5\textwidth}
-		{\color{blue} Ширина спейсера с учетом ССП:}\\
+		{\color{blue} Ширина спейсера с учетом ССП::}\\
+		{\color{red} Прозрачность РТГС:}
+	   	\includegraphics[width=.8\linewidth,center]{assets/qslqt}\\
 		{\color{red} Плотность тока через РТГС:}
-	   	\includegraphics[width=.88\linewidth,center]{assets/qslqj}
-	   	\\[39mm]
-		{\color{red} }
+	   	\includegraphics[width=.8\linewidth,center]{assets/qslqj}
 	\end{columns}
 \end{frame}
 
@@ -535,7 +607,7 @@
 		{\color{red}\footnotesize Период решетки (нм):}\\
 		\scriptsize
 			$\Delta x = 0.56533+0.00078x \approx 0.57$;\\
-		{\color{red}\footnotesize Ширина запрященной зоны (эВ):}\\
+		{\color{red}\footnotesize Ширина запрещенной зоны (эВ):}\\
 		\scriptsize
 			$E_{g}^{\Gamma} = \begin{cases}
 				1.424+1.247x, x < 0.45;\\
@@ -563,11 +635,12 @@
 			D_{Al,Si} = D_{0}\exp\bigg[-\frac{E_{a}}{k_{B}T}\bigg]\Big( \frac{N_{D}}{n_{i}} \Big)^{3};
 		\end{equation*}
 		$E_{a} = 3.5$эВ -- энергия активации;\\
-		$T = 360$K -- температура системы;\\
+		% $T = 360$K -- температура системы;\\
 		$D_{0} = 0.2$ -- предэкспоненциальный множитель;\\
 		$N_{D}$ -- концентрация донорной примеси;\\
 		$n_{i}$ -- концентрация собственных носителей заряда.
 	\end{columns}
+	{\color{blue}Воздействие:} {\color{red}Производство} (МЛЭ $\Rightarrow$ Отжиг $\Rightarrow$ Метал.контакты)  $\Rightarrow$ {\color{blue}Эксплуатация}.
 \end{frame}
 
 \begin{frame}
@@ -576,50 +649,67 @@
 	% {\color{blue}$GaAs$/$Al_{0.4}Ga_{0.6}As$/$GaAs$/$Al_{0.4}Ga_{0.6}As$/$GaAs$}
 	\begin{columns}
 	\column{0.5\textwidth}
-		{\color{blue} $N_{D} = n_{i} = 10^{12} m^{-3},\,T = 800K$:}\\
-		{\color{red} Диффузионное расплытие профиля:}\\
-	   	\includegraphics[width=0.85\linewidth,center]{assets/DCAlGaAs}\\
-		{\color{red} Деградация ВАХ:}
-	   	\includegraphics[width=.9\linewidth,center]{assets/JDCAlGaAs}
+		{\color{blue} МЛЭ:}\\
+		{\color{red} $T = 650^\circ\text{C}, t \approx 560\text{секунд}$:}\\
+	   	\includegraphics[width=0.8\linewidth,center]{assets/DA650}\\
+		{\color{blue} Отжиг:}\\
+		{\color{red} $T = 800^\circ\text{C}, t \approx 30\text{секунд}$:}\\
+	   	\includegraphics[width=.8\linewidth,center]{assets/DA800}
 	   	\newline\newline\newline\newline
 	\column{0.01\textwidth}
 		\rule[17mm]{0.2ex}{76mm}
 	\column{0.5\textwidth}
-		{\color{blue} $N_{D} = 10^{18}; n_{i} = 10^{12} m^{-3};\,T = 650K$:}
-		{\color{red} Диффузионное расплытие профиля:}\\
-	   	\includegraphics[width=.85\linewidth,center]{assets/DCAlGaAsNd}\\
-		{\color{red} Деградация ВАХ:}\\
-	   	\includegraphics[width=.9\linewidth,center]{assets/JDCAlGaAsNd}
+		{\color{blue} Эксплуатация:}\\
+		{\color{red} $T = 100^\circ\text{C}, t \approx 15\text{лет}$:}\\
+	   	\includegraphics[width=0.8\linewidth,center]{assets/DA100}\\
+		{\color{blue} Вывод:} Наибольшее влияние на состав гетероструктуры оказывает кратковременный отжиг. МЛЭ практические не влияет на гетероструктуру. Эксплуатация в течении долгового времени не оказывает никаких влияний на состав.
 	   	\newline\newline\newline\newline
 	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Моделирование термической деградации квантовой области с учетом приконтактных областей}
-	{\large\color{blue} $N_{D}^{Reserve} = 10^{24}m^{-3};\,N_{D} = n_{i} = 10^{12} m^{-3},\,T = 800K$:}\\
+	{\large\color{blue} Эксплуатация:}\\
+	{\color{red} $N_{D}^{r+} = 2.5*10^{24}m^{-3}, N_{D}^{r} = 2*10^{23}m^{-3},\,r=20\text{ монослоев},T = 100^\circ\text{C}$:}\\
 	\begin{columns}
 	\column{0.5\textwidth}
-		{\color{red} Диффузионное расплытие профиля:}\\
-	   	\includegraphics[width=.99\linewidth,center]{assets/DAlGaAs_Si}\\
+		% {\color{red} Диффузионное расплытие профиля:}\\
+	   	\includegraphics[width=.99\linewidth,center]{assets/RTHSResearch}\\
 	\column{0.01\textwidth}
 		\rule[0mm]{0.2ex}{40mm}
 	\column{0.5\textwidth}
-		{\color{red} Деградация ВАХ:}\\
-	   	\includegraphics[width=.99\linewidth,center]{assets/JDAlGaAs_Si}\\
+		% {\color{red} Деградация ВАХ:}\\
+	   	\includegraphics[width=.99\linewidth,center]{assets/DSi100}\\
 	\end{columns}
 	{\large\color{blue}Вывод:}\\
-	Основная причина термической деградации ВАХ РТГС -- диффузия донорной примеси из приконтакных областей.
+	Основная причина термической деградации --- диффузия донорной примеси из сильнолегированных ($N_{D}^{r+}$)приконтактных областей. Спейсеры предохраняют активную область от проникновения легирующей примеси. Деградацию ВАХ РТГС необходимо рассматривать при $t \geq 10$лет. 
+\end{frame}
+
+\begin{frame}
+\frametitle{Моделирование термической деградации РТГС $n^{++}$-$GaAs$/$n^{+}$-$GaAs$/$i$-$GaAs$/$i$-$Al_{0.4}Ga_{0.6}As$/$i$-$GaAs$/$i$-$Al_{0.4}Ga_{0.6}As$/$i$-$GaAs$/$n^{+}$-$GaAs$/$n^{++}$-$GaAs$}
+	{\color{blue}Воздействие:} {\color{red}Производство} (Отжиг: $T = 800^\circ\text{C}, t \approx 30\text{секунд}$)  $\Rightarrow$ {\color{blue}Эксплуатация} ($N_{D}^{r+} = 2.5*10^{24}m^{-3}, N_{D}^{r} = 2*10^{23}m^{-3},\,r=20\text{ монослоев},T = 100^\circ\text{C}$).
+	\begin{columns}
+	\column{0.5\textwidth}
+		{\color{red} Диффузионное расплытие:}\\
+	   	\includegraphics[width=.99\linewidth,center]{assets/DegrC}\\
+	\column{0.01\textwidth}
+		\rule[0mm]{0.2ex}{40mm}
+	\column{0.5\textwidth}
+		{\color{red} ВАХ:}\\
+	   	\includegraphics[width=.99\linewidth,center]{assets/DegrJ}\\
+	\end{columns}
+	{\large\color{blue}Вывод:} ВАХ исследуемой РТГС в первые 10 лет эксплуатации при $T = 100^\circ\text{C}$ зависит от деградации после отжига. После 10 лет доминирующим фактором является проникновение легирующей примеси и размытие потенциальных барьеров.
 \end{frame}
 
 \begin{frame}
 	\frametitle{Заключение}
 	В ходе работы были:
 	\begin{itemize}
-		\item Исследована модель токопереноса через гетеростуктуру с учетом самосогласованного потенциала;
-		\item Исследовано влияние основных параметров РТГС на ВАХ; 
-		\item Исследована модель дуффузионного расплытия гетероструктур на основе $GaAs$ под дейсвием градиента концентрации при постоянной темпрературе;
-		\item Исследованы различные граничные условия для дальнейшего моделирования диффузионного расплытия систем; 
-		\item Получен аглгорим моделирования термической деградации ВАХ гетероструктур.
+		\item Исследована модель токопереноса через гетероструктуру с учетом самосогласованного потенциала и влияние основных параметров РТГС на ВАХ; 
+		\item Исследована модель диффузионного размытия гетероструктур на основе $GaAs$ под действием градиента концентрации при постоянной температуре;
+		\item Исследованы конечно-разносные схемы для решения нестационарного уравнения диффузии. Метод BTCS сходится при любом шаге временной сетки в отличии от FTCS и проще, чем метод Crank-Nicolson'a; 
+		\item Исследованы граничные условия для дальнейшего моделирования диффузионного размытия различные систем; 
+		\item Получен алгоритм моделирования термической деградации РТГС на основе $GaAs$.
 	\end{itemize}
 \end{frame}
 

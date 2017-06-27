@@ -6,7 +6,7 @@ function [Ec, meff, Alx, Six] = getDiffOpenAlGaAs(x_Al, checkTime, dx, T, n_Si)
 
 	kT = T*k_B; % J
 
-	Time = max(checkTime)*12*30*24; % to hours
+	Time = max(checkTime); % to hours
 
 	n_Atoms = 4.42*1e28; % number Atoms in GaAs ~ AlAs
 	n_Al = n_Atoms/2; % number atoms of Al in AlAs
@@ -46,7 +46,7 @@ function [Ec, meff, Alx, Six] = getDiffOpenAlGaAs(x_Al, checkTime, dx, T, n_Si)
 		C_Al = Matrix*C_Al;
 		C_Si = Matrix*C_Si;
 
-		ind = find(j == checkTime*12*30*24); 
+		ind = find(j == checkTime); 
 		if (ind & j ~= 0)
 			[Ec(ind, :), ~, meff(ind, :), ~] = getBandPropAlGaAs(C_Al(2:end-1)');
 			Alx(ind, :) = C_Al(2:end-1)'./n_Al;

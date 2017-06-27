@@ -13,7 +13,7 @@ dx = dx/dis;
 
 % Count layers
 a = 10; % monolayers
-b = 8;
+b = 6;
 c = 6;
 
 a = a*dis;
@@ -26,8 +26,8 @@ sizeHS = a + b + c + b + a;
 EFermi = 1.51*1e-20; % J
 
 % Applyied voltage
-dU = 0:0.0005:1;
-% dU = 0:0.5:1;
+% dU = 0:0.0005:1;
+dU = 0:0.5:1;
 
 % Ec
 Ec = [...
@@ -45,7 +45,7 @@ meff = [...
 	0.067*ones(1, a), 0.15*ones(1, b), 0.067*ones(1, c), 0.15*ones(1, b), 0.067*ones(1, a)...
 ];
 tic
-numPoint = 10;
+numPoint = 5000;
 for j = 1 : length(Ec(:, 1))
 	Tr(j, :) = getTransperent(...
 		dx*nm, ...

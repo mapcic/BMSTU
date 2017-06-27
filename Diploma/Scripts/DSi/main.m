@@ -4,25 +4,26 @@ clear; clc;
 e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); 
 me = 9.11*1e-31; nm = 1e-9;
 
-T = 400; % K
+T = 100 + 273.5; % K
 
-checkTime = [0, 1, 5, 10, 15, 20]; %years
+checkTime = [0, 2, 5, 10, 15, 16]*24*360; %years
 
 % atoms' radius
 dx = 0.56; %nm
 
 % Count layers
+r = 10; % monolayers
 a = 10; % monolayers
 b = 6;
 c = 6;
 
-sizeHS = a + b + c + b + a;
+sizeHS = r + a + b + c + b + a + r;
 
 % Fermi Energy
 EFermi = 1.51*1e-20; % J
 
 % Applyied voltage
-dU = 0:0.1:0.5;
+dU = 0:0.5:0.5;
 
 % grid of Al conentration
 grid_x_Al = [zeros(1, a), ...
@@ -32,9 +33,9 @@ grid_x_Al = [zeros(1, a), ...
 	zeros(1, a)
 ];
 
-Nd = 2*1e17*1e6;
+Nd = 1.2*1e18*1e6;
 % Get profile Ec
-[grids_Ec, grids_meff, grids_C_Al, Six] = getDiffAlGaAs_Si( grid_x_Al, checkTime, dx*nm, T, Nd);
+[grids_Ec, grids_meff, grids_C_Al, Six] = getDiffBAlGaAs_Si( grid_x_Al, checkTime, dx*nm, T, Nd);
 % get J from V
 for j = 1 : length(checkTime)
 	J(j, :) = getJ(dx*nm, ...
