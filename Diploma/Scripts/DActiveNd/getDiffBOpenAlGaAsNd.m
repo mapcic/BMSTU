@@ -11,8 +11,9 @@ function [Ec, meff, Alx] = getDiffOpenAlGaAsNd(x_Al, checkTime, dx, T, Nd)
 	n_Atoms = 4.42*1e28; % number Atoms in GaAs ~ AlAs
 	n_Al = n_Atoms/2; % number atoms of Al in AlAs
 
-	dt = 1; % one hour
-	dtdx2 = dt/dx^2; % s/m^2
+	dt = 1; %
+	dtdx2 = dt*60*60/dx^2; % s/m^2. dt in house
+	% dtdx2 = dt/dx^2; % s/m^2. dt in secondsx^2; % s/m^2
 
 	D_Al = 0.2*exp(-3.5/(kT*JtoEv))*1e-4*(Nd)^3; % m^2/s
 
@@ -33,7 +34,6 @@ function [Ec, meff, Alx] = getDiffOpenAlGaAsNd(x_Al, checkTime, dx, T, Nd)
 
 	C_Al = C_Al';
 	for j = 0 : dt : Time
-		% clc; disp(j/Time*100);
 		C_Al = Matrix_Al*C_Al;
 		ind = find(j == checkTime); 
 		if (ind & j ~= 0)

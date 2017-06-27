@@ -103,6 +103,19 @@ Diffusion in GaAs and Related Compounds: Resent Developments~/ U.~Gosele,
 \newblock California: USC, 2016. ---
 \newblock 222~pp.
 
+\bibitem{Gerald}
+\selectlanguageifdefined{english}
+\BibEmph{Recktenwald,~G.~W.} Finite-Difference Approximations to the Heat
+  Equation~/ G.~W.~Recktenwald. ---
+\newblock 2011.
+
+\bibitem{Erwin}
+\selectlanguageifdefined{english}
+\BibEmph{Kreyszig,~Erwin}. Advanced Engineering Mathematics~/ Erwin~Kreyszig.
+  ---
+\newblock California: Chegg, 2011. ---
+\newblock 1283~pp.
+
 \bibitem{Vetrova}
 \selectlanguageifdefined{russian}
 \BibEmph{Ветрова,~Н.~А.} Определение управляемых

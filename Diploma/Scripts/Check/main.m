@@ -1,28 +1,24 @@
 clear; clc;
 
 nm = 1e-9;
-
 L = 100;
-dx = 1;
+dx = 5;
 x = 0 :dx: L;
 
 CInit = sin(x*pi/L);
 
-dt = 0.01;
-t = [500, 1000];
+dt = 10;
+t = [400, 1100];
 
-D = 1;
+D = 1.5;
 
 for ind = 1 : length(t)
 	CAnalyt(ind, :) = CInit*exp(-D*pi^2*t(ind)/L^2);
 end
 
-% plot(x, [CInit; C]);
-
 dtdx2 = dt/dx^2;
 maxt = max(t);
 
-tic
 CNumF = CInit';
 lmbd = D*dtdx2;
 
@@ -40,11 +36,7 @@ for j = 0 : dt : maxt
 		CNumFRes(ind, :) = CNumF';
 	end
 end
-toc
 
-% plot(x, [CInit; C], x, CNumFRes);
-
-tic
 CNumB = CInit';
 lmbd = D*dtdx2;
 
@@ -64,10 +56,7 @@ for j = 0 : dt : maxt
 		CNumBRes(ind, :) = CNumB';
 	end
 end
-toc
 
-
-tic
 CNumCN = CInit';
 lmbd = D*dtdx2/2;
 d1 = [[-lmbd*ones(1, length(x)-2)], 0];
@@ -95,6 +84,5 @@ for j = 0 : dt : maxt
 		CNumCNRes(ind, :) = CNumCN';
 	end
 end
-toc
 
 showResults(x, CInit, CAnalyt, CNumFRes, CNumBRes, CNumCNRes);

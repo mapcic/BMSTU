@@ -344,7 +344,7 @@ end
 
 В строках 16-19 рассчитывается концентрация собственных носителей заряда и в случаи чистого полупроводника приравнивается к концентрации донорной примеси. В строках 21, 24 задаются начальные условия -- профиль концентрации $Al$ и $Si$. Строки 32, 33 преобразуют строку в столбец, для преобразования. 
 
-В строках 24-34 рассчитывается диффузионное расплытие гетероструктуры. Цикл выполняется с шагом сетки по времени. В строке 35 каждый цикл пересчитывается коэффициент диффузии, так как изменяется концентрация $Al$ и $Si$. В строках 37, 38 рассчитываются средние значения коэффициента диффузии, в соответствии с коненчо-разностной схемой (\ref{eq:DFromC}). В строке 41 объявляется конечно-разностная схема для внутрненних точек гетероструктуры. В строках 40, 42 объявляются граничные условия. В строках 43, 45, 46 объявляется матрица преобразования и происходит расчет диффузии атомов $Al$ и $Si$ в гетероструктуре.
+В строках 24-34 рассчитывается диффузионное размытие гетероструктуры. Цикл выполняется с шагом сетки по времени. В строке 35 каждый цикл пересчитывается коэффициент диффузии, так как изменяется концентрация $Al$ и $Si$. В строках 37, 38 рассчитываются средние значения коэффициента диффузии, в соответствии с конечно-разностной схемой (\ref{eq:DFromC}). В строке 41 объявляется конечно-разностная схема для внутренних точек гетероструктуры. В строках 40, 42 объявляются граничные условия. В строках 43, 45, 46 объявляется матрица преобразования и происходит расчет диффузии атомов $Al$ и $Si$ в гетероструктуре.
 
 С помощью лист.~\ref{lst:mainDiff} (см. прил.~\ref{app:Diff}) можно рассчитать процесс диффузии $Al$ под действием градиента концентрации при фиксированной температуре из $i$-$AlAs$ в $i$-$GaAs$ с учетом диффузии легирующей примеси из резервуаров на схеме представленной на рис.~\ref{fig:DSiBox}.
 \begin{figure}[h!]
@@ -367,6 +367,88 @@ end
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{assets/DSi}
-	\caption{Диффузионное расплытие гетероструктуры $i$-$GaAs$/$i$-$AlAs$/$i$-$GaAs$ при $T = 430\,K$}
+	\caption{Диффузионное размытие гетероструктуры $i$-$GaAs$/$i$-$AlAs$/$i$-$GaAs$ при $T = 430\,K$}
 	\label{fig:DSi}
+\end{figure}
+\subsection{Виды конечно-разностных схем и их верификация}
+Для решения уравнения диффузии (\ref{eq:F2}) рассмотрим следующие конечно-разностные схемы:
+\begin{itemize}
+	\item Явная схема (FTCS), см рис.\ref{fig:FDShms}, a;
+	\item Неявная схема (BTCS), см рис.\ref{fig:FDShms}, б;
+	\item Схема Crank-Nicolson (С-N), см рис.\ref{fig:FDShms}, в.
+\end{itemize}
+
+\noindent
+\begin{minipage}[b]{0.3\textwidth}
+	\centering
+    \includegraphics[width=0.99\textwidth]{assets/FTCS}\\
+    a)
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=0.99\textwidth]{assets/BTCS}\\
+	б)
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=0.99\textwidth]{assets/CN}\\
+	в)
+\end{minipage}
+\begin{figure}[h!]
+	\centering
+	% \includegraphics[width=0.9\linewidth]{assets/CD}
+	\caption{a) Явная схема, б) Неявная схема, в) Схема Crank-Nicolson}
+	\label{fig:FDShms}
+\end{figure}
+
+Конечно разностная схема для явной схемы:
+\begin{equation}
+	\label{eq:FTCS}
+	\frac{C^{i+1}_{j} - C^{i}_{j}}{\Delta t} = D \frac{C^{i}_{j-1} -2C^{i}_{j} + C^{i}_{j+1}}{\Delta x^{2}};
+\end{equation}
+Схема (\ref{eq:FTCS}) сходится только при условии:
+\begin{equation}
+	\Delta t \leq \frac{\Delta x^{2}}{2D}. 
+\end{equation}
+
+
+Конечно разностная схема для неявной схемы:
+\begin{equation}
+	\label{eq:BTCS}
+	\frac{C^{i}_{j} - C^{i-1}_{j}}{\Delta t} = D \frac{C^{i}_{j-1} -2C^{i}_{j} + C^{i}_{j+1}}{\Delta x^{2}}.
+\end{equation}
+
+Конечно разностная схема для Crank-Nicolson:
+\begin{equation}
+	\label{eq:C-N}
+	\frac{C^{i}_{j} - C^{i-1}_{j}}{\Delta t} = \frac{D}{2} \bigg(\frac{C^{i}_{j-1} -2C^{i}_{j} + C^{i}_{j+1}}{\Delta x^{2}} + \frac{C^{i-1}_{j-1} -2C^{i-1}_{j} + C^{i-1}_{j+1}}{\Delta x^{2}}\bigg).
+\end{equation}
+
+Схемы (\ref{eq:BTCS}), (\ref{eq:C-N}) сходятся при любых условиях.
+
+Ошибка схем (\ref{eq:FTCS}), (\ref{eq:BTCS}) по координаторе --- $O(\Delta x^2)$, по времени --- $O(\Delta t)$, (\ref{eq:C-N}) --- $O(\Delta x^2)$ и $O(\Delta t^2)$.\cite{Gerald}
+
+Для верификации модели воспользуемся следующей аналитической моделью \cite{Erwin}:
+\begin{gather}
+	\frac{\partial C}{\partial t} = \frac{\partial^{2}C}{\partial x^{2}};\\
+	C(0, t) = C(L, t) = 0;\\
+	C_{0}(x) = C(x, 0);\\
+	\label{eq:Cxt}
+	C(x, t) = \sum\limits_{n=1}^{\infty}b_{n}\sin\bigg( \frac{n\pi x}{L}\bigg) \exp \bigg[ -\frac{Dn^{2}\pi^{2}t}{L^{2}}\bigg];\\
+	b = \frac{2}{L}\int\limits_{0}^{L}C_{0}(x)\sin\bigg( \frac{n\pi x}{L} \bigg)
+\end{gather}
+Если $C_{0}(x) = \sin(\pi x/L)$, тогда (\ref{eq:Cxt}):
+\begin{equation}
+	\label{eq:CAnal}
+	C(x, t) = \sin\bigg( \frac{n\pi x}{L} \bigg) \exp \bigg[ -\frac{Dn^{2}\pi^{2}t}{L^{2}}\bigg].
+\end{equation}
+
+Для верификации модели была составлена программа (см. лист.\ref{lst:DifFD}), с помощью которой был получен рис.\ref{fig:DifFD}, в котором сравниваются результаты аналитического решения (\ref{eq:CAnal}) и конечно-разностных схем (\ref{eq:FTCS})--(\ref{eq:C-N}) с граничными условиями (\ref{eq:DDiffConst}). Из результатов видно, что явная схема расходится, а неявная и Crank-Nicolson стабильны и соответствуют аналитическому решению.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{assets/DifFD}
+	\caption{Верификация конечно-разностных схем}
+	\label{fig:DifFD}
 \end{figure}

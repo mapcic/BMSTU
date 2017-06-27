@@ -3,7 +3,7 @@ clear; clc;
 e = 1.6e-19; eVtoJ = e; JtoEv = e^(-1); 
 me = 9.11*1e-31; nm = 1e-9;
 
-smth = 1;
+smth = 4;
 % atoms' radius
 dx = 0.56/smth; %nm
 
@@ -22,19 +22,19 @@ grid_x_Al = [zeros(1, a), ...
 	zeros(1, a)
 ];
 
-% T = 800 + 273.5; % K
-% checkTime = [30]; % s
-% 
-% [~, ~, grid_x_Al] = getDiffBOpenAlGaAs(...
-% 	grid_x_Al, ...
-% 	checkTime, ...
-% 	dx*nm, ...
-% 	T ...
-% );
+T = 800 + 273.5; % K
+checkTime = [30]; % s
+
+[~, ~, grid_x_Al] = getDiffBOpenAlGaAs(...
+	grid_x_Al, ...
+	checkTime, ...
+	dx*nm, ...
+	T ...
+);
 
 T = 100 + 273.5; % K
 checkTime = [0, 3, 5, 10, 11, 12, 13]*24*360; %years
-% checkTime = [13]*24*360; %years
+
 Ndp = 2.5*1e18*1e6;
 Nd = 2*1e17*1e6;
 % Get profile Ec

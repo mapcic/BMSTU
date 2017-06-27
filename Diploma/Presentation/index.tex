@@ -31,19 +31,43 @@
 % 	\tableofcontents
 % \end{frame} 
 % \section{Постановка проблемы}
+
 \begin{frame}
 	\frametitle{Постановка проблемы}
 	\begin{columns}
+	\column{0.4\textwidth}
+	\small
+	Гетероструктуры на основе GaAs:
+	\scriptsize
+	\begin{enumerate}
+		\item Резонансно-туннельный гетероструктуры (РТГС);
+		\item Транзистор с высокой подвижностью электронов (HEMT);
+		\item Flash на основе QD.
+	\end{enumerate}
+	\begin{columns}
+	\column{0.47\textwidth}
+		{\large\color{red}1.}
+		\includegraphics[width=0.99\textwidth]{assets/RTDItro}
+	\column{0.47\textwidth}
+		{\large\color{red}2.}
+		\includegraphics[width=.99\textwidth]{assets/HEMT}
+	\end{columns}
+
+	{\large\color{red}3.}
+	\includegraphics[width=.7\textwidth,center]{assets/QDMemory}
+	
+	\column{0.05\textwidth}
+		\Huge{$\Rightarrow$}	
 	\column{0.22\textwidth}
 		\begin{center}
 			\includegraphics[width=\textwidth]{assets/Trouble}
 		\end{center}
-	\column{0.05\textwidth}
-		\Huge{$\Rightarrow$}
-	\column{0.33\textwidth}
-		\begin{center}
-			\includegraphics[width=\textwidth]{assets/AlgWrk}
-		\end{center}
+	% \column{0.05\textwidth}
+	% 	\Huge{$\Rightarrow$}
+	% \column{0.33\textwidth}
+	% 	\begin{center}
+	% 		\includegraphics[width=\textwidth]{assets/AlgWrk}
+	% 	\end{center}
 	\column{0.05\textwidth}
 		\Huge{$\Rightarrow$}
 	\column{0.33\textwidth}
@@ -52,6 +76,29 @@
 		\end{center}
 	\end{columns}
 \end{frame}
+
+
+% \begin{frame}
+% 	\frametitle{Постановка проблемы}
+% 	\begin{columns}
+% 	\column{0.22\textwidth}
+% 		\begin{center}
+% 			\includegraphics[width=\textwidth]{assets/Trouble}
+% 		\end{center}
+% 	\column{0.05\textwidth}
+% 		\Huge{$\Rightarrow$}
+% 	\column{0.33\textwidth}
+% 		\begin{center}
+% 			\includegraphics[width=\textwidth]{assets/AlgWrk}
+% 		\end{center}
+% 	\column{0.05\textwidth}
+% 		\Huge{$\Rightarrow$}
+% 	\column{0.33\textwidth}
+% 		\begin{center}
+% 			\includegraphics[width=0.95\textwidth]{assets/Cond}
+% 		\end{center}
+% 	\end{columns}
+% \end{frame}
 
 \begin{frame}
 	\frametitle{Цели и задачи}
@@ -153,7 +200,7 @@
 	\column{0.01\textwidth}
 		\rule[0mm]{0.2ex}{60mm}
 	\column{0.33\textwidth}
-		{\small\color{red} Схема Crank-Nicolson:}\\
+		{\small\color{red} Схема Crank-Nicolson (С-N):}\\
 		\includegraphics[width=.99\textwidth,center]{assets/CN}\\
 		\tiny
 		\begin{gather*}
@@ -189,7 +236,7 @@
 	\newline\newline
 	{\color{red}Crank-Nicolson}: $O(\Delta x^{2}) + O(\Delta t^{2})$
 	\end{columns}
-	{\color{blue} Вывод:} Численное решение соответствует аналитическому. В качестве основной конечно-разностной схемы диффузии принимается BTCS.
+	{\color{blue} Вывод:} FTCS -- расходится. BTCS и С-N соответствуют соответствует аналитическому решению. В качестве основной конечно-разностной схемы диффузии принимается BTCS из-за ее простоты и схождением при любых условиях.
 \end{frame}
 
 \begin{frame}
@@ -708,7 +755,7 @@
 		\item Исследована модель токопереноса через гетероструктуру с учетом самосогласованного потенциала и влияние основных параметров РТГС на ВАХ; 
 		\item Исследована модель диффузионного размытия гетероструктур на основе $GaAs$ под действием градиента концентрации при постоянной температуре;
 		\item Исследованы конечно-разносные схемы для решения нестационарного уравнения диффузии. Метод BTCS сходится при любом шаге временной сетки в отличии от FTCS и проще, чем метод Crank-Nicolson'a; 
-		\item Исследованы граничные условия для дальнейшего моделирования диффузионного размытия различные систем; 
+		\item Исследованы граничные условия для дальнейшего моделирования диффузионного размытия различных систем; 
 		\item Получен алгоритм моделирования термической деградации РТГС на основе $GaAs$.
 	\end{itemize}
 \end{frame}
